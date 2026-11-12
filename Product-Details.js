@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
             rating: 4.8,
             reviews: 124,
             code: "PET-DOG-001",
-            image: "Images/Dog Food.jpeg",
+            image: "Dog Food.jpeg",
             shortDescription:
                 "A daily food option for adult dogs, designed to make everyday feeding convenient.",
             description:
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
             rating: 4.7,
             reviews: 98,
             code: "PET-CAT-002",
-            image: "Images/Cat Food.jpeg",
+            image: "Cat Food.jpeg",
             shortDescription:
                 "An everyday cat-food option in a convenient pack for regular feeding routines.",
             description:
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
             rating: 4.6,
             reviews: 76,
             code: "PET-DOG-003",
-            image: "Images/Dog Toy.jpeg",
+            image: "Dog Toy.jpeg",
             shortDescription:
                 "A rope-style play accessory for interactive games and supervised playtime.",
             description:
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
             rating: 4.5,
             reviews: 63,
             code: "PET-CAT-004",
-            image: "Images/Cat Toy.jpeg",
+            image: "Cat Toy.jpeg",
             shortDescription:
                 "A play accessory intended to encourage active and engaging play sessions for cats.",
             description:
@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
             rating: 4.8,
             reviews: 112,
             code: "PET-DOG-005",
-            image: "Images/Dog Bed.jpeg",
+            image: "Dog Bed.jpeg",
             shortDescription:
                 "A dedicated resting space designed to give dogs a comfortable place to relax.",
             description:
@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", () => {
             rating: 4.7,
             reviews: 84,
             code: "PET-CAT-006",
-            image: "Images/Cat Bed.jpeg",
+            image: "Cat Bed.jpeg",
             shortDescription:
                 "A soft resting cushion for cats to use in a quiet and comfortable spot.",
             description:
@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", () => {
             rating: 4.6,
             reviews: 71,
             code: "PET-DOG-007",
-            image: "Images/Grooming Brush.jpeg",
+            image: "Grooming Brush.jpeg",
             shortDescription:
                 "An everyday grooming accessory for routine coat care.",
             description:
@@ -185,7 +185,7 @@ document.addEventListener("DOMContentLoaded", () => {
             rating: 4.5,
             reviews: 59,
             code: "PET-CAT-008",
-            image: "Images/Cat Grooming.jpeg",
+            image: "Cat Grooming.jpeg",
             shortDescription:
                 "A grooming accessory set for routine cat coat-care sessions.",
             description:
@@ -210,7 +210,7 @@ document.addEventListener("DOMContentLoaded", () => {
             rating: 4.6,
             reviews: 48,
             code: "PET-SMALL-009",
-            image: "Images/Small Pet Food.jpeg",
+            image: "Small Pet Food.jpeg",
             shortDescription:
                 "A food product listing for small pets. Confirm the intended animal species on the packaging.",
             description:
@@ -235,7 +235,7 @@ document.addEventListener("DOMContentLoaded", () => {
             rating: 4.4,
             reviews: 37,
             code: "PET-SMALL-010",
-            image: "Images/Small Pet Toy.jpeg",
+            image: "Small Pet Toy.jpeg",
             shortDescription:
                 "An enrichment toy listing for small pets, with suitability depending on the animal and toy design.",
             description:
@@ -260,7 +260,7 @@ document.addEventListener("DOMContentLoaded", () => {
             rating: 4.5,
             reviews: 42,
             code: "PET-SMALL-011",
-            image: "Images/Small Pet Bedding.jpeg",
+            image: "Small Pet Bedding.jpeg",
             shortDescription:
                 "A bedding accessory listing for suitable small pets.",
             description:
@@ -285,7 +285,7 @@ document.addEventListener("DOMContentLoaded", () => {
             rating: 4.4,
             reviews: 31,
             code: "PET-SMALL-012",
-            image: "Images/Small Pet Grooming.jpeg",
+            image: "Small Pet Grooming.jpeg",
             shortDescription:
                 "A grooming brush listing for small pets where the brush design is suitable.",
             description:
