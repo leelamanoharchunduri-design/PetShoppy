@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PetShoppy | Pet Store</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+     <!-- HEADER -->
+<header class="main-header">
+    <div class="header-container">
+
+        <a href="index.html" class="logo">
+            <img src="Images/Logo Image1.png" alt="PetShoppy Logo">
+            <span class="logo-text">
+                Pet<span>Shoppy</span>
+                <small>Everything Your Pet Loves</small>
+            </span>
+        </a>
+
+        <nav class="navigation">
+            <div class="nav-item dropdown">
+                <a href="index.html" class="nav-link">Home <i class="fa-solid fa-angle-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="index.html">Home 1 - Classic</a>
+                    <a href="home2.html">Home 2 - Premium</a>
+                </div>
+            </div>
+
+            <a href="about.html" class="nav-link">About Us</a>
+
+            <div class="nav-item dropdown">
+                <a href="index.html" class="nav-link">Pets <i class="fa-solid fa-angle-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="Dogs.html">Dogs</a>
+                    <a href="Cat.html">Cats</a>
+                </div>
+            </div>
+
+            <a href="Products.html" class="nav-link">Products</a>
+            <a href="Brands.html" class="nav-link">Brands</a>
+            <a href="Services.html" class="nav-link">Services</a>
+            <a href="Blog.html" class="nav-link">Blog</a>
+            <a href="Contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="circle-btn" id="directionBtn" aria-label="Toggle direction">
+                <i class="fa-solid fa-right-left"></i>
+            </button>
+
+            <button class="circle-btn" id="themeBtn" aria-label="Toggle theme">
+                <i class="fa-solid fa-sun"></i>
+            </button>
+
+            <a href="PetClub.html" class="login-btn">
+                <i class="fa-solid fa-paw"></i> Join Pet Club
+            </a>
+        </div>
+
+    </div>
+</header>
+
+
+<main>
+
+        <!-- HERO SECTION -->
+        <section class="hero-section">
+
+            <div class="hero-content">
+                <span class="section-label">
+                    <i class="fa-solid fa-paw"></i>
+                    A HAPPY PLACE FOR PETS
+                </span>
+
+                <h1>Everything Your Pets Need,
+    <span>All in One Place!</span>
+</h1>
+
+                <p>
+                    Discover quality food, playful toys, comfortable
+                    accessories and everyday essentials for your
+                    favourite companions.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="Dogs.html" class="primary-btn">
+                        Shop for Dogs <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="Cat.html" class="secondary-btn">
+                        Shop for Cats
+                    </a>
+                </div>
+
+                <div class="hero-note">
+                    <i class="fa-solid fa-heart"></i>
+                    Making every pet moment special
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="https://images.openai.com/static-rsc-4/yv9fFzBGlke947bfDOb0Z7qNkBr9wfw-Pga7GW_WyAotWIUZUHiNxw3YHhKzJ4N2_zgHcG5rDOvu-KFgvY75jbmQHMu-gefCmbKS2JQjT4H97CNhTfmTo3LqtAyRwEe6N50HMDy4kjdWznx2pqMe7HKFtoqE82LpN9ot8MDPfqCSSa-1QfwiL3cHMQ8kjoYR?purpose=fullsize"
+                    alt="Happy dog enjoying time outdoors">
+            </div>
+
+        </section>
+
+        <!-- SHOP BY PET -->
+        <section class="pet-section section-padding">
+
+            <div class="section-heading">
+                <span class="section-label">FIND THEIR FAVOURITES</span>
+                <h2>Who Are You Shopping For?</h2>
+                <p>Explore products made for your beloved companions.</p>
+            </div>
+
+            <div class="pet-grid">
+
+                <a href="dogs.html" class="pet-card">
+                    <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=700&q=85"
+                         alt="Golden retriever">
+                    <div class="pet-card-content">
+                        <h3>For Dogs</h3>
+                        <span>Explore Collection <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="Cat.html" class="pet-card">
+                    <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=700&q=85"
+                         alt="Cute cat">
+                    <div class="pet-card-content">
+                        <h3>For Cats</h3>
+                        <span>Explore Collection <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="pets.html" class="pet-card">
+                    <img src="https://images.openai.com/static-rsc-4/M1uS88FH36iswIZ0i0aM6IA3JnJ85YdUIURCovAgB_wp9JYYLMtBQS9XjxEmxh2h3yuicZxG7aOPbZoO9vGT4IWAkmvV-0KDw5vS_-56KUPz9xJ5YkKwACZ6F4ILIfjZeVVXGG_XXZeByf4X2DwvqJqZKwZMmvioOyO29KGqjc8075OUZHC_ckWkNqx-2v0m?purpose=fullsize"
+                         alt="Two happy dogs">
+                    <div class="pet-card-content">
+                        <h3>For Every Pet</h3>
+                        <span>Explore Collection <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- SHOP BY CATEGORY -->
+        <section class="category-section section-padding">
+
+            <div class="section-heading">
+                <span class="section-label">EXPLORE OUR COLLECTION</span>
+                <h2>Shop by Categories</h2>
+                <p>All the essentials for happy and healthy pets.</p>
+            </div>
+
+            <div class="category-grid">
+
+                <a href="products.html?category=food" class="category-card">
+                    <img src="https://images.openai.com/static-rsc-4/w9gseoCZGbuDJq6z_aG2uYO_X9687kGMLa2LZ8mhQYrj1rZRljZS0B2GazOanKTUPEvj69d0FUClDx20MYPlgzSAu5G_6LDif5fSuiGbgMOo9HhkyM_K80q-_yTcn5nT3eSIf3bA2Y5-SR7mwPo7KEdLQihY2UJdJTpyXSNIxcE?purpose=inline"
+                         alt="Pet food">
+                    <h3>Food & Treats</h3>
+                    <span>Shop Now <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+
+                <a href="products.html?category=toys" class="category-card">
+                    <img src="https://images.openai.com/static-rsc-4/tr6yJ81hYm2WGzdh1qy6G77R_ZMPfN1IJ9Z_MlYuu9AM08XhpfwTsrjVlc0AoRLRRu6GlCtEkIq3HJm7YVZC6fKRW61rsCvmf4ctxcFJcIoJ61_GNgADt7xI5p9Fy0DrSOKdNMJChFsO-4_V158oUacP2K9cR25HHlIHg-2e441HVv5BWqV_vjlaEWlSWuTX?purpose=fullsize"
+                         alt="Dog playing">
+                    <h3>Toys & Playtime</h3>
+                    <span>Shop Now <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+
+                <a href="products.html?category=accessories" class="category-card">
+                    <img src="https://images.openai.com/static-rsc-4/vF84g98JcKkGpsXER8NIwprN9hUa2C1HQTozOo4ASb5_BIkXZnYdfcnOPlpkqFh2_ndFCGbqCw2EZwQ28UBWZj_Ja2KV51nwinU11_EELD_P-YZYaQcdj98UH1uloZx5sgu2XPXuT2Jk524FbW9jj3n4Ofq7sRMVcmcHCJE-gjyT3ckfWSNJg_zQeWU3oCxb?purpose=fullsize"
+                         alt="Pet accessories">
+                    <h3>Accessories</h3>
+                    <span>Shop Now <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+
+                <a href="products.html?category=grooming" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=500&q=85"
+                         alt="Pet grooming">
+                    <h3>Grooming & Care</h3>
+                    <span>Shop Now <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- BESTSELLERS -->
+        <section class="bestseller-section section-padding">
+
+            <div class="section-heading">
+                <span class="section-label">PET PARENT FAVOURITES</span>
+                <h2>Our Bestselling Products</h2>
+                <p>Popular picks for your furry family members.</p>
+            </div>
+
+            <div class="product-grid">
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <span class="product-badge">Bestseller</span>
+                        <button class="wishlist-btn" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&w=600&q=85"
+                             alt="Premium pet food">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Food & Nutrition</span>
+                        <h3>Premium Pet Food</h3>
+                        <div class="product-bottom">
+                            <a href="Products.html" class="explore-products-btn">
+            Explore Products
+        </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <span class="product-badge">Popular</span>
+                        <button class="wishlist-btn" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <img src="https://images.unsplash.com/photo-1535294435445-d7249524ef2e?auto=format&fit=crop&w=600&q=85"
+                             alt="Pet toy">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Toys</span>
+                        <h3>Interactive Pet Toy</h3>
+                        <div class="product-bottom">
+                            <a href="Products.html" class="explore-products-btn">
+            Explore Products
+        </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <span class="product-badge">Bestseller</span>
+                        <button class="wishlist-btn" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <img src="https://images.openai.com/static-rsc-4/2dLUdEP9UcZacmaC6hxf51R4PpE7CirOr6_ly_SInamq5q2U4r5czKsvhjABSQUBqb5PgcH0j5OBZxZT11_l3LiR2NWbaVoIHSXXsfH3gTNQ5hMKevtEZ_mlscs-GKLW6hBFCuZg0l_awp-FXLvWe-RgYG3Zj9zHFlpuqJ2c233FLqtme3eib3plA29GCLK5?purpose=fullsize"
+                             alt="Pet accessories">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Accessories</span>
+                        <h3>Pet Walking Essentials</h3>
+                        <div class="product-bottom">
+                            <a href="Products.html" class="explore-products-btn">
+            Explore Products
+        </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <span class="product-badge">New</span>
+                        <button class="wishlist-btn" aria-label="Add to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <img src="https://images.openai.com/static-rsc-4/v_l3QWi_aCL-Y4SPza91qTbNcBNuBeCyhJTZ9Yce27BEwrQ-N0HdIakyfzFicpVqZDqZfb8ol4YPfHnry--LnUiGXWp87zS38oLdOtI35bYtXudIZqfKRHuE4CO8knqOC5g65Wk5xR7fUqk2XOuaJcjd12OBngR_Y3dppf5QTFQ-JzhrM2zDSWf9HW0GSOrD?purpose=fullsize"
+                             alt="Pet grooming care">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Grooming</span>
+                        <h3>Pet Grooming Essentials</h3>
+                        <div class="product-bottom">
+                            <a href="Products.html" class="explore-products-btn">
+            Explore Products
+        </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        
+<!-- A DAY IN YOUR PET'S LIFE -->
+<section class="pet-day-section">
+
+    <div class="pet-day-heading">
+        <span>HAPPY PETS, HAPPY DAYS</span>
+        <h2>A Day Full of Happy Moments</h2>
+        <p>Little moments, endless love and everything your pets need to enjoy every day.</p>
+    </div>
+
+    <div class="pet-day-grid">
+
+        <div class="pet-day-card">
+            <img src="https://images.openai.com/static-rsc-4/bUbUkX5YAL70xVwl69kjFBfryx52gneSA9NkqL2_LeEsoudcdIZrEvoqcYoya6zXaM0Zi-5uOtzfBKHK5pg0A_JEK1BnFvBBjQwwKqswlo4CA7nQbqRXP-WxRLe_WMxv3n_Ofv-Rpp7mDgKIGvI92vcCcVqZ6egKwdVOHNZy441gNcPEd_VzwcJjjB_0Mo6y?purpose=fullsize" alt="Dog enjoying breakfast">
+            <div class="pet-day-content">
+                <span>08:00 AM</span>
+                <h3>Fresh Start</h3>
+                <p>Start the day with tasty meals and nutritious food.</p>
+            </div>
+        </div>
+
+        <div class="pet-day-card">
+            <img src="https://images.openai.com/static-rsc-4/GTpex6RY9-g0YZzZyBBnBYWVW_Mtb5lOQWo68M_n631e6BX32MEMfwHjb3NJf7N5k6_aBkHXQdZFrUtqG6r8BBa3N3HectMAuAz3hzi2VyV3AoZaJ8e39Bln7CA3OC39dQqvyOp_m5WS3PNLb9xSwV_8Zactd60HYW6OdTGU3wgQEkDzCuWnay23FyY60uSc?purpose=fullsize" alt="Cat playing with a toy">
+            <div class="pet-day-content">
+                <span>11:00 AM</span>
+                <h3>Play & Explore</h3>
+                <p>Keep curious paws busy with exciting toys and activities.</p>
+            </div>
+        </div>
+
+        <div class="pet-day-card">
+            <img src="https://images.openai.com/static-rsc-4/OUQ8JRv__H7JQ8FYyiUVu63lmPB1i5_ll8um2wQzfiwKYZVjVJCXAGg10Qb26gcEl5DC_Z2Kl83BoWbNeYTGbdZPN52knNEXu1XH3vCAG6NJkA9x5mXJouUY_OZ8pjU0_OfltHuBAYo5WQsJ5-YtAg6T02Ng9ffSD7Ozb2IrsEpKtLcuVv69WAm70a2XUKTD?purpose=fullsize" alt="Dog enjoying a walk">
+            <div class="pet-day-content">
+                <span>04:00 PM</span>
+                <h3>Outdoor Adventures</h3>
+                <p>Enjoy fresh air, daily walks and wonderful adventures.</p>
+            </div>
+        </div>
+
+        <div class="pet-day-card">
+            <img src="https://images.openai.com/static-rsc-4/2AfeKkSe9-xejkE0UqCwcOaHom0KQNA_HehQyUAsPU2XBfiVXcrzaXmeObzhb1rB93_dPsyw2_AYHCMjV1HPJ6y0lPg9GGnBBtVWXBL5fVgrO625mQ8usZeN1Tso3xNkkVGVKhDj27nOylyvvviECOlXj6Cztm2D1T7uoxoOEX4DkMCDcGhPx3EpHvJTHPbv?purpose=fullsize" alt="Puppy resting in a comfortable bed">
+            <div class="pet-day-content">
+                <span>09:00 PM</span>
+                <h3>Cozy Goodnight</h3>
+                <p>End the day with comfort, cuddles and peaceful rest.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+        <!-- WHY CHOOSE US -->
+        <section class="benefits-section section-padding">
+
+            <div class="section-heading">
+                <span class="section-label">THE PETSHOPPY PROMISE</span>
+                <h2>Why Pet Parents Choose Us</h2>
+                <p>We make shopping for your pets simple and enjoyable.</p>
+            </div>
+
+            <div class="benefits-grid">
+
+                <div class="benefit-card">
+                    <i class="fa-solid fa-heart"></i>
+                    <h3>Pets Come First</h3>
+                    <p>Thoughtfully selected essentials for your pets.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <i class="fa-solid fa-shield-heart"></i>
+                    <h3>Quality Selection</h3>
+                    <p>Products selected with pet care in mind.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <h3>Easy Shopping</h3>
+                    <p>A convenient way to find your pet's favourites.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <i class="fa-solid fa-headset"></i>
+                    <h3>Friendly Support</h3>
+                    <p>Here to help with your shopping questions.</p>
+                </div>
+
+            </div>
+        </section>
+
+        
+<!-- PET PARENT COMMUNITY SECTION -->
+<section class="pet-community">
+
+    <div class="community-heading">
+        <span class="community-eyebrow">
+            <i class="fa-solid fa-paw"></i> OUR PET PARENT COMMUNITY
+        </span>
+
+        <h2>One Big Family, Countless Happy Tails!</h2>
+
+        <p>
+                Being a pet parent is a beautiful journey filled with love,
+                laughter, learning, and unforgettable memories. At PetShoppy,
+                we bring pet lovers together to share experiences, celebrate
+                milestones, and make every pet feel special.
+        </p>
+    </div>
+
+    <!-- Community Highlights -->
+        <div class="community-highlights">
+
+            <div class="community-highlight-card">
+                <div class="community-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <h3>Share Your Pet's Story</h3>
+                <p>
+                    Every pet has a unique personality and a special story.
+                    Share your favourite moments, adorable pictures, funny
+                    memories, and precious milestones with fellow pet parents.
+                </p>
+            </div>
+
+            <div class="community-highlight-card">
+                <div class="community-icon">
+                    <i class="fa-solid fa-paw"></i>
+                </div>
+                <h3>Learn & Grow Together</h3>
+                <p>
+                    Discover helpful pet-care tips, grooming advice,
+                    nutrition suggestions, training guidance, and everyday
+                    ideas to give your furry friends the care they deserve.
+                </p>
+            </div>
+
+            <div class="community-highlight-card">
+                <div class="community-icon">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <h3>Connect With Pet Lovers</h3>
+                <p>
+                    Meet people who understand the joy of having pets.
+                    Exchange experiences, celebrate achievements, and
+                    build friendships with a community that shares your love.
+                </p>
+            </div>
+
+        </div>
+
+    <div class="community-content">
+
+        <!-- LEFT IMAGE -->
+        <div class="community-image">
+            <img src="https://images.openai.com/static-rsc-4/Ar8RjG4HCKugmw3k2uFCuZrhv36-RqtYcuJ3emU5BBuncJILy2A9ULHrqNByoX5HQGNmAMoklzmAexhk5NBsLxDHe_chSbwuv-uDMfiUddiRTKKH_zzKNK43p0Yjq5b2kR4RpZjOLBXd_HGL79GxpvcrFk_ML75wp6bMALSjIRBuZZQjoULWEWf4RBMpie0m?purpose=fullsize"
+                 alt="Pet parents enjoying happy moments with their pets">
+
+            <div class="community-image-label">
+                <i class="fa-solid fa-heart"></i>
+                <div>
+                    <strong>Made with Love</strong>
+                    <small>For every paw and every family</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="community-details">
+
+            <span class="community-small-title">
+                MORE THAN JUST A PET STORE
+            </span>
+
+            <h3>Because Every Pet Deserves a Little Extra Love.</h3>
+
+            <p>
+                From playful puppies to curious kittens, we celebrate
+                the beautiful bond between pets and their parents.
+                Discover products, share experiences and make
+                everyday moments unforgettable.
+            </p>
+
+            <div class="community-stats">
+
+                <div class="community-stat">
+                    <i class="fa-solid fa-paw"></i>
+                    <div>
+                        <strong>Pet Lovers</strong>
+                        <small>A welcoming community</small>
+                    </div>
+                </div>
+
+                <div class="community-stat">
+                    <i class="fa-solid fa-heart"></i>
+                    <div>
+                        <strong>Shared Happiness</strong>
+                        <small>Stories, care and memories</small>
+                    </div>
+                </div>
+
+                <div class="community-stat">
+                    <i class="fa-solid fa-star"></i>
+                    <div>
+                        <strong>Every Paw Matters</strong>
+                        <small>Celebrating every pet</small>
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="Contact.html" class="community-btn">
+                Join Our Pet Family
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- TESTIMONIALS -->
+    <div class="community-testimonials">
+
+        <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p>
+                "PetShoppy makes finding everyday essentials for
+                my furry friend so much easier!"
+            </p>
+            <h4>Happy Pet Parent</h4>
+            <span>Dog Parent</span>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p>
+                "I love having so many pet care and playtime
+                essentials in one place."
+            </p>
+            <h4>Happy Pet Parent</h4>
+            <span>Cat Parent</span>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p>
+                "A lovely place to discover products that make
+                my pet's everyday life more enjoyable."
+            </p>
+            <h4>Happy Pet Parent</h4>
+            <span>Pet Lover</span>
+        </div>
+
+    </div>
+
+</section>
+
+     <!-- LATEST BLOGS -->
+        <section class="blog-section section-padding">
+
+            <div class="section-heading">
+                <span class="section-label">FROM OUR PET JOURNAL</span>
+                <h2>Tips, Stories & Pet Care Ideas</h2>
+                <p>Explore helpful reads for happier pets.</p>
+            </div>
+
+            <div class="blog-grid">
+
+                <article class="blog-card">
+                    <img src="https://images.openai.com/static-rsc-4/ntaHWitN49q7gMIZHKxVzC87u06nARiaIp7tf5kWaCTLLTFNCA01dZgBDpZTMjLp9Jzn1vy35rawL4FOU_GH_lEDOnTwFx3JcBO01jcZdF05NSiQ65h9Cy8ePi3QS0Whrevjr1EIeoHx7h4nxtHB7GvMQXn_7UvlNZnuYgLZ5q7BtUitwGsqmBjrtwtC989p?purpose=fullsize"
+                         alt="Golden retriever">
+                    <div class="blog-content">
+                        <span>Dog Care</span>
+                        <h3>Simple Everyday Care Tips for Your Dog</h3>
+                        <a href="Blog.html">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <img src="https://images.openai.com/static-rsc-4/kg76ANDOqgH2F67m8czyvPqn5RCb-ZNaqVhEdgrrAhLimbJo6SZoG86lebbU3shGhzVF4gAYnI741_w6fgg-HufRtK_QcilcKIohya6N20kWYszdDuzyZrRDq7mDn9xGDJtF1yVtd-aYqB8JmTGPkG_Tu1aMqE0ckZxa4PH4HMLQLw-gMSXX0RECUbbWYBZf?purpose=fullsize"
+                         alt="Cat">
+                    <div class="blog-content">
+                        <span>Cat Care</span>
+                        <h3>Creating a Comfortable Home for Your Cat</h3>
+                        <a href="Blog.html">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <img src="https://images.openai.com/static-rsc-4/FNK484W7RzDBKFLCUSxcVCUs_gwY26ll9-efwCsiiAbQE-N5OKKfXq5e3hRlboqYPoUUCL9S6AsniAyLRrCJfpZDnAwXu3zq6koljmyGz_dxVk_2JZZUmWex-ubmDN7xE46SrRrqyAN-fdRPbkd7DMhLNkA3CG7NJTa0sVoSmHH-G4EAlmCOvdfQ1Dh0nR6w?purpose=fullsize"
+                         alt="Pets together">
+                    <div class="blog-content">
+                        <span>Pet Lifestyle</span>
+                        <h3>Fun Ways to Spend Time With Your Pets</h3>
+                        <a href="Blog.html">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- NEWSLETTER -->
+        <section class="newsletter-section">
+            <div>
+                <span class="section-label">STAY CONNECTED</span>
+                <h2>A Little More Love in Your Inbox!</h2>
+                <p>Get pet care ideas, updates and new product news.</p>
+            </div>
+
+            <form id="newsletterForm" class="newsletter-form">
+                <input type="email" id="newsletterEmail"
+                       placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+    </main>
+
+
+
+<footer class="main-footer">
+    <div class="footer-container">
+
+        <!-- COLUMN 1: BRAND -->
+        <div class="footer-column footer-brand">
+
+            <a href="index.html" class="logo">
+                <img src="Images/Logo Image1.png" alt="PetShoppy Logo">
+
+                <span class="footer-logo-text">
+                    Pet<span>Shoppy</span>
+                </span>
+            </a>
+
+            <p class="footer-tagline">
+                Everything Your Pet Loves
+            </p>
+
+            <p class="footer-description">
+                Your one-stop destination for quality pet food,
+                toys, accessories and everything your furry
+                friends need to stay happy and healthy.
+            </p>
+
+
+            <div class="social-links">
+                <a href="#" class="social-btn" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" class="social-btn" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" class="social-btn" aria-label="Pinterest">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+
+                <a href="#" class="social-btn" aria-label="Twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- COLUMN 2: EXPLORE -->
+        <div class="footer-column">
+
+            <h3>Explore</h3>
+
+            <ul class="footer-links">
+        <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home-Classic </a></li>
+        <li><a href="home2.html"><i class="fa-solid fa-angle-right"></i> Home-Premium </a></li>
+        <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us </a></li>
+        <li><a href="Products.html"><i class="fa-solid fa-angle-right"></i> Products </a></li>
+        <li><a href="Brands.html"><i class="fa-solid fa-angle-right"></i> Brands </a></li>
+        <li><a href="Services.html"><i class="fa-solid fa-angle-right"></i> Services </a></li>
+        <li><a href="Blog.html"><i class="fa-solid fa-angle-right"></i> Blog </a></li>
+    </ul>
+        </div>
+
+        <!-- COLUMN 3: CUSTOMER SUPPORT -->
+        <div class="footer-column">
+
+            <h3>Customer Support</h3>
+
+            <ul class="footer-links">
+        <li><a href="Contact.html"><i class="fa-solid fa-angle-right"></i> Help & Support</a></li>
+        <li><a href="Contact.html"><i class="fa-solid fa-angle-right"></i> FAQs</a></li>
+        <li><a href="Contact.html"><i class="fa-solid fa-angle-right"></i> Shipping Information</a></li>
+        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Return & Refund Policy</a></li>
+        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Privacy Policy</a></li>
+        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Terms & Conditions</a></li>
+    </ul>
+
+        </div>
+
+        <!-- COLUMN 4: CONTACT -->
+        <div class="footer-column">
+
+            <h3>Contact Us</h3>
+
+            <ul class="contact-list">
+
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:hello@petshoppy.com">
+                        hello@petshoppy.com
+                    </a>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+919876543210">
+                        +91 98765 43210
+                    </a>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Your Business Address, India</span>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-clock"></i>
+                    <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 PetShoppy. All Rights Reserved.
+        </p>
+
+        <div class="legal-links">
+            <a href="#privacy">Privacy Policy</a>
+            <span class="separator">•</span>
+            <a href="#terms">Terms &amp; Conditions</a>
+        </div>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>

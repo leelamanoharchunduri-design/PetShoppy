@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | PetShoppy</title>
+    
+    <!-- Shared Website CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Contact Page CSS -->
+    <link rel="stylesheet" href="Contact.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Shared Website CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Contact Page JavaScript -->
+    <script src="Contact.js" defer></script>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="main-header">
+    <div class="header-container">
+
+        <a href="index.html" class="logo">
+            <img src="Images/Logo Image1.png" alt="PetShoppy Logo">
+            <span class="logo-text">
+                Pet<span>Shoppy</span>
+                <small>Everything Your Pet Loves</small>
+            </span>
+        </a>
+
+        <nav class="navigation">
+            <div class="nav-item dropdown">
+                <a href="index.html" class="nav-link">Home <i class="fa-solid fa-angle-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="index.html">Home 1 - Classic</a>
+                    <a href="home2.html">Home 2 - Premium</a>
+                </div>
+            </div>
+
+            <a href="about.html" class="nav-link">About Us</a>
+
+            <div class="nav-item dropdown">
+                <a href="index.html" class="nav-link">Pets <i class="fa-solid fa-angle-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="Dogs.html">Dogs</a>
+                    <a href="Cat.html">Cats</a>
+                </div>
+            </div>
+            
+            <a href="Products.html" class="nav-link">Products</a>
+            <a href="Brands.html" class="nav-link">Brands</a>
+            <a href="Services.html" class="nav-link">Services</a>
+            <a href="Blog.html" class="nav-link">Blog</a>
+            <a href="Contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="circle-btn" id="directionBtn" aria-label="Toggle direction">
+                <i class="fa-solid fa-right-left"></i>
+            </button>
+
+            <button class="circle-btn" id="themeBtn" aria-label="Toggle theme">
+                <i class="fa-solid fa-sun"></i>
+            </button>
+
+            <a href="PetClub.html" class="login-btn">
+                <i class="fa-solid fa-paw"></i> Join Pet Club
+            </a>
+        </div>
+
+    </div>
+</header>
+
+
+<main>
+
+    <!-- SECTION 1: CONTACT HERO -->
+    <section class="contact-hero">
+
+        <div class="contact-hero-content">
+            <span class="section-label">
+                <i class="fa-solid fa-paw"></i>
+                WE ARE HERE FOR YOU
+            </span>
+
+            <h1>Let's Talk About Your <span>Furry Friends!</span></h1>
+
+            <p>
+                Have a question about pet food, accessories, grooming
+                or veterinary care? Our friendly team is ready to help
+                you and your beloved pets.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#contact-information" class="primary-btn">
+                    Contact Our Team
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="#book-vet" class="secondary-btn">
+                    <i class="fa-solid fa-stethoscope"></i>
+                    Book a Vet
+                </a>
+            </div>
+        </div>
+
+        <div class="contact-hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1000&q=85"
+                alt="Happy dogs enjoying time together">
+        </div>
+
+    </section>
+
+
+    <!-- SECTION 2: CONTACT INFORMATION -->
+    <section class="contact-information section-padding"
+             id="contact-information">
+
+        <div class="section-heading">
+            <span class="section-label">GET IN TOUCH</span>
+            <h2>We Would Love to <span>Hear From You</span></h2>
+
+            <p>
+                Whether you need help choosing the right products
+                or have a question about our services, contact us.
+            </p>
+        </div>
+
+        <div class="contact-info-grid">
+
+            <div class="contact-info-card">
+                <div class="info-icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+
+                <h3>Call Our Team</h3>
+                <p>Speak directly with our customer support team.</p>
+
+                <a href="tel:+910000000000">+91 XXXXX XXXXX</a>
+                <small>Available during store hours</small>
+            </div>
+
+            <div class="contact-info-card">
+                <div class="info-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <h3>Email Us</h3>
+                <p>Send us your questions and product enquiries.</p>
+
+                <a href="mailto:hello@petshoppy.example">
+                    hello@petshoppy.example
+                </a>
+
+                <small>We aim to reply within 24 hours</small>
+            </div>
+
+            <div class="contact-info-card">
+                <div class="info-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+
+                <h3>Visit Our Store</h3>
+                <p>Come visit us with your furry companions.</p>
+
+                <a href="#store-location">View Store Location</a>
+                <small>Store address to be updated</small>
+            </div>
+
+            <div class="contact-info-card">
+                <div class="info-icon">
+                    <i class="fa-solid fa-stethoscope"></i>
+                </div>
+
+                <h3>Veterinary Support</h3>
+                <p>Arrange a veterinary consultation for your pet.</p>
+
+                <a href="#book-vet">Book an Appointment</a>
+                <small>Appointment confirmation required</small>
+            </div>
+
+        </div>
+
+        <div class="contact-help-banner">
+            <div>
+                <h3>How Can We Help Your Pet Today?</h3>
+                <p>
+                    Ask us about food, bulk orders, grooming availability,
+                    accessories, product sizing and more.
+                </p>
+            </div>
+
+            <a href="#contact-form" class="banner-btn">
+                Send an Enquiry
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- SECTION 3: STORE LOCATION AND HOURS -->
+    <section class="store-location section-padding"
+             id="store-location">
+
+        <div class="section-heading">
+            <span class="section-label">COME SAY HELLO</span>
+            <h2>Visit Our <span>PetShoppy Store</span></h2>
+
+            <p>
+                We look forward to welcoming you and your pets
+                to our store.
+            </p>
+        </div>
+
+        <div class="location-layout">
+
+            <div class="location-details">
+
+                <div class="location-item">
+                    <div class="location-icon">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+
+                    <div>
+                        <h3>Our Store Address</h3>
+                        <p>
+                            Add your complete store address here,
+                            including street, area, city, state and PIN code.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="location-item">
+                    <div class="location-icon">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+
+                    <div>
+                        <h3>Store Opening Hours</h3>
+
+                        <div class="opening-hours">
+                            <div>
+                                <span>Monday – Friday</span>
+                                <strong>9:00 AM – 8:00 PM</strong>
+                            </div>
+
+                            <div>
+                                <span>Saturday</span>
+                                <strong>9:00 AM – 8:00 PM</strong>
+                            </div>
+
+                            <div>
+                                <span>Sunday</span>
+                                <strong>10:00 AM – 6:00 PM</strong>
+                            </div>
+
+                            <div>
+                                <span>Public Holidays</span>
+                                <strong>Contact Us</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="location-item">
+                    <div class="location-icon">
+                        <i class="fa-solid fa-car"></i>
+                    </div>
+
+                    <div>
+                        <h3>Plan Your Visit</h3>
+                        <p>
+                            Bring your pets along when visiting our store.
+                            Please check with us about any special
+                            arrangements before your visit.
+                        </p>
+                    </div>
+                </div>
+
+                <a href="https://www.google.com/maps"
+                   target="_blank"
+                   rel="noopener"
+                   class="primary-btn directions-btn">
+                    <i class="fa-solid fa-diamond-turn-right"></i>
+                    Get Directions
+                </a>
+
+            </div>
+
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps?q=Visakhapatnam,Andhra%20Pradesh,India&output=embed"
+                    width="100%"
+                    height="100%"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Map showing Visakhapatnam">
+                </iframe>
+            </div>
+
+        </div>
+
+        <p class="map-note">
+            <i class="fa-solid fa-circle-info"></i>
+            Replace the sample map with your actual PetShoppy store location.
+        </p>
+
+    </section>
+
+
+    <!-- SECTION 4: CONTACT FORM -->
+    <section class="contact-form-section section-padding"
+             id="contact-form">
+
+        <div class="contact-form-layout">
+
+            <div class="contact-form-intro">
+                <span class="section-label">CUSTOMER SUPPORT</span>
+
+                <h2>Send Us a <span>Message</span></h2>
+
+                <p>
+                    Tell us what you need help with. Our team will
+                    get back to you as soon as possible.
+                </p>
+
+                <div class="form-benefit">
+                    <i class="fa-solid fa-check-circle"></i>
+                    Product and availability enquiries
+                </div>
+
+                <div class="form-benefit">
+                    <i class="fa-solid fa-check-circle"></i>
+                    Bulk pet food orders
+                </div>
+
+                <div class="form-benefit">
+                    <i class="fa-solid fa-check-circle"></i>
+                    Grooming and accessory questions
+                </div>
+
+                <div class="form-benefit">
+                    <i class="fa-solid fa-check-circle"></i>
+                    Order and customer support
+                </div>
+
+                <div class="form-side-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1551717743-49959800b1f6?auto=format&fit=crop&w=800&q=85"
+                        alt="Dog enjoying attention from its owner">
+                </div>
+            </div>
+
+
+            <form class="contact-form" id="contactForm">
+
+                <h3>Send an Enquiry</h3>
+                <p>Fields marked with * are required.</p>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="contactName">Full Name *</label>
+
+                        <input type="text" id="contactName"
+                               name="name"
+                               placeholder="Enter your name"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactEmail">Email Address *</label>
+
+                        <input type="email" id="contactEmail"
+                               name="email"
+                               placeholder="Enter your email"
+                               required>
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="contactPhone">Phone Number *</label>
+
+                        <input type="tel" id="contactPhone"
+                               name="phone"
+                               placeholder="Enter phone number"
+                               pattern="[0-9+\-\s]{10,16}"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactSubject">Enquiry Type *</label>
+
+                        <select id="contactSubject"
+                                name="subject" required>
+
+                            <option value="">Select enquiry type</option>
+                            <option>Product Enquiry</option>
+                            <option>Bulk Pet Food Orders</option>
+                            <option>Grooming Services</option>
+                            <option>Accessories and Sizing</option>
+                            <option>Order Support</option>
+                            <option>Other</option>
+
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="petType">Pet Type</label>
+
+                    <select id="petType" name="petType">
+                        <option value="">Select your pet</option>
+                        <option>Dog</option>
+                        <option>Cat</option>
+                        <option>Bird</option>
+                        <option>Rabbit</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactMessage">Your Message *</label>
+
+                    <textarea id="contactMessage"
+                              name="message"
+                              rows="5"
+                              placeholder="Tell us how we can help..."
+                              required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Send Message
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+
+                <p class="form-status" id="contactStatus"
+                   aria-live="polite"></p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- SECTION 5: BOOK A VET -->
+    <section class="book-vet-section section-padding"
+             id="book-vet">
+
+        <div class="vet-heading">
+            <span class="section-label">YOUR PET'S WELLNESS MATTERS</span>
+
+            <h2>Book a <span>Vet Appointment</span></h2>
+
+            <p>
+                Give your beloved companion the care and attention
+                they deserve. Request a veterinary appointment
+                using the form below.
+            </p>
+        </div>
+
+        <div class="vet-layout">
+
+            <div class="vet-image">
+                <img
+                    src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?auto=format&fit=crop&w=1000&q=85"
+                    alt="Veterinarian caring for a pet">
+
+                <div class="vet-image-caption">
+                    <i class="fa-solid fa-heart"></i>
+
+                    <div>
+                        <h3>Care That Puts Pets First</h3>
+                        <p>Helping pet parents arrange veterinary care.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <form class="vet-form" id="vetForm">
+
+                <h3>Appointment Request</h3>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="ownerName">Pet Parent Name *</label>
+
+                        <input type="text" id="ownerName"
+                               name="ownerName"
+                               placeholder="Your full name"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ownerPhone">Phone Number *</label>
+
+                        <input type="tel" id="ownerPhone"
+                               name="ownerPhone"
+                               placeholder="Your phone number"
+                               pattern="[0-9+\-\s]{10,16}"
+                               required>
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="petName">Pet's Name *</label>
+
+                        <input type="text" id="petName"
+                               name="petName"
+                               placeholder="Enter pet's name"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="vetPetType">Pet Type *</label>
+
+                        <select id="vetPetType"
+                                name="vetPetType" required>
+
+                            <option value="">Select pet type</option>
+                            <option>Dog</option>
+                            <option>Cat</option>
+                            <option>Bird</option>
+                            <option>Rabbit</option>
+                            <option>Other</option>
+
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="petAge">Pet's Age</label>
+
+                        <input type="text" id="petAge"
+                               name="petAge"
+                               placeholder="Example: 2 years">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="vetService">Appointment Type *</label>
+
+                        <select id="vetService"
+                                name="vetService" required>
+
+                            <option value="">Select appointment</option>
+                            <option>General Consultation</option>
+                            <option>Routine Health Check-up</option>
+                            <option>Vaccination Consultation</option>
+                            <option>Dental Check-up</option>
+                            <option>Nutrition Consultation</option>
+                            <option>Other</option>
+
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="vetDate">Preferred Date *</label>
+
+                        <input type="date" id="vetDate"
+                               name="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="vetTime">Preferred Time *</label>
+
+                        <select id="vetTime" name="time" required>
+
+                            <option value="">Select time</option>
+                            <option>09:00 AM – 10:00 AM</option>
+                            <option>10:00 AM – 11:00 AM</option>
+                            <option>11:00 AM – 12:00 PM</option>
+                            <option>12:00 PM – 01:00 PM</option>
+                            <option>02:00 PM – 03:00 PM</option>
+                            <option>03:00 PM – 04:00 PM</option>
+                            <option>04:00 PM – 05:00 PM</option>
+                            <option>05:00 PM – 06:00 PM</option>
+
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="vetNotes">Additional Information</label>
+
+                    <textarea id="vetNotes"
+                              name="notes"
+                              rows="4"
+                              placeholder="Share any relevant information about your pet..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Request Vet Appointment
+                    <i class="fa-solid fa-calendar-check"></i>
+                </button>
+
+                <p class="form-status" id="vetStatus"
+                   aria-live="polite"></p>
+
+                <small class="vet-disclaimer">
+                    Appointment requests are not confirmed until
+                    the store or veterinary provider contacts you.
+                    For urgent concerns, contact a veterinary professional
+                    directly.
+                </small>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="main-footer">
+
+    <div class="footer-container">
+
+        <!-- COLUMN 1: BRAND -->
+        <div class="footer-column footer-brand">
+
+            <a href="index.html" class="logo">
+      <img src="Images/Logo Image1.png" alt="PetShoppy Logo">
+
+      <span class="footer-logo-text">
+            Pet<span>Shoppy</span>
+      </span>
+</a>
+
+            <p class="footer-tagline">
+                Everything Your Pet Loves
+            </p>
+
+            <p class="footer-description">
+                Your one-stop destination for quality pet food,
+                toys, accessories and everything your furry
+                friends need to stay happy and healthy.
+            </p>
+
+
+            <div class="social-links">
+                <a href="#" class="social-btn" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" class="social-btn" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" class="social-btn" aria-label="Pinterest">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+
+                <a href="#" class="social-btn" aria-label="Twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- COLUMN 2: EXPLORE -->
+        <div class="footer-column">
+
+            <h3>Explore</h3>
+
+    <ul class="footer-links">
+        <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home-Classic </a></li>
+        <li><a href="home2.html"><i class="fa-solid fa-angle-right"></i> Home-Premium </a></li>
+        <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us </a></li>
+        <li><a href="Products.html"><i class="fa-solid fa-angle-right"></i> Products </a></li>
+        <li><a href="Brands.html"><i class="fa-solid fa-angle-right"></i> Brands </a></li>
+        <li><a href="Services.html"><i class="fa-solid fa-angle-right"></i> Services </a></li>
+    </ul>
+        </div>
+
+        <!-- COLUMN 3: CUSTOMER SUPPORT -->
+        <div class="footer-column">
+
+            <h3>Customer Support</h3>
+
+            <ul class="footer-links">
+        <li><a href="Contact.html"><i class="fa-solid fa-angle-right"></i> Help & Support</a></li>
+        <li><a href="Contact.html"><i class="fa-solid fa-angle-right"></i> FAQs</a></li>
+        <li><a href="Contact.html"><i class="fa-solid fa-angle-right"></i> Shipping Information</a></li>
+        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Return & Refund Policy</a></li>
+        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Privacy Policy</a></li>
+        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Terms & Conditions</a></li>
+    </ul>
+
+        </div>
+
+        <!-- COLUMN 4: CONTACT -->
+        <div class="footer-column">
+
+            <h3>Contact Us</h3>
+
+            <ul class="contact-list">
+
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:hello@petshoppy.com">
+                        hello@petshoppy.com
+                    </a>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+919876543210">
+                        +91 98765 43210
+                    </a>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Your Business Address, India</span>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-clock"></i>
+                    <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 PetShoppy. All Rights Reserved.
+        </p>
+
+        <div class="legal-links">
+            <a href="#privacy">Privacy Policy</a>
+            <span class="separator">•</span>
+            <a href="#terms">Terms &amp; Conditions</a>
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,422 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | PetShoppy</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="Register.css">
+
+    <script src="Auth.js" defer></script>
+</head>
+
+<body class="register-page">
+
+    <main class="register-main">
+
+        <div class="register-card">
+
+            <!-- PETSHOPPY LOGO -->
+            <a href="index.html" class="register-logo">
+
+                <span class="register-logo-icon">
+                    <i class="fa-solid fa-paw"></i>
+                </span>
+
+                <span class="register-logo-text">
+                    Pet<span>Shoppy</span>
+                    <small>Everything Your Pet Loves</small>
+                </span>
+
+            </a>
+
+
+            <!-- HEADING -->
+            <div class="register-heading">
+
+                <h1>Create Your Account</h1>
+
+                <p>
+                    Join PetShoppy and make your pet's life happier.
+                </p>
+
+            </div>
+
+
+            <form id="registerForm">
+
+                <!-- PERSONAL INFORMATION -->
+                <div class="register-section-title">
+                    <i class="fa-solid fa-user"></i>
+                    Personal Information
+                </div>
+
+
+                <div class="register-field">
+
+                    <label for="fullName">Full Name *</label>
+
+                    <div class="register-input-wrapper">
+                        <i class="fa-regular fa-user"></i>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Enter your full name"
+                            autocomplete="name"
+                            required>
+                    </div>
+
+                </div>
+
+
+                <div class="register-field">
+
+                    <label for="registerEmail">Email Address *</label>
+
+                    <div class="register-input-wrapper">
+                        <i class="fa-regular fa-envelope"></i>
+
+                        <input
+                            type="email"
+                            id="registerEmail"
+                            name="email"
+                            placeholder="you@example.com"
+                            autocomplete="email"
+                            required>
+                    </div>
+
+                </div>
+
+
+                <div class="register-field">
+
+                    <label for="registerPhone">Phone Number *</label>
+
+                    <div class="register-input-wrapper">
+                        <i class="fa-solid fa-phone"></i>
+
+                        <input
+                            type="tel"
+                            id="registerPhone"
+                            name="phone"
+                            placeholder="Enter your phone number"
+                            pattern="[0-9+\-\s]{10,16}"
+                            autocomplete="tel"
+                            required>
+                    </div>
+
+                </div>
+
+
+                <!-- ACCOUNT SECURITY -->
+                <div class="register-section-title">
+
+                    <i class="fa-solid fa-lock"></i>
+                    Account Security
+
+                </div>
+
+
+                <div class="register-field">
+
+                    <label for="registerPassword">Password *</label>
+
+                    <div class="register-input-wrapper">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                            type="password"
+                            id="registerPassword"
+                            name="password"
+                            placeholder="Create a strong password"
+                            autocomplete="new-password"
+                            minlength="8"
+                            required>
+
+                        <button
+                            type="button"
+                            class="register-password-toggle"
+                            data-toggle="registerPassword"
+                            aria-label="Show password">
+
+                            <i class="fa-solid fa-eye"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- PASSWORD STRENGTH -->
+                    <div class="register-strength">
+
+                        <div class="register-strength-track">
+                            <span id="strengthBar"></span>
+                        </div>
+
+                        <small id="strengthText">
+                            Password strength: Not entered
+                        </small>
+
+                    </div>
+
+
+                    <div class="register-password-rules">
+
+                        <span id="ruleLength">
+                            <i class="fa-regular fa-circle"></i>
+                            At least 8 characters
+                        </span>
+
+                        <span id="ruleUpper">
+                            <i class="fa-regular fa-circle"></i>
+                            One uppercase letter
+                        </span>
+
+                        <span id="ruleNumber">
+                            <i class="fa-regular fa-circle"></i>
+                            One number
+                        </span>
+
+                        <span id="ruleSpecial">
+                            <i class="fa-regular fa-circle"></i>
+                            One special character
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="register-field">
+
+                    <label for="confirmPassword">
+                        Confirm Password *
+                    </label>
+
+                    <div class="register-input-wrapper">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            name="confirmPassword"
+                            placeholder="Re-enter your password"
+                            autocomplete="new-password"
+                            required>
+
+                        <button
+                            type="button"
+                            class="register-password-toggle"
+                            data-toggle="confirmPassword"
+                            aria-label="Show password">
+
+                            <i class="fa-solid fa-eye"></i>
+
+                        </button>
+
+                    </div>
+
+                    <small id="passwordMatch"
+                           class="register-match-message"></small>
+
+                </div>
+
+
+                <!-- PET PROFILE -->
+                <div class="register-section-title">
+
+                    <i class="fa-solid fa-paw"></i>
+                    Your Pet Profile
+
+                    <span class="register-optional">Optional</span>
+
+                </div>
+
+
+                <div class="register-field">
+
+                    <label for="petNames">Pet Name(s)</label>
+
+                    <div class="register-input-wrapper">
+
+                        <i class="fa-solid fa-paw"></i>
+
+                        <input
+                            type="text"
+                            id="petNames"
+                            name="petNames"
+                            placeholder="Example: Max, Luna">
+
+                    </div>
+
+                </div>
+
+
+                <div class="register-row">
+
+                    <div class="register-field">
+
+                        <label for="petSpecies">Pet Type</label>
+
+                        <select id="petSpecies" name="petSpecies">
+
+                            <option value="">Select pet type</option>
+                            <option value="Dog">Dog</option>
+                            <option value="Cat">Cat</option>
+                            <option value="Bird">Bird</option>
+                            <option value="Fish">Fish</option>
+                            <option value="Rabbit">Rabbit</option>
+                            <option value="Hamster">Hamster</option>
+                            <option value="Other">Other</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="register-field">
+
+                        <label for="petBreed">Breed / Size</label>
+
+                        <input
+                            type="text"
+                            id="petBreed"
+                            name="petBreed"
+                            placeholder="Example: Labrador / Medium">
+
+                    </div>
+
+                </div>
+
+
+                <!-- PREFERENCES -->
+                <div class="register-section-title">
+
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                    Your Preferences
+
+                </div>
+
+
+                <div class="register-preferences">
+
+                    <label class="register-checkbox">
+
+                        <input type="checkbox" name="offers">
+
+                        <span class="register-checkmark"></span>
+
+                        <span>
+                            Send me exclusive offers and discounts.
+                        </span>
+
+                    </label>
+
+
+                    <label class="register-checkbox">
+
+                        <input type="checkbox" name="tips">
+
+                        <span class="register-checkmark"></span>
+
+                        <span>
+                            Send me pet care tips and updates.
+                        </span>
+
+                    </label>
+
+
+                    <label class="register-checkbox">
+
+                        <input type="checkbox" name="loyalty">
+
+                        <span class="register-checkmark"></span>
+
+                        <span>
+                            Keep me updated about VIP loyalty benefits.
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <!-- TERMS AND CONDITIONS -->
+                <div class="register-terms">
+
+                    <label class="register-checkbox">
+
+                        <input
+                            type="checkbox"
+                            id="termsAccepted"
+                            name="terms"
+                            required>
+
+                        <span class="register-checkmark"></span>
+
+                        <span>
+                            I agree to the
+                            <a href="Terms.html" target="_blank">
+                                Terms & Conditions
+                            </a>
+                            and
+                            <a href="Privacy.html" target="_blank">
+                                Privacy Policy
+                            </a>.
+                            *
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <!-- CREATE ACCOUNT -->
+                <button type="submit" class="register-submit">
+
+                    <i class="fa-solid fa-user-plus"></i>
+
+                    Create Account
+
+                </button>
+
+                <p id="registerStatus"
+                   class="register-status"
+                   aria-live="polite"></p>
+
+            </form>
+
+
+            <!-- LOGIN REDIRECT -->
+            <div class="register-login-link">
+
+                <span>Already have an account?</span>
+
+                <a href="Login.html">Log In</a>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="register-footer">
+
+        © 2026 PetShoppy. Everything Your Pet Loves.
+
+    </footer>
+
+</body>
+</html>

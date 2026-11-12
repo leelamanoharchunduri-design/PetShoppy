@@ -1,0 +1,1203 @@
+
+/* =====================================
+   PETSHOPPY HOME 2 - PREMIUM
+===================================== */
+
+:root {
+    --pet-primary: #147D78;
+    --pet-dark: #105E5A;
+    --pet-coral: #FF8A65;
+    --pet-white: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.premium-announcement {
+    background: var(--pet-dark);
+    color: var(--pet-white);
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 13px;
+}
+
+.premium-announcement p {
+    margin: 0;
+    color: var(--pet-white);
+}
+
+.premium-announcement i {
+    color: var(--pet-coral);
+    margin-right: 7px;
+}
+
+/* HEADER */
+
+.main-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* HERO */
+
+.premium-hero {
+    min-height: 650px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
+    overflow: hidden;
+    background-image: url("https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=2000");
+    background-size: cover;
+    background-position: center;
+}
+
+.premium-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(16, 94, 90, 0.92) 0%,
+        rgba(16, 94, 90, 0.75) 48%,
+        rgba(16, 94, 90, 0.12) 100%
+    );
+}
+
+.premium-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 650px;
+    color: var(--pet-white);
+}
+
+.premium-eyebrow,
+.premium-label {
+    display: inline-block;
+    color: var(--pet-coral);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.premium-hero h1 {
+    font-size: clamp(42px, 6vw, 76px);
+    line-height: 1.08;
+    margin: 0 0 22px;
+    color: var(--pet-primary);
+    font-weight: 800;
+}
+
+.premium-hero h1 span {
+    color: var(--pet-coral);
+}
+
+.premium-hero-content > p {
+    max-width: 540px;
+    color: var(--pet-white);
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.premium-hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.premium-btn,
+.premium-outline-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 23px;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.premium-btn {
+    background: var(--pet-coral);
+    color: var(--pet-dark);
+}
+
+.premium-btn:hover {
+    background: var(--pet-white);
+    color: var(--pet-dark);
+    transform: translateY(-3px);
+}
+
+.premium-outline-btn {
+    border: 1px solid var(--pet-white);
+    color: var(--pet-white);
+}
+
+.premium-outline-btn:hover {
+    background: var(--pet-white);
+    color: var(--pet-dark);
+}
+
+.hero-trust-note {
+    margin-top: 35px;
+    color: var(--pet-white);
+    font-size: 13px;
+}
+
+.hero-trust-note i {
+    color: var(--pet-coral);
+    margin-right: 7px;
+}
+
+.hero-side-note {
+    position: absolute;
+    right: 35px;
+    bottom: 35px;
+    display: flex;
+    gap: 12px;
+    color: var(--pet-white);
+    font-size: 11px;
+    letter-spacing: 2px;
+    z-index: 1;
+}
+
+/* COMMON SECTION */
+
+.premium-section {
+    padding: 85px 7%;
+}
+
+.premium-heading {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 45px;
+}
+
+.premium-heading h2,
+.care-banner h2,
+.community-premium h2,
+.premium-newsletter h2 {
+    color: var(--pet-dark);
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.2;
+    margin: 0 0 14px;
+}
+
+.premium-heading p {
+    color: var(--pet-primary);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* SHOP BY PET */
+
+.shop-pet-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.shop-pet-card {
+    height: 390px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+.shop-pet-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .5s;
+}
+
+.shop-pet-card:hover img {
+    transform: scale(1.07);
+}
+
+.shop-pet-overlay {
+    position: absolute;
+    inset: 0;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: linear-gradient(transparent 25%, rgba(16, 94, 90, .92));
+    color: var(--pet-white);
+}
+
+.shop-pet-overlay span {
+    color: var(--pet-coral);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.shop-pet-overlay h3 {
+    color: var(--pet-white);
+    font-size: 36px;
+    margin: 8px 0;
+}
+
+.shop-pet-overlay p {
+    color: var(--pet-white);
+    margin: 0 0 18px;
+}
+
+.shop-pet-overlay b {
+    color: var(--pet-coral);
+    font-size: 13px;
+}
+
+/* SHOP BY BREED */
+
+.breed-section {
+    background: rgba(20, 125, 120, .07);
+}
+
+.breed-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.breed-card {
+    display: block;
+    overflow: hidden;
+    border-radius: 12px;
+    background: var(--pet-white);
+    box-shadow: 0 8px 24px rgba(16, 94, 90, .10);
+    transition: transform .3s;
+}
+
+.breed-card:hover {
+    transform: translateY(-7px);
+}
+
+.breed-card img {
+    display: block;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.breed-info {
+    padding: 20px;
+}
+
+.breed-info h3 {
+    color: var(--pet-dark);
+    margin: 0 0 10px;
+    font-size: 19px;
+}
+
+.breed-info span {
+    color: var(--pet-primary);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.breed-info i {
+    color: var(--pet-coral);
+    margin-left: 5px;
+}
+
+/* CATEGORIES */
+
+.premium-category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.premium-category-card {
+    height: 330px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+
+.premium-category-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .5s;
+}
+
+.premium-category-card:hover img {
+    transform: scale(1.08);
+}
+
+.premium-category-card > div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 18px;
+    background: linear-gradient(transparent, rgba(16, 94, 90, .95));
+}
+
+.premium-category-card h3 {
+    color: var(--pet-white);
+    margin: 0 0 10px;
+    font-size: 21px;
+}
+
+.premium-category-card span {
+    color: var(--pet-coral);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* PRODUCTS */
+
+.featured-premium-section {
+    background: rgba(20, 125, 120, .06);
+}
+
+.heading-with-link {
+    max-width: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: left;
+    gap: 20px;
+}
+
+.text-link {
+    color: var(--pet-primary);
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.text-link i {
+    color: var(--pet-coral);
+    margin-left: 5px;
+}
+
+.premium-product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.premium-product-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    background: var(--pet-white);
+    box-shadow: 0 7px 22px rgba(16, 94, 90, .09);
+    border: 1px solid rgba(20, 125, 120, .15);
+}
+
+.premium-product-card > img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.product-tag {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    z-index: 2;
+    background: var(--pet-coral);
+    color: var(--pet-dark);
+    padding: 7px 10px;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.premium-wishlist {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 2;
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    background: var(--pet-white);
+    color: var(--pet-coral);
+    cursor: pointer;
+}
+
+.premium-wishlist.active {
+    background: var(--pet-coral);
+    color: var(--pet-white);
+}
+
+.premium-product-info {
+    padding: 18px;
+}
+
+.premium-product-info small {
+    color: var(--pet-primary);
+    font-weight: 800;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.premium-product-info h3 {
+    color: var(--pet-dark);
+    font-size: 17px;
+    min-height: 42px;
+    margin: 10px 0;
+}
+
+.premium-rating {
+    color: var(--pet-coral);
+    font-size: 13px;
+}
+
+.premium-rating span {
+    color: var(--pet-primary);
+    font-size: 11px;
+}
+
+.premium-product-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.premium-product-bottom strong {
+    color: var(--pet-dark);
+    font-size: 19px;
+}
+
+.premium-add-cart {
+    border: 0;
+    background: var(--pet-primary);
+    color: var(--pet-white);
+    padding: 10px 13px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.premium-add-cart:hover {
+    background: var(--pet-dark);
+}
+
+/* CARE BANNER */
+
+.care-banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 440px;
+    background: var(--pet-dark);
+}
+
+.care-banner-image {
+    
+    background-size: cover;
+    background-position: center;
+}
+
+.care-banner-content {
+    padding: 65px 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.care-banner h2 {
+    color: var(--pet-white);
+}
+
+.care-banner-content p {
+    color: var(--pet-white);
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* PROMISE */
+
+.promise-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.promise-card {
+    text-align: center;
+    padding: 30px 20px;
+    border: 1px solid rgba(20, 125, 120, .2);
+    border-radius: 12px;
+    background: var(--pet-white);
+}
+
+.promise-card > i {
+    font-size: 32px;
+    color: var(--pet-coral);
+    margin-bottom: 15px;
+}
+
+.promise-card h3 {
+    color: var(--pet-dark);
+    font-size: 18px;
+}
+
+.promise-card p {
+    color: var(--pet-primary);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* COMMUNITY */
+
+.community-premium {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: rgba(20, 125, 120, .08);
+    align-items: center;
+}
+
+.community-premium-content {
+    padding: 65px 12%;
+}
+
+.community-premium-content p {
+    color: var(--pet-primary);
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.community-premium-image {
+    height: 440px;
+}
+
+.community-premium-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* TESTIMONIALS */
+
+.testimonial-premium-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.premium-quote {
+    padding: 30px;
+    border-radius: 12px;
+    background: rgba(20, 125, 120, .08);
+    border: 1px solid rgba(20, 125, 120, .18);
+}
+
+.premium-quote > div {
+    color: var(--pet-coral);
+    letter-spacing: 3px;
+}
+
+.premium-quote p {
+    color: var(--pet-dark);
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.premium-quote h4 {
+    color: var(--pet-primary);
+    margin-bottom: 5px;
+}
+
+.premium-quote span {
+    color: var(--pet-primary);
+    font-size: 12px;
+}
+
+/* BLOG */
+
+.premium-blog-section {
+    background: rgba(20, 125, 120, .06);
+}
+
+.premium-blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.premium-blog-card {
+    overflow: hidden;
+    border-radius: 12px;
+    background: var(--pet-white);
+    box-shadow: 0 7px 22px rgba(16, 94, 90, .09);
+}
+
+.premium-blog-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.premium-blog-info {
+    padding: 22px;
+}
+
+.premium-blog-info > span {
+    color: var(--pet-coral);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.premium-blog-info h3 {
+    color: var(--pet-dark);
+    line-height: 1.5;
+    font-size: 19px;
+}
+
+.premium-blog-info a {
+    color: var(--pet-primary);
+    font-weight: 700;
+    font-size: 13px;
+}
+
+/* NEWSLETTER */
+
+.premium-newsletter {
+    padding: 65px 8%;
+    background: var(--pet-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+}
+
+.premium-newsletter h2 {
+    color: var(--pet-white);
+}
+
+.premium-newsletter p {
+    color: var(--pet-white);
+    line-height: 1.7;
+}
+
+.premium-newsletter-form {
+    display: flex;
+    width: min(100%, 480px);
+    gap: 8px;
+}
+
+.premium-newsletter-form input {
+    min-width: 0;
+    flex: 1;
+    padding: 15px;
+    border: 1px solid var(--pet-coral);
+    border-radius: 5px;
+    outline: none;
+}
+
+.premium-newsletter-form button {
+    padding: 14px 18px;
+    border: 0;
+    border-radius: 5px;
+    background: var(--pet-coral);
+    color: var(--pet-dark);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* DARK MODE - WHITE TEXT ONLY */
+
+body.dark .premium-section h2,
+body.dark .premium-section h3,
+body.dark .premium-section h4,
+body.dark .premium-section p,
+body.dark .premium-section .breed-info span,
+body.dark .premium-section .premium-product-info small,
+body.dark .premium-section .premium-rating span,
+body.dark .premium-section .premium-product-bottom strong,
+body.dark .premium-section .premium-quote span,
+body.dark .premium-section .premium-blog-info a,
+body.dark .premium-section .text-link,
+body.dark .care-banner-content p,
+body.dark .care-banner-content h2,
+body.dark .community-premium-content h2,
+body.dark .community-premium-content p,
+body.dark .premium-newsletter h2,
+body.dark .premium-newsletter p {
+    color: #FFFFFF !important;
+}
+
+/* Keep coral highlights */
+body.dark .premium-label,
+body.dark .premium-eyebrow,
+body.dark .premium-hero h1 span {
+    color: var(--pet-coral) !important;
+}
+
+/* Keep white hero text */
+body.dark .premium-hero h1,
+body.dark .premium-hero-content p,
+body.dark .premium-hero .hero-trust-note {
+    color: #FFFFFF;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1100px) {
+    .premium-product-grid,
+    .premium-category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .promise-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .premium-hero {
+        min-height: 580px;
+    }
+}
+
+@media (max-width: 768px) {
+    .premium-section {
+        padding: 60px 5%;
+    }
+
+    .premium-hero {
+        min-height: 590px;
+        padding: 65px 6%;
+        background-position: 60% center;
+    }
+
+    .premium-hero-overlay {
+        background: rgba(16, 94, 90, .78);
+    }
+
+    .shop-pet-grid,
+    .breed-grid,
+    .testimonial-premium-grid,
+    .premium-blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .shop-pet-card {
+        height: 310px;
+    }
+
+    .care-banner,
+    .community-premium {
+        grid-template-columns: 1fr;
+    }
+
+    .care-banner-image {
+        min-height: 300px;
+    }
+
+    .community-premium-image {
+        height: 300px;
+    }
+
+    .premium-newsletter {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .heading-with-link {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 520px) {
+    .shop-pet-grid,
+    .breed-grid,
+    .premium-category-grid,
+    .premium-product-grid,
+    .promise-grid,
+    .testimonial-premium-grid,
+    .premium-blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .shop-pet-card {
+        height: 350px;
+    }
+
+    .premium-category-card {
+        height: 280px;
+    }
+
+    .premium-hero h1 {
+        font-size: 43px;
+    }
+
+    .premium-hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .premium-btn,
+    .premium-outline-btn {
+        width: 100%;
+    }
+
+    .premium-newsletter-form {
+        flex-direction: column;
+    }
+
+    .premium-newsletter-form button {
+        width: 100%;
+    }
+
+    .hero-side-note {
+        display: none;
+    }
+}
+
+
+
+
+
+/* Breed Card – Dark Mode Visibility */
+body.dark .breed-card {
+    background-color: #105E5A;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Keep existing heading and paragraph colors */
+body.dark .breed-card .breed-info h3,
+body.dark .breed-card .breed-info span {
+    color: inherit;
+}
+
+/* Keep arrow visible */
+body.dark .breed-card .breed-info i {
+    color: inherit;
+}
+
+/* Image visibility */
+body.dark .breed-card img {
+    opacity: 1;
+    filter: none;
+}
+
+/* Hover effect */
+body.dark .breed-card:hover {
+    background-color: #147D78;
+}
+
+
+/* ==============================
+   PROMISE CARDS – DARK MODE
+============================== */
+
+body.dark .promise-card {
+    background-color: #105E5A;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Preserve existing text colors */
+body.dark .promise-card h3,
+body.dark .promise-card p,
+body.dark .promise-card i {
+    color: inherit;
+}
+
+/* Keep icons clearly visible */
+body.dark .promise-card i {
+    opacity: 1;
+}
+
+/* Hover effect */
+body.dark .promise-card:hover {
+    background-color: #147D78;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+
+
+/* =================================
+   PREMIUM BLOG CARDS – DARK MODE
+================================= */
+
+body.dark .premium-blog-card {
+    background-color: #105E5A;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+/* Preserve existing text colors */
+body.dark .premium-blog-info span,
+body.dark .premium-blog-info h3,
+body.dark .premium-blog-info a {
+    color: inherit;
+}
+
+/* Keep images clear */
+body.dark .premium-blog-card img {
+    opacity: 1;
+    filter: none;
+}
+
+/* Improve card separation */
+body.dark .premium-blog-info {
+    background-color: transparent;
+}
+
+/* Hover effect */
+body.dark .premium-blog-card:hover {
+    background-color: #147D78;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+
+
+
+
+
+/* ================= PREMIUM HERO ================= */
+
+.premium-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 45px;
+    padding: 65px 7%;
+    background: #FFFFFF;
+    overflow: hidden;
+}
+
+/* LEFT IMAGE */
+
+.premium-hero-image {
+    width: 100%;
+    height: 520px;
+    overflow: hidden;
+}
+
+.premium-hero-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* RIGHT TEXT CONTENT */
+
+.premium-hero-content {
+    width: 100%;
+}
+
+/* Small Label */
+
+.premium-hero-label {
+    display: inline-block;
+    color: #147D78;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+}
+
+.premium-hero-label i {
+    margin-right: 6px;
+}
+
+/* Main Heading - Same as index.html */
+
+.premium-hero-content h1 {
+    max-width: 650px;
+    color: #FF8A65;
+    font-size: clamp(36px, 4.5vw, 60px);
+    font-weight: 900;
+    line-height: 1.12;
+    margin-bottom: 22px;
+}
+
+.premium-hero-content h1 span {
+    color: #147D78;
+    display: inline;
+}
+
+/* Description */
+
+.premium-hero-content > p {
+    max-width: 540px;
+    color: #147D78;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 28px;
+}
+
+/* Buttons */
+
+.premium-hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+}
+
+.premium-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 14px 27px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.primary-btn {
+    background: #147D78;
+    color: #FFFFFF;
+}
+
+.secondary-btn {
+    background: coral;
+    color: #FFFFFF;
+}
+
+.premium-btn:hover {
+    transform: translateY(-3px);
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+    .premium-hero {
+        gap: 25px;
+        padding: 50px 5%;
+    }
+
+    .premium-hero-content h1 {
+        font-size: clamp(32px, 4vw, 45px);
+    }
+
+    .premium-hero-image {
+        height: 420px;
+    }
+}
+
+@media (max-width: 600px) {
+    .premium-hero {
+        grid-template-columns: 1fr;
+        padding: 35px 5%;
+    }
+
+    .premium-hero-image {
+        height: 300px;
+    }
+
+    .premium-hero-content h1 {
+        font-size: 36px;
+    }
+}
+
+
+
+/* Premium Hero Heading Colors */
+.premium-hero-content h1 {
+    color: #147D78; /* Teal */
+}
+
+.premium-hero-content h1 span {
+    color: #FF8A65; /* Coral */
+}
+
+
+
+
+
+/* Premium Hero Buttons */
+.premium-hero-buttons .primary-btn,
+.premium-hero-buttons .secondary-btn {
+    background: #147D78;
+    color: #FFFFFF;
+    border: 2px solid #147D78;
+    transition: 0.3s ease;
+}
+
+/* Hover Color - Coral */
+.premium-hero-buttons .primary-btn:hover,
+.premium-hero-buttons .secondary-btn:hover {
+    background: #FF8A65;
+    color: #FFFFFF;
+    border-color: #FF8A65;
+    transform: translateY(-3px);
+}
+
+
+
+/* Center Premium Blog Heading */
+.premium-blog-section .premium-heading {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.premium-blog-section .premium-heading > div {
+    width: 100%;
+    text-align: center;
+}
+
+.premium-blog-section .premium-label,
+.premium-blog-section h2,
+.premium-blog-section p {
+    text-align: center;
+}
+
+
+
+.premium-hero-content h1 {
+    font-weight: 400;
+    color: #147D78;
+}
+
+.premium-hero-content h1 span {
+    color: #FF8A65;
+    font-weight: 400;
+}
+
+.premium-hero {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.94) 0%,
+            rgba(255, 255, 255, 0.80) 48%,
+            rgba(255, 255, 255, 0.10) 100%
+        ),
+        url("Images/premium-home-banner1.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

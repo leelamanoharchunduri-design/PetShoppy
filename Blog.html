@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore PetShoppy's pet care blog for dog and cat nutrition, grooming, training, health tips, product guides and seasonal advice.">
+    <meta name="keywords" content="pet care blog, dog care tips, cat care tips, pet nutrition, pet grooming, pet accessories India">
+    <title>Pet Care Blog | PetShoppy</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Blog.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="Blog.js" defer></script>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="main-header">
+    <div class="header-container">
+
+        <a href="index.html" class="logo">
+            <img src="Images/Logo Image1.png" alt="PetShoppy Logo">
+            <span class="logo-text">
+                Pet<span>Shoppy</span>
+                <small>Everything Your Pet Loves</small>
+            </span>
+        </a>
+
+        <nav class="navigation">
+            <div class="nav-item dropdown">
+                <a href="index.html" class="nav-link">Home <i class="fa-solid fa-angle-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="index.html">Home 1 - Classic</a>
+                    <a href="home2.html">Home 2 - Premium</a>
+                </div>
+            </div>
+
+            <a href="about.html" class="nav-link">About Us</a>
+
+            <div class="nav-item dropdown">
+                <a href="index.html" class="nav-link">Pets <i class="fa-solid fa-angle-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="Dogs.html">Dogs</a>
+                    <a href="Cat.html">Cats</a>
+                </div>
+            </div>
+            
+            <a href="Products.html" class="nav-link">Products</a>
+            <a href="Brands.html" class="nav-link">Brands</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="Blog.html" class="nav-link">Blog</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="circle-btn" id="directionBtn" aria-label="Toggle direction">
+                <i class="fa-solid fa-right-left"></i>
+            </button>
+
+            <button class="circle-btn" id="themeBtn" aria-label="Toggle theme">
+                <i class="fa-solid fa-sun"></i>
+            </button>
+
+            <a href="PetClub.html" class="login-btn">
+                <i class="fa-solid fa-paw"></i> Join Pet Club
+            </a>
+        </div>
+
+    </div>
+</header>
+
+
+<!-- HERO -->
+<section class="blog-hero">
+    <div class="blog-container blog-hero-content">
+
+        <div class="blog-hero-text">
+            <span class="blog-eyebrow">
+                <i class="fa-solid fa-paw"></i> THE PETSHOPPY JOURNAL
+            </span>
+
+            <h1>Helpful Tips for a <span>Happier, Healthier</span> Pet</h1>
+
+            <p>
+                Discover practical pet care advice, nutrition guides,
+                grooming tips, product recommendations and expert insights
+                to help you care for every member of your furry family.
+            </p>
+
+            <div class="blog-hero-buttons">
+                <a href="#latest-articles" class="blog-primary-btn">
+                    Explore Articles <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="Products.html" class="blog-outline-btn">
+                    Shop Pet Essentials
+                </a>
+            </div>
+
+            <div class="blog-hero-highlights">
+                <span><i class="fa-solid fa-check-circle"></i> Practical Advice</span>
+                <span><i class="fa-solid fa-check-circle"></i> Product Guides</span>
+                <span><i class="fa-solid fa-check-circle"></i> Pet Wellness</span>
+            </div>
+        </div>
+
+        <div class="blog-hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=1100&q=85"
+                alt="Dog and cat sitting together">
+            <div class="hero-image-label">
+                <i class="fa-solid fa-heart"></i>
+                Better care starts with better knowledge
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- BLOG INTRODUCTION -->
+<section class="blog-intro section-padding">
+    <div class="blog-container blog-intro-inner">
+
+        <div>
+            <span class="section-eyebrow">WELCOME TO OUR BLOG</span>
+            <h2>Everything You Need to Know About Pet Care</h2>
+        </div>
+
+        <p>
+            Every pet has unique needs. Our blog brings together useful
+            information about everyday care, food choices, grooming,
+            behaviour, health and accessories. Explore topics that help
+            you make informed decisions for your pets.
+        </p>
+
+    </div>
+</section>
+
+
+<!-- BLOG CATEGORY FILTERS -->
+<section class="blog-filter-section" id="latest-articles">
+    <div class="blog-container">
+
+        <div class="blog-section-heading">
+            <span class="section-eyebrow">FIND WHAT YOU NEED</span>
+            <h2>Explore Our Pet Care Articles</h2>
+            <p>Choose a pet category or topic to discover helpful articles.</p>
+        </div>
+
+        <div class="blog-filter-panel">
+
+            <div class="blog-filter-group">
+                <label for="petFilter">Pet Type</label>
+                <select id="petFilter">
+                    <option value="all">All Pets</option>
+                    <option value="dogs">Dogs</option>
+                    <option value="cats">Cats</option>
+                    <option value="small-pets">Small Pets</option>
+                </select>
+            </div>
+
+            <div class="blog-filter-group">
+                <label for="topicFilter">Article Topic</label>
+                <select id="topicFilter">
+                    <option value="all">All Topics</option>
+                    <option value="nutrition">Nutrition</option>
+                    <option value="grooming">Grooming</option>
+                    <option value="training">Training</option>
+                    <option value="health">Health</option>
+                    <option value="accessories">Accessories</option>
+                    <option value="seasonal">Seasonal Care</option>
+                </select>
+            </div>
+
+            <div class="blog-search-group">
+                <label for="blogSearch">Search Articles</label>
+                <div class="blog-search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" id="blogSearch"
+                           placeholder="Search pet care tips...">
+                </div>
+            </div>
+
+            <button type="button" class="clear-filter-btn" id="clearFilters">
+                <i class="fa-solid fa-rotate-left"></i> Reset
+            </button>
+
+        </div>
+
+        <div class="active-filter-info">
+            <span id="articleCount">Showing all articles</span>
+        </div>
+
+        <!-- ARTICLE GRID -->
+        <div class="blog-article-grid" id="blogArticleGrid">
+
+            <!-- ARTICLE 1 -->
+            <article class="blog-card"
+                     data-pet="dogs" data-topic="nutrition"
+                     data-title="choosing the right food for your dog">
+                <a href="Blog-Article.html?article=dog-nutrition"
+                   class="blog-card-image">
+                    <img src="https://images.openai.com/static-rsc-4/giJiUzEYa9Ue0v2fmhqd4Mho7hTrWWZ3zLBbno1yjDypl6V2YELWMCaKdbOup8TKP9BF5NKGfbIuQ0y9JKW4RiGheu2iorzrkDsGMpS620qhSo60-aQkCuP-pgjImXGfdnUp19ecM8QednhUXB0kU3SOQm8djTfQ4uhHr0vIavni9Th-gxpZJotIbjCMy84j?purpose=fullsize"
+                         alt="Dog enjoying its food">
+                    <span class="article-category">DOGS · NUTRITION</span>
+                </a>
+                <div class="blog-card-content">
+                    <div class="article-meta">
+                        <span><i class="fa-regular fa-calendar"></i> Pet Care Guide</span>
+                        <span><i class="fa-regular fa-clock"></i> 5 min read</span>
+                    </div>
+                    <h3>Choosing the Right Food for Your Dog</h3>
+                    <p>
+                        Learn about balanced dog nutrition, food labels,
+                        feeding routines and choosing food suitable for
+                        your dog's age and needs.
+                    </p>
+                    <a href="Blog-Article.html?article=dog-nutrition"
+                       class="read-article-link">
+                        Read Article <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+
+            <!-- ARTICLE 2 -->
+            <article class="blog-card"
+                     data-pet="cats" data-topic="grooming"
+                     data-title="simple grooming tips for healthy cats">
+                <a href="Blog-Article.html?article=cat-grooming"
+                   class="blog-card-image">
+                    <img src="https://images.openai.com/static-rsc-4/iaWNqM2t0y2XCgjcsMZCRvAzGY8euT2KrbuMdD_BEZ1bgAxzsFQNfAyXp8sdkYk4BtlKkwrlyJ3ucAoMZEjg3CANdZyV57FEyxmnO2MVqFvvZVeMEySsMOBzYvbbAp_3IhjAem4VnpXnqAgjSBf4hcqMFZXAPi91yy-h9599Abm1tMKI66iWX8GDnPARJu1Y?purpose=fullsize"
+                         alt="Beautiful cat relaxing">
+                    <span class="article-category">CATS · GROOMING</span>
+                </a>
+                <div class="blog-card-content">
+                    <div class="article-meta">
+                        <span><i class="fa-regular fa-calendar"></i> Pet Care Guide</span>
+                        <span><i class="fa-regular fa-clock"></i> 4 min read</span>
+                    </div>
+                    <h3>Simple Grooming Tips for Healthy Cats</h3>
+                    <p>
+                        Explore brushing routines, coat care, nail
+                        maintenance and ways to make grooming more
+                        comfortable for your cat.
+                    </p>
+                    <a href="Blog-Article.html?article=cat-grooming"
+                       class="read-article-link">
+                        Read Article <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+
+            <!-- ARTICLE 3 -->
+            <article class="blog-card"
+                     data-pet="dogs" data-topic="training"
+                     data-title="building good habits through dog training">
+                <a href="Blog-Article.html?article=dog-training"
+                   class="blog-card-image">
+                    <img src="https://images.openai.com/static-rsc-4/GE09bShafM_Dm2qyAN1UstTT1fR303JTpF0r8bFb9CbN-BXmIMpAj-NtglN3rqYNd_Ob13XDtue3YZSmuOh3DfXrAOuY_JDwwctkrDQpIU3681cWPfGhSRnsY28fxrkP_hfiM5jVhkAwaV8649Waaz7EhvA8x9B4XWfO_JSQIVzcH7_EOIPBo2DGnzVTRqjz?purpose=fullsize"
+                         alt="Dog practising training with its owner">
+                    <span class="article-category">DOGS · TRAINING</span>
+                </a>
+                <div class="blog-card-content">
+                    <div class="article-meta">
+                        <span><i class="fa-regular fa-calendar"></i> Training Tips</span>
+                        <span><i class="fa-regular fa-clock"></i> 6 min read</span>
+                    </div>
+                    <h3>Building Good Habits Through Dog Training</h3>
+                    <p>
+                        Discover positive reinforcement, basic commands,
+                        consistency and simple activities that support
+                        good behaviour.
+                    </p>
+                    <a href="Blog-Article.html?article=dog-training"
+                       class="read-article-link">
+                        Read Article <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+
+            <!-- ARTICLE 4 -->
+            <article class="blog-card"
+                     data-pet="cats" data-topic="health"
+                     data-title="everyday health and wellness for cats">
+                <a href="Blog-Article.html?article=cat-health"
+                   class="blog-card-image">
+                    <img src="https://images.openai.com/static-rsc-4/wwr30vteA7-WF_IxK2PQZKK4nLHaAVHzq5pwbbcxJpwFXKMDN5RmaOWN3tFCJwZCvOzp1cnIWSX68yhvFkvXEKfsdhLT-aleVgvEBvf6n72b3UUrO3WXmXanXQeFPGZ9EdhPSKgDB8HUeDriZ4gq8hvb18dZDB_qYl7cWEs4KKF-Ke45CnpMG3KTqko8lfjL?purpose=fullsize"
+                         alt="Cat resting comfortably">
+                    <span class="article-category">CATS · HEALTH</span>
+                </a>
+                <div class="blog-card-content">
+                    <div class="article-meta">
+                        <span><i class="fa-regular fa-calendar"></i> Wellness Guide</span>
+                        <span><i class="fa-regular fa-clock"></i> 5 min read</span>
+                    </div>
+                    <h3>Everyday Health and Wellness for Cats</h3>
+                    <p>
+                        Understand routine wellness, clean surroundings,
+                        regular veterinary check-ups and changes in
+                        behaviour worth discussing with a vet.
+                    </p>
+                    <a href="Blog-Article.html?article=cat-health"
+                       class="read-article-link">
+                        Read Article <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+
+            <!-- ARTICLE 5 -->
+            <article class="blog-card"
+                     data-pet="small-pets" data-topic="accessories"
+                     data-title="creating a comfortable home for small pets">
+                <a href="Blog-Article.html?article=small-pet-home"
+                   class="blog-card-image">
+                    <img src="https://images.openai.com/static-rsc-4/yrCWr-VuBoP-vs9xD6ccgvfYMZ1yfLCJ6Mm8H5SebwPKcGhbdJJdBJuAZX_rL65LlHhKzmZrDkgunr6zPr4SQBbo15ZsJwJxci1syPachbY_muOuA2APaj4gNf49gD64DK_mUevmG5W8mK76EUp5aDPC_CDCXl0Vjy0M_8M_2QnUWZQi27-CySCgVYqi2Vk6?purpose=fullsize"
+                         alt="Small pet in a comfortable environment">
+                    <span class="article-category">SMALL PETS · ACCESSORIES</span>
+                </a>
+                <div class="blog-card-content">
+                    <div class="article-meta">
+                        <span><i class="fa-regular fa-calendar"></i> Small Pet Guide</span>
+                        <span><i class="fa-regular fa-clock"></i> 4 min read</span>
+                    </div>
+                    <h3>Creating a Comfortable Home for Small Pets</h3>
+                    <p>
+                        Learn about suitable habitats, enrichment items,
+                        bedding and everyday essentials for small
+                        companion animals.
+                    </p>
+                    <a href="Blog-Article.html?article=small-pet-home"
+                       class="read-article-link">
+                        Read Article <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+
+            <!-- ARTICLE 6 -->
+            <article class="blog-card"
+                     data-pet="dogs" data-topic="accessories"
+                     data-title="a practical guide to choosing dog accessories">
+                <a href="Blog-Article.html?article=dog-accessories"
+                   class="blog-card-image">
+                    <img src="https://images.openai.com/static-rsc-4/WraYGghfNF694g_gu5APW9XbhfLeaEpZECtyhb4Liv0ApDABAcFSNXmrlnvwicKN_QkXrvfS-lGrrGZRzNpW7cCZYdDmJzELtf09uYXBAnoJJpb9-SS8HBgzxdOcnNFh6ZrYHDTjVVYpHWkHMSvuFAuIjtfdz7aYbVofUlbaDElaNHVveabLt_bx_EvhX96v?purpose=fullsize"
+                         alt="Dogs enjoying outdoor time">
+                    <span class="article-category">DOGS · ACCESSORIES</span>
+                </a>
+                <div class="blog-card-content">
+                    <div class="article-meta">
+                        <span><i class="fa-regular fa-calendar"></i> Buying Guide</span>
+                        <span><i class="fa-regular fa-clock"></i> 7 min read</span>
+                    </div>
+                    <h3>A Practical Guide to Choosing Dog Accessories</h3>
+                    <p>
+                        Explore useful considerations when selecting
+                        collars, leashes, harnesses, toys and grooming
+                        accessories for your dog.
+                    </p>
+                    <a href="Blog-Article.html?article=dog-accessories"
+                       class="read-article-link">
+                        Read Article <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+
+            <!-- ARTICLE 7 -->
+            <article class="blog-card"
+                     data-pet="cats" data-topic="accessories"
+                     data-title="choosing toys that keep indoor cats engaged">
+                <a href="Blog-Article.html?article=cat-toys"
+                   class="blog-card-image">
+                    <img src="https://images.openai.com/static-rsc-4/t13UvKZL5v1QbIaEbnHiZ27xsF3Jj06TYi-GQbb3PJ2yWGaHsQ5hVM1r5yB0YGIhfiFO74KHuSZ_k5_ikdaBZXBoa9muDQYudRkGx8X1r9IGO0v1t6HJrsKog28dc7VOHzLQ3umdgFttozI03YT6eWv2THeWwHHu_6EcY3K2jaUP7Oa7R50P-XoqCG4Ymria?purpose=fullsize"
+                         alt="Cat playing with a toy">
+                    <span class="article-category">CATS · ACCESSORIES</span>
+                </a>
+                <div class="blog-card-content">
+                    <div class="article-meta">
+                        <span><i class="fa-regular fa-calendar"></i> Product Guide</span>
+                        <span><i class="fa-regular fa-clock"></i> 4 min read</span>
+                    </div>
+                    <h3>Choosing Toys That Keep Indoor Cats Engaged</h3>
+                    <p>
+                        Find out how interactive toys, scratching posts
+                        and play routines can provide enrichment for
+                        indoor cats.
+                    </p>
+                    <a href="Blog-Article.html?article=cat-toys"
+                       class="read-article-link">
+                        Read Article <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+
+            <!-- ARTICLE 8 -->
+            <article class="blog-card"
+                     data-pet="dogs cats" data-topic="seasonal"
+                     data-title="summer care tips for dogs and cats">
+                <a href="Blog-Article.html?article=summer-care"
+                   class="blog-card-image">
+                    <img src="https://images.openai.com/static-rsc-4/BR2ElTyPcWx74F26r7nZT4wcbrC_h6WHqrtNxjrR-5kl0UTgP5hynsEOduWiyxl_Qr5zV98gfn9TxwN-GOulTPqephiWPx5BRaNoUfQRGp_AWd-1TcFZpSokDOBASdmt2tLmjYVFwzLR_4QvJW48-UadLn_yHzFfGZFDKn7GmU9t_E57p7QTY9172m15T7Ld?purpose=fullsize"
+                         alt="Dog relaxing outdoors">
+                    <span class="article-category">DOGS & CATS · SEASONAL</span>
+                </a>
+                <div class="blog-card-content">
+                    <div class="article-meta">
+                        <span><i class="fa-regular fa-calendar"></i> Seasonal Advice</span>
+                        <span><i class="fa-regular fa-clock"></i> 5 min read</span>
+                    </div>
+                    <h3>Summer Care Tips for Dogs and Cats</h3>
+                    <p>
+                        Explore practical ways to support hydration,
+                        provide cool resting areas and plan comfortable
+                        outdoor activities during warmer weather.
+                    </p>
+                    <a href="Blog-Article.html?article=summer-care"
+                       class="read-article-link">
+                        Read Article <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="no-articles-message" id="noArticlesMessage">
+            <i class="fa-solid fa-paw"></i>
+            <h3>No articles found</h3>
+            <p>Try another pet category, topic or search term.</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- PRODUCT GUIDES -->
+<section class="product-guide-section section-padding">
+    <div class="blog-container">
+
+        <div class="blog-section-heading">
+            <span class="section-eyebrow">SMART SHOPPING</span>
+            <h2>Pet Product Guides & Recommendations</h2>
+            <p>
+                Understand the features that matter before choosing
+                everyday products for your pet.
+            </p>
+        </div>
+
+        <div class="product-guide-grid">
+
+            <article class="product-guide-card">
+                <div class="guide-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <h3>Pet GPS Trackers</h3>
+                <p>
+                    Explore tracker features such as location updates,
+                    battery life, compatibility and subscription
+                    requirements before making a choice.
+                </p>
+                <a href="Products.html">Explore Products <i class="fa-solid fa-arrow-right"></i></a>
+            </article>
+
+            <article class="product-guide-card">
+                <div class="guide-icon"><i class="fa-solid fa-bone"></i></div>
+                <h3>Interactive & Comfort Toys</h3>
+                <p>
+                    Learn how to consider your pet's size, play style,
+                    material safety and supervision needs when selecting toys.
+                </p>
+                <a href="Products.html">Explore Products <i class="fa-solid fa-arrow-right"></i></a>
+            </article>
+
+            <article class="product-guide-card">
+                <div class="guide-icon"><i class="fa-solid fa-link"></i></div>
+                <h3>Collars, Harnesses & Leashes</h3>
+                <p>
+                    Compare fit, adjustability, comfort and everyday
+                    practicality when choosing walking accessories.
+                </p>
+                <a href="Products.html">Explore Products <i class="fa-solid fa-arrow-right"></i></a>
+            </article>
+
+            <article class="product-guide-card">
+                <div class="guide-icon"><i class="fa-solid fa-pump-soap"></i></div>
+                <h3>Grooming Essentials</h3>
+                <p>
+                    Discover brushes, combs, shampoos and grooming tools
+                    suited to different coat types and care routines.
+                </p>
+                <a href="Products.html">Explore Products <i class="fa-solid fa-arrow-right"></i></a>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- SEASONAL CARE -->
+<section class="seasonal-blog-section section-padding">
+    <div class="blog-container seasonal-inner">
+
+        <div class="seasonal-image">
+            <img src="https://images.unsplash.com/photo-1544568100-847a948585b9?auto=format&fit=crop&w=1000&q=85"
+                 alt="Happy dog enjoying time outdoors">
+        </div>
+
+        <div class="seasonal-content">
+            <span class="section-eyebrow">CARE THROUGH EVERY SEASON</span>
+            <h2>Little Changes Can Make Every Season Better</h2>
+            <p>
+                Weather and seasonal routines can affect your pet's
+                comfort. Explore practical ideas for adapting daily care
+                throughout the year.
+            </p>
+
+            <ul>
+                <li><i class="fa-solid fa-check"></i> Summer hydration and cool resting spaces</li>
+                <li><i class="fa-solid fa-check"></i> Monsoon coat, paw and hygiene care</li>
+                <li><i class="fa-solid fa-check"></i> Festive noise and routine awareness</li>
+                <li><i class="fa-solid fa-check"></i> Comfortable seasonal accessories</li>
+            </ul>
+
+            <a href="Blog-Article.html?article=seasonal-care"
+               class="blog-primary-btn">
+                Explore Seasonal Tips <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- EXPERT ADVICE -->
+<section class="expert-section section-padding">
+    <div class="blog-container">
+
+        <div class="blog-section-heading">
+            <span class="section-eyebrow">TRUSTED PET CARE</span>
+            <h2>Learn from Pet Care Professionals</h2>
+            <p>
+                Good pet care information should support responsible
+                decisions and encourage professional guidance when needed.
+            </p>
+        </div>
+
+        <div class="expert-grid">
+
+            <article class="expert-card">
+                <div class="expert-icon"><i class="fa-solid fa-user-doctor"></i></div>
+                <h3>Veterinary Insights</h3>
+                <p>
+                    Learn about preventive care, routine check-ups,
+                    vaccination discussions and when to consult a veterinarian.
+                </p>
+                <a href="Services.html">Explore Veterinary Services</a>
+            </article>
+
+            <article class="expert-card">
+                <div class="expert-icon"><i class="fa-solid fa-dog"></i></div>
+                <h3>Certified Trainer Tips</h3>
+                <p>
+                    Discover positive reinforcement, basic training
+                    routines and ways to encourage appropriate behaviour.
+                </p>
+                <a href="Services.html">Explore Training Services</a>
+            </article>
+
+            <article class="expert-card">
+                <div class="expert-icon"><i class="fa-solid fa-heart"></i></div>
+                <h3>Everyday Care Guidance</h3>
+                <p>
+                    Find practical information about grooming,
+                    enrichment, nutrition and creating a comfortable home.
+                </p>
+                <a href="#latest-articles">Read Care Articles</a>
+            </article>
+
+        </div>
+
+        <p class="expert-disclaimer">
+            Blog content is for general educational purposes and is not
+            a substitute for advice from a qualified veterinarian.
+        </p>
+
+    </div>
+</section>
+
+
+<!-- SERVICE CTA -->
+<section class="blog-service-cta">
+    <div class="blog-container service-cta-inner">
+
+        <div>
+            <span class="section-eyebrow">MORE THAN JUST PRODUCTS</span>
+            <h2>Give Your Pet the Care They Deserve</h2>
+            <p>
+                From grooming and training to everyday care support,
+                explore services designed with your pet's comfort in mind.
+            </p>
+        </div>
+
+        <a href="Services.html" class="blog-light-btn">
+            Explore Pet Services <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+</section>
+
+
+<!-- NEWSLETTER -->
+<section class="newsletter-section section-padding">
+    <div class="blog-container">
+
+        <div class="newsletter-box">
+            <div class="newsletter-icon">
+                <i class="fa-regular fa-envelope"></i>
+            </div>
+
+            <span class="section-eyebrow">THE PETSHOPPY NEWSLETTER</span>
+            <h2>Useful Pet Tips, Delivered to Your Inbox</h2>
+            <p>
+                Get updates about pet care guides, new articles,
+                product tips and seasonal advice.
+            </p>
+
+            <form id="newsletterForm" class="newsletter-form">
+                <input type="email" id="newsletterEmail"
+                       placeholder="Enter your email address"
+                       aria-label="Email address" required>
+                <button type="submit">
+                    Subscribe <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </form>
+
+            <p class="newsletter-message" id="newsletterMessage"
+               aria-live="polite"></p>
+
+            <small>Demo form: connect it to your email marketing service to collect subscriptions.</small>
+        </div>
+
+    </div>
+</section>
+
+
+<footer class="main-footer">
+
+    <div class="footer-container">
+
+        <!-- COLUMN 1: BRAND -->
+        <div class="footer-column footer-brand">
+
+            <a href="index.html" class="logo">
+      <img src="Images/Logo Image1.png" alt="PetShoppy Logo">
+
+      <span class="footer-logo-text">
+            Pet<span>Shoppy</span>
+      </span>
+</a>
+
+            <p class="footer-tagline">
+                Everything Your Pet Loves
+            </p>
+
+            <p class="footer-description">
+                Your one-stop destination for quality pet food,
+                toys, accessories and everything your furry
+                friends need to stay happy and healthy.
+            </p>
+
+
+            <div class="social-links">
+                <a href="#" class="social-btn" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" class="social-btn" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" class="social-btn" aria-label="Pinterest">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+
+                <a href="#" class="social-btn" aria-label="Twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- COLUMN 2: EXPLORE -->
+        <div class="footer-column">
+
+            <h3>Explore</h3>
+
+    <ul class="footer-links">
+        <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home-Classic </a></li>
+        <li><a href="home2.html"><i class="fa-solid fa-angle-right"></i> Home-Premium </a></li>
+        <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us </a></li>
+        <li><a href="Products.html"><i class="fa-solid fa-angle-right"></i> Products </a></li>
+        <li><a href="Brands.html"><i class="fa-solid fa-angle-right"></i> Brands </a></li>
+        <li><a href="Services.html"><i class="fa-solid fa-angle-right"></i> Services </a></li>
+    </ul>
+        </div>
+
+        <!-- COLUMN 3: CUSTOMER SUPPORT -->
+        <div class="footer-column">
+
+            <h3>Customer Support</h3>
+
+            <ul class="footer-links">
+        <li><a href="Contact.html"><i class="fa-solid fa-angle-right"></i> Help & Support</a></li>
+        <li><a href="Contact.html"><i class="fa-solid fa-angle-right"></i> FAQs</a></li>
+        <li><a href="Contact.html"><i class="fa-solid fa-angle-right"></i> Shipping Information</a></li>
+        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Return & Refund Policy</a></li>
+        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Privacy Policy</a></li>
+        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Terms & Conditions</a></li>
+    </ul>
+
+        </div>
+
+        <!-- COLUMN 4: CONTACT -->
+        <div class="footer-column">
+
+            <h3>Contact Us</h3>
+
+            <ul class="contact-list">
+
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:hello@petshoppy.com">
+                        hello@petshoppy.com
+                    </a>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+919876543210">
+                        +91 98765 43210
+                    </a>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Your Business Address, India</span>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-clock"></i>
+                    <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 PetShoppy. All Rights Reserved.
+        </p>
+
+        <div class="legal-links">
+            <a href="#privacy">Privacy Policy</a>
+            <span class="separator">•</span>
+            <a href="#terms">Terms &amp; Conditions</a>
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

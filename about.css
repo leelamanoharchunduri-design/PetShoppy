@@ -1,0 +1,724 @@
+
+/* ABOUT PAGE */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.about-announcement {
+    background: #105E5A;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.about-announcement p {
+    margin: 0;
+}
+
+/* HEADER */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* HERO */
+
+.about-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 45px;
+    padding: 75px 7%;
+    background: #FFFFFF;
+}
+
+.about-hero-content {
+    max-width: 650px;
+}
+
+.about-label,
+.section-tag {
+    color: #FF8A65;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.about-hero h1 {
+    color: #105E5A;
+    font-size: clamp(40px, 5vw, 65px);
+    font-weight: 400;
+    line-height: 1.15;
+    margin: 20px 0;
+}
+
+.about-hero h1 span {
+    display: block;
+    color: #FF8A65;
+}
+
+.about-hero-content p {
+    color: #147D78;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+
+.about-hero-image img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.about-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: #147D78;
+    color: #FFFFFF;
+    padding: 15px 27px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.about-btn:hover {
+    background: #105E5A;
+    transform: translateY(-3px);
+}
+
+/* COMMON SECTION */
+
+.section-padding {
+    padding: 75px 7%;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 45px;
+}
+
+.section-heading h2 {
+    color: #105E5A;
+    font-size: 36px;
+    margin: 15px 0;
+}
+
+.section-heading p {
+    color: #147D78;
+    line-height: 1.8;
+}
+
+/* OUR STORY */
+
+.about-story {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 55px;
+    background: #F4FAF8;
+}
+
+.story-image img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.story-content h2,
+.pet-care-content h2,
+.veterinary-content h2 {
+    color: #105E5A;
+    font-size: 36px;
+    line-height: 1.3;
+    margin: 15px 0 20px;
+}
+
+.story-content p,
+.pet-care-content > p,
+.veterinary-content > p {
+    color: #147D78;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+/* MISSION AND VISION */
+
+.mission-vision {
+    background: #FFFFFF;
+}
+
+.mission-vision-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.mission-card,
+.vision-card {
+    padding: 40px;
+    border-radius: 20px;
+    background: #F4FAF8;
+    border: 1px solid rgba(20, 125, 120, 0.15);
+}
+
+.mission-icon,
+.vision-icon {
+    width: 65px;
+    height: 65px;
+    display: grid;
+    place-items: center;
+    background: #FF8A65;
+    color: #FFFFFF;
+    border-radius: 50%;
+    font-size: 25px;
+    margin-bottom: 22px;
+}
+
+.mission-card h3,
+.vision-card h3 {
+    color: #105E5A;
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.mission-card p,
+.vision-card p {
+    color: #147D78;
+    line-height: 1.9;
+    font-size: 15px;
+}
+
+/* SHOPPING */
+
+.shopping-section {
+    background: #F4FAF8;
+}
+
+.shopping-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.shopping-card {
+    background: #FFFFFF;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(16, 94, 90, 0.08);
+}
+
+.shopping-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.shopping-card-content {
+    padding: 23px;
+}
+
+.shopping-card-content > i {
+    color: #FF8A65;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.shopping-card h3 {
+    color: #105E5A;
+    font-size: 19px;
+    margin: 10px 0;
+}
+
+.shopping-card p {
+    color: #147D78;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+/* PET CARE */
+
+.pet-care-section {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 50px;
+}
+
+.pet-care-image img,
+.veterinary-image img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.care-points {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.care-point {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.care-point > i {
+    color: #FF8A65;
+    font-size: 23px;
+    margin-top: 5px;
+}
+
+.care-point h3 {
+    color: #105E5A;
+    font-size: 17px;
+    margin: 0 0 8px;
+}
+
+.care-point p {
+    color: #147D78;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* VETERINARY */
+
+.veterinary-section {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 50px;
+    background: #F4FAF8;
+}
+
+.vet-list {
+    display: grid;
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.vet-list > div {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+.vet-list i {
+    color: #FF8A65;
+    font-size: 23px;
+    margin-top: 4px;
+}
+
+.vet-list span {
+    color: #147D78;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.vet-list strong {
+    display: block;
+    color: #105E5A;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.vet-note {
+    padding: 15px;
+    border-left: 4px solid #FF8A65;
+    background: #FFFFFF;
+    border-radius: 5px;
+    font-size: 13px !important;
+}
+
+/* WHY PETSHOPPY */
+
+.why-petshoppy {
+    background: #FFFFFF;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.why-card {
+    text-align: center;
+    padding: 30px 22px;
+    border: 1px solid rgba(20, 125, 120, 0.2);
+    border-radius: 15px;
+}
+
+.why-card > i {
+    color: #FF8A65;
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+.why-card h3 {
+    color: #105E5A;
+    font-size: 18px;
+}
+
+.why-card p {
+    color: #147D78;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* CLOSING BANNER */
+
+.about-banner {
+    margin: 35px 7% 75px;
+    padding: 65px 30px;
+    text-align: center;
+    background: #105E5A;
+    border-radius: 22px;
+}
+
+.about-banner span {
+    color: #FF8A65;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.about-banner h2 {
+    color: #FFFFFF;
+    font-size: 36px;
+    margin: 18px 0;
+}
+
+.about-banner p {
+    color: #FFFFFF;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.about-banner .about-btn {
+    background: #FF8A65;
+    color: #FFFFFF;
+}
+
+.about-banner .about-btn:hover {
+    background: #147D78;
+}
+
+/* DARK MODE: TEXT ONLY */
+
+body.dark .about-hero h1,
+body.dark .section-heading h2,
+body.dark .story-content h2,
+body.dark .pet-care-content h2,
+body.dark .veterinary-content h2,
+body.dark .mission-card h3,
+body.dark .vision-card h3,
+body.dark .shopping-card h3,
+body.dark .care-point h3,
+body.dark .vet-list strong,
+body.dark .why-card h3 {
+    color: #FFFFFF !important;
+}
+
+body.dark .about-hero-content p,
+body.dark .section-heading p,
+body.dark .story-content p,
+body.dark .pet-care-content > p,
+body.dark .veterinary-content > p,
+body.dark .mission-card p,
+body.dark .vision-card p,
+body.dark .shopping-card p,
+body.dark .care-point p,
+body.dark .vet-list span,
+body.dark .why-card p {
+    color: #FFFFFF !important;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+    .shopping-grid,
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-hero,
+    .about-story,
+    .pet-care-section,
+    .veterinary-section {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero,
+    .about-story,
+    .pet-care-section,
+    .veterinary-section,
+    .mission-vision-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-hero {
+        padding: 50px 6%;
+    }
+
+    .about-hero-image img,
+    .story-image img {
+        height: 320px;
+    }
+
+    .pet-care-image img,
+    .veterinary-image img {
+        height: 350px;
+    }
+
+    .section-padding {
+        padding: 55px 6%;
+    }
+
+    .section-heading h2,
+    .story-content h2,
+    .pet-care-content h2,
+    .veterinary-content h2 {
+        font-size: 29px;
+    }
+
+    .care-points {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .shopping-grid,
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mission-card,
+    .vision-card {
+        padding: 25px;
+    }
+
+    .about-banner {
+        margin: 20px 5% 50px;
+        padding: 45px 20px;
+    }
+
+    .about-banner h2 {
+        font-size: 27px;
+    }
+}
+/* =================================
+   MISSION & VISION – DARK MODE
+================================= */
+
+body.dark .mission-card,
+body.dark .vision-card {
+    background-color: #105E5A;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+
+/* Preserve existing text colors */
+body.dark .mission-card h3,
+body.dark .mission-card p,
+body.dark .vision-card h3,
+body.dark .vision-card p {
+    color: inherit;
+}
+
+/* Preserve existing icon colors */
+body.dark .mission-icon i,
+body.dark .vision-icon i {
+    color: inherit;
+}
+
+/* Keep icon containers visible */
+body.dark .mission-icon,
+body.dark .vision-icon {
+    opacity: 1;
+}
+
+/* Hover effect */
+body.dark .mission-card:hover,
+body.dark .vision-card:hover {
+    background-color: #147D78;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+    transition: 0.3s ease;
+}
+
+/* =================================
+   SHOPPING CARDS – DARK MODE
+================================= */
+
+body.dark .shopping-card {
+    background-color: #105E5A;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+/* Preserve existing text colors */
+body.dark .shopping-card-content h3,
+body.dark .shopping-card-content p,
+body.dark .shopping-card-content i {
+    color: inherit;
+}
+
+/* Keep images clear and visible */
+body.dark .shopping-card img {
+    opacity: 1;
+    filter: none;
+}
+
+/* Keep content area transparent */
+body.dark .shopping-card-content {
+    background-color: transparent;
+}
+
+/* Hover effect */
+body.dark .shopping-card:hover {
+    background-color: #147D78;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+    transition: 0.3s ease;
+}
+/* Vet note - Dark Mode */
+body.dark .vet-note {
+    background-color: #105E5A;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    padding: 12px 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Veterinary Section - Full Height Image */
+.veterinary-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    gap: 40px;
+}
+
+.veterinary-image {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.veterinary-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .veterinary-section {
+        grid-template-columns: 1fr;
+    }
+
+    .veterinary-image {
+        height: 350px;
+    }
+}
+
+
+
+
+
+/* ABOUT HERO - IMAGE LEFT, CONTENT RIGHT */
+
+.about-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 70px 6%;
+
+    min-height: 550px;
+    box-sizing: border-box;
+}
+
+/* IMAGE ON LEFT */
+.about-hero-image {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    margin: 0;
+}
+
+.about-hero-image img {
+    display: block;
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* CONTENT ON RIGHT */
+.about-hero-content {
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 800px) {
+    .about-hero {
+        grid-template-columns: 1fr;
+        padding: 45px 6%;
+        gap: 30px;
+    }
+
+    .about-hero-image {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .about-hero-content {
+        grid-column: 1;
+        grid-row: 2;
+        text-align: center;
+    }
+
+    .about-hero-image img {
+        height: 300px;
+    }
+}
+
+
+
+
+

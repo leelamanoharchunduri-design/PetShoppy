@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | PetShoppy</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Product-Details.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <script src="script.js" defer></script>
+    <script src="Product-Details.js" defer></script>
+</head>
+
+<body>
+
+<header class="main-header">
+    <div class="header-container">
+        <a href="index.html" class="logo">
+            <img src="Images/Logo Image1.png" alt="PetShoppy Logo">
+            <span class="logo-text">
+                Pet<span>Shoppy</span>
+                <small>Everything Your Pet Loves</small>
+            </span>
+        </a>
+
+        <nav class="navigation">
+            <div class="nav-item dropdown">
+                <a href="index.html" class="nav-link">
+                    Home <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="index.html">Home 1 - Classic</a>
+                    <a href="home2.html">Home 2 - Premium</a>
+                </div>
+            </div>
+
+            <a href="about.html" class="nav-link">About Us</a>
+
+            <div class="nav-item dropdown">
+                <a href="index.html" class="nav-link">
+                    Pets <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="Dogs.html">Dogs</a>
+                    <a href="Cat.html">Cats</a>
+                </div>
+            </div>
+
+            <a href="Products.html" class="nav-link">Products</a>
+            <a href="Brands.html" class="nav-link">Brands</a>
+            <a href="Services.html" class="nav-link">Services</a>
+            <a href="Blog.html" class="nav-link">Blog</a>
+            <a href="Contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="circle-btn" id="directionBtn" aria-label="Toggle direction">
+                <i class="fa-solid fa-right-left"></i>
+            </button>
+            <button class="circle-btn" id="themeBtn" aria-label="Toggle theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            <a href="PetClub.html" class="login-btn">
+                <i class="fa-solid fa-paw"></i> Join Pet Club
+            </a>
+        </div>
+    </div>
+</header>
+
+
+<!-- PRODUCT PROMOTIONAL BANNER -->
+<section class="product-promo-banner">
+    <div class="promo-content">
+        <span class="promo-label">A LITTLE MORE LOVE FOR YOUR PET</span>
+
+        <h2>
+            Make Every Pet Moment
+            <span>Extra Special!</span>
+        </h2>
+
+        <p>
+            Discover quality food, playful toys and everyday
+            essentials made to keep your furry friends happy.
+        </p>
+
+        <a href="Products.html" class="promo-btn">
+            Explore More Products
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </div>
+
+    <div class="promo-image">
+        <img src="Images/product-banner.png"
+             alt="Happy dog and cat enjoying their day">
+    </div>
+</section>
+
+
+<main class="product-details-page">
+
+    <div class="details-breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-angle-right"></i>
+        <a href="Products.html">Products</a>
+        <i class="fa-solid fa-angle-right"></i>
+        <span id="breadcrumbProduct">Product Details</span>
+    </div>
+
+    <section class="product-details-container">
+
+        <!-- PRODUCT IMAGE -->
+        <div class="details-gallery">
+            <div class="main-product-image">
+                <img id="mainProductImage" src="" alt="Product image">
+            </div>
+
+            <div class="thumbnail-gallery" id="thumbnailGallery"></div>
+        </div>
+
+        <!-- PRODUCT INFORMATION -->
+        <div class="product-details-info">
+
+            <span class="details-category" id="detailsCategory"></span>
+
+            <h1 id="detailsName">Product Name</h1>
+
+            <div class="details-rating">
+                <span class="rating-stars" id="detailsStars"></span>
+                <strong id="detailsRating"></strong>
+                <span id="detailsReviews"></span>
+            </div>
+
+            <div class="details-price" id="detailsPrice"></div>
+
+            <p class="details-short-description" id="detailsShortDescription"></p>
+
+            <div class="details-specifications">
+                <div>
+                    <i class="fa-solid fa-weight-hanging"></i>
+                    <span>Weight / Pack Size</span>
+                    <strong id="detailsWeight"></strong>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-paw"></i>
+                    <span>Suitable For</span>
+                    <strong id="detailsPet"></strong>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-layer-group"></i>
+                    <span>Category</span>
+                    <strong id="detailsCategoryName"></strong>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-box"></i>
+                    <span>Product Code</span>
+                    <strong id="detailsCode"></strong>
+                </div>
+            </div>
+
+            <div class="details-features">
+                <h3>Product Highlights</h3>
+                <ul id="detailsFeatures"></ul>
+            </div>
+
+            <div class="quantity-section">
+                <label for="productQuantity">Select Quantity</label>
+
+                <div class="quantity-control">
+                    <button type="button" id="decreaseQty" aria-label="Decrease quantity">
+                        <i class="fa-solid fa-minus"></i>
+                    </button>
+
+                    <input type="number" id="productQuantity"
+                           value="1" min="1" max="10">
+
+                    <button type="button" id="increaseQty" aria-label="Increase quantity">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+
+                <p>Maximum 10 units per selection.</p>
+            </div>
+
+            <div class="details-subtotal">
+                <span>Subtotal</span>
+                <strong id="detailsSubtotal"></strong>
+            </div>
+
+            <div class="details-actions">
+                <button type="button" id="detailsAddToCart" class="details-cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add to Cart
+                </button>
+
+                <a href="Products.html" class="back-products-btn">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Back to Products
+                </a>
+            </div>
+
+            <p id="detailsMessage" class="details-message" aria-live="polite"></p>
+
+        </div>
+    </section>
+
+    <!-- FULL DESCRIPTION -->
+    <section class="product-description-section">
+        <div class="description-heading">
+            <span>KNOW YOUR PRODUCT</span>
+            <h2>Detailed Product Description</h2>
+        </div>
+
+        <div class="description-content">
+            <h3 id="descriptionTitle"></h3>
+            <p id="detailsFullDescription"></p>
+
+            <h3>Key Features</h3>
+            <ul id="descriptionFeatures"></ul>
+
+            <h3>Usage and Care Instructions</h3>
+            <p id="detailsCare"></p>
+
+            <h3>Product Information</h3>
+            <div class="information-table">
+                <div><span>Product Name</span><strong id="infoName"></strong></div>
+                <div><span>Product Category</span><strong id="infoCategory"></strong></div>
+                <div><span>Suitable Pet</span><strong id="infoPet"></strong></div>
+                <div><span>Weight / Pack Size</span><strong id="infoWeight"></strong></div>
+                <div><span>Customer Rating</span><strong id="infoRating"></strong></div>
+                <div><span>Product Code</span><strong id="infoCode"></strong></div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+<!-- WHY CHOOSE PETSHOPPY -->
+<section class="product-benefits">
+    <div class="product-section-heading">
+        <span>THE PETSHOPPY PROMISE</span>
+        <h2>Everything Your Pet Deserves</h2>
+        <p>Thoughtful products and convenient shopping for every pet parent.</p>
+    </div>
+
+    <div class="benefits-grid">
+
+        <div class="benefit-card">
+            <div class="benefit-icon">
+                <i class="fa-solid fa-shield-heart"></i>
+            </div>
+            <h3>Quality Products</h3>
+            <p>Explore carefully selected products for your pet's everyday needs.</p>
+        </div>
+
+        <div class="benefit-card">
+            <div class="benefit-icon">
+                <i class="fa-solid fa-truck-fast"></i>
+            </div>
+            <h3>Convenient Shopping</h3>
+            <p>Find your pet essentials easily in one convenient place.</p>
+        </div>
+
+        <div class="benefit-card">
+            <div class="benefit-icon">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <h3>Made with Love</h3>
+            <p>We put pets and their comfort at the heart of everything we do.</p>
+        </div>
+
+        <div class="benefit-card">
+            <div class="benefit-icon">
+                <i class="fa-solid fa-headset"></i>
+            </div>
+            <h3>Friendly Support</h3>
+            <p>Get help finding suitable products for your furry companion.</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- RECOMMENDED PRODUCTS -->
+<section class="recommended-products">
+
+    <div class="product-section-heading">
+        <span>MORE TO EXPLORE</span>
+        <h2>More Favorites for Your Pet</h2>
+        <p>Discover more essentials your furry friend might love.</p>
+    </div>
+
+    <div class="recommended-grid">
+
+        <div class="recommended-card">
+            <img src="Images/dog-food.png" alt="Dog food">
+            <div class="recommended-info">
+                <span>FOR DOGS</span>
+                <h3>Nutritious Dog Food</h3>
+                <p>Everyday nutrition for your canine companion.</p>
+                <a href="Products.html">Explore Products <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="recommended-card">
+            <img src="https://images.openai.com/static-rsc-4/XvQh-Mg-xb6gOeonUZJzmz2F10AgWUdmwlQtKz3rrOSV4YX_tth6Ruw2TALnH2WcEWygYXiAuMk9P_Q3GDhW0jakoh-CoFPf7QtC17XIPSR5FMux_VLxxzy01dj0lLEPWqaQfUpeQ9261FsmTcZ6XP_p4fUz3fE4IptlC24Fkx0?purpose=inline" alt="Cat toys">
+            <div class="recommended-info">
+                <span>FOR CATS</span>
+                <h3>Playful Cat Toys</h3>
+                <p>Fun toys to keep curious cats entertained.</p>
+                <a href="Products.html">Explore Products <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="recommended-card">
+            <img src="Images/pet-accessories.jpeg" alt="Pet accessories">
+            <div class="recommended-info">
+                <span>PET ESSENTIALS</span>
+                <h3>Everyday Accessories</h3>
+                <p>Discover useful accessories for your pets.</p>
+                <a href="Products.html">Explore Products <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="main-footer">
+
+    <div class="footer-container">
+
+        <!-- COLUMN 1: BRAND -->
+        <div class="footer-column footer-brand">
+
+            <a href="index.html" class="logo">
+      <img src="Images/Logo Image1.png" alt="PetShoppy Logo">
+
+      <span class="footer-logo-text">
+            Pet<span>Shoppy</span>
+      </span>
+</a>
+
+            <p class="footer-tagline">
+                Everything Your Pet Loves
+            </p>
+
+            <p class="footer-description">
+                Your one-stop destination for quality pet food,
+                toys, accessories and everything your furry
+                friends need to stay happy and healthy.
+            </p>
+
+            <div class="social-links">
+                <a href="#" class="social-btn" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" class="social-btn" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" class="social-btn" aria-label="Pinterest">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+
+                <a href="#" class="social-btn" aria-label="Twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- COLUMN 2: EXPLORE -->
+        <div class="footer-column">
+
+            <h3>Explore</h3>
+
+            <ul class="footer-links">
+        <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home-Classic </a></li>
+        <li><a href="home2.html"><i class="fa-solid fa-angle-right"></i> Home- Premium </a></li>
+        <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us </a></li>
+        <li><a href="Brands.html"><i class="fa-solid fa-angle-right"></i> Brands </a></li>
+        <li><a href="services.html"><i class="fa-solid fa-angle-right"></i> Services</a></li>
+        <li><a href="blogs.html"><i class="fa-solid fa-angle-right"></i> Blog </a></li>
+    </ul>
+        </div>
+
+        <!-- COLUMN 3: CUSTOMER SUPPORT -->
+        <div class="footer-column">
+
+            <h3>Customer Support</h3>
+
+            <ul class="footer-links">
+        <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Help & Support</a></li>
+        <li><a href="#"><i class="fa-solid fa-angle-right"></i> FAQs</a></li>
+        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Shipping Information</a></li>
+        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Return & Refund Policy</a></li>
+        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Privacy Policy</a></li>
+        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Terms & Conditions</a></li>
+    </ul>
+
+        </div>
+
+        <!-- COLUMN 4: CONTACT -->
+        <div class="footer-column">
+
+            <h3>Contact Us</h3>
+
+            <ul class="contact-list">
+
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:hello@petshoppy.com">
+                        hello@petshoppy.com
+                    </a>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+919876543210">
+                        +91 98765 43210
+                    </a>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Your Business Address, India</span>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-clock"></i>
+                    <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 PetShoppy. All Rights Reserved.
+        </p>
+
+        <div class="legal-links">
+            <a href="#privacy">Privacy Policy</a>
+            <span class="separator">•</span>
+            <a href="#terms">Terms &amp; Conditions</a>
+        </div>
+
+    </div>
+
+</footer>
+
+    
+
+</body>
+</html>

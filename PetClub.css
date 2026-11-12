@@ -1,0 +1,478 @@
+
+/* ==============================
+   COMMUNITY SECTION FIX
+============================== */
+
+.community-section {
+    width: 100%;
+    background: #FFFFFF;
+    padding: 80px 20px;
+    box-sizing: border-box;
+}
+
+.community-section .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.community-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+    margin: 0 auto;
+}
+
+/* IMAGE */
+
+.community-image {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.community-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    border: 4px solid #147D78;
+    border-radius: 25px;
+    background: #FFFFFF;
+}
+
+.community-image-badge {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #FFFFFF;
+    padding: 15px 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(20, 125, 120, 0.15);
+}
+
+.community-image-badge > i {
+    width: 42px;
+    height: 42px;
+    background: #FF8A65;
+    color: #FFFFFF;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.community-image-badge strong,
+.community-image-badge span {
+    display: block;
+    color: #147D78;
+}
+
+.community-image-badge span {
+    font-size: 13px;
+}
+
+.community-floating-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 55px;
+    height: 55px;
+    background: #FF8A65;
+    color: #FFFFFF;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 23px;
+}
+
+/* CONTENT */
+
+.community-content {
+    width: 100%;
+    min-width: 0;
+    color: #147D78;
+}
+
+.community-tag {
+    display: inline-block;
+    background: #FF8A65;
+    color: #FFFFFF;
+    padding: 9px 17px;
+    border-radius: 25px;
+    font-weight: 900;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.community-content h2 {
+    color: #147D78;
+    font-size: clamp(32px, 4vw, 45px);
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.community-content h2 span {
+    color: #FF8A65;
+}
+
+.community-description {
+    color: #147D78;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* FEATURES */
+
+.community-features {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.community-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 15px;
+    background: #FFFFFF;
+    border: 1px solid #147D78;
+    border-radius: 14px;
+    min-width: 0;
+}
+
+.feature-icon {
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    background: #FF8A65;
+    color: #FFFFFF;
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+}
+
+.community-feature h4 {
+    color: #147D78;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.community-feature p {
+    color: #147D78;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+/* BOTTOM */
+
+.community-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+.community-message {
+    color: #FF8A65;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.community-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #147D78;
+    color: #FFFFFF;
+    padding: 14px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 900;
+    transition: 0.3s;
+}
+
+.community-btn:hover {
+    background: #FF8A65;
+    color: #FFFFFF;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+    .community-grid {
+        grid-template-columns: 1fr;
+        max-width: 650px;
+        gap: 35px;
+    }
+
+    .community-image {
+        height: 450px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 550px) {
+    .community-section {
+        padding: 50px 15px;
+    }
+
+    .community-image {
+        height: 350px;
+    }
+
+    .community-features {
+        grid-template-columns: 1fr;
+    }
+
+    .community-content h2 {
+        font-size: 32px;
+    }
+
+    .community-image-badge {
+        left: 10px;
+        bottom: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* IMAGE LEFT - CONTENT RIGHT */
+
+.community-section .community-grid {
+    display: grid !important;
+    grid-template-columns: 45% 55% !important;
+    align-items: center !important;
+    gap: 0 !important;
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+/* LEFT IMAGE */
+.community-section .community-image {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    width: 100% !important;
+    height: 480px !important;
+    position: relative;
+}
+
+.community-section .community-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    object-position: center;
+    display: block;
+}
+
+/* RIGHT CONTENT */
+.community-section .community-content {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    width: 100% !important;
+    padding: 20px 0 20px 45px !important;
+    box-sizing: border-box;
+}
+
+/* TWO BENEFIT COLUMNS */
+.community-section .community-features {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 15px !important;
+    width: 100% !important;
+}
+
+.community-section .community-feature {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+/* TABLET AND MOBILE */
+@media (max-width: 900px) {
+    .community-section .community-grid {
+        grid-template-columns: 1fr !important;
+        gap: 35px !important;
+    }
+
+    .community-section .community-image {
+        grid-column: 1 !important;
+        grid-row: 1 !important;
+        height: 400px !important;
+    }
+
+    .community-section .community-content {
+        grid-column: 1 !important;
+        grid-row: 2 !important;
+        padding: 0 !important;
+    }
+}
+
+@media (max-width: 550px) {
+    .community-section .community-image {
+        height: 300px !important;
+    }
+
+    .community-section .community-features {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+
+
+
+
+
+
+
+/* ==============================
+   PET CLUB REGISTRATION SECTION
+============================== */
+
+.registration-section {
+    width: 100%;
+    background: #FFFFFF !important;
+    padding: 80px 20px;
+}
+
+/* Registration Container */
+
+.registration-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Registration Form */
+
+.registration-form {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    background: #FFFFFF !important;
+    border: 2px solid #147D78;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(20, 125, 120, 0.10);
+}
+
+/* Form Heading */
+
+.registration-form h3 {
+    color: #147D78;
+    font-size: 28px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Form Groups */
+
+.registration-form .form-group {
+    margin-bottom: 20px;
+}
+
+.registration-form label {
+    display: block;
+    color: #147D78;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.registration-form input,
+.registration-form select {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1.5px solid #147D78;
+    border-radius: 10px;
+    background: #FFFFFF;
+    color: #147D78;
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.registration-form input:focus,
+.registration-form select:focus {
+    border-color: #FF8A65;
+    box-shadow: 0 0 0 3px rgba(255, 138, 101, 0.15);
+}
+
+/* Submit Button */
+
+.registration-form button {
+    width: 100%;
+    padding: 15px;
+    background: #147D78;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.registration-form button:hover {
+    background: #FF8A65;
+    color: #FFFFFF;
+}
+
+/* Success Message */
+
+.registration-form .form-message {
+    display: none;
+    color: #147D78;
+    text-align: center;
+    font-weight: 800;
+    margin-top: 18px;
+}
+
+/* Mobile */
+
+@media (max-width: 550px) {
+    .registration-section {
+        padding: 45px 15px;
+    }
+
+    .registration-form {
+        padding: 25px 18px;
+    }
+
+    .registration-form h3 {
+        font-size: 23px;
+    }
+}
+

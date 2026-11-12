@@ -1,0 +1,1526 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Club | PetShoppy</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="PetClub.css">
+    <script src="script.js" defer></script>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #147D78;
+            --secondary: #FF8A65;
+            --white: #FFFFFF;
+            --dark: #263B39;
+            --light: #F5FAF9;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background: var(--white);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        button {
+            font-family: inherit;
+            cursor: pointer;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* HEADER */
+
+        .main-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: var(--white);
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+        }
+
+        .header-container {
+            min-height: 85px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--primary);
+            flex-shrink: 0;
+        }
+
+        .logo-icon {
+            font-size: 36px;
+        }
+
+        .logo-text {
+            font-size: 25px;
+            font-weight: 900;
+            line-height: 1.1;
+        }
+
+        .logo-text span {
+            color: var(--secondary);
+        }
+
+        .logo-text small {
+            display: block;
+            font-size: 10px;
+            color: var(--primary);
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .navigation {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .navigation a {
+            color: var(--dark);
+            font-size: 15px;
+            font-weight: 800;
+            transition: 0.3s;
+        }
+
+        .navigation a:hover,
+        .navigation .active {
+            color: var(--primary);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .club-header-btn {
+            background: var(--primary);
+            color: var(--white);
+            padding: 11px 18px;
+            border-radius: 25px;
+            font-weight: 800;
+            white-space: nowrap;
+        }
+
+        .club-header-btn:hover {
+            background: var(--secondary);
+        }
+
+        /* COMMON */
+
+        .section {
+            padding: 75px 0;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-heading span {
+            color: var(--secondary);
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 13px;
+        }
+
+        .section-heading h2 {
+            color: var(--primary);
+            font-size: 36px;
+            font-weight: 900;
+            margin: 8px 0;
+        }
+
+        .section-heading p {
+            color: #667674;
+            max-width: 650px;
+            margin: auto;
+        }
+
+        .primary-btn {
+            display: inline-block;
+            background: var(--primary);
+            color: var(--white);
+            padding: 13px 27px;
+            border-radius: 30px;
+            font-size: 15px;
+            font-weight: 900;
+            border: none;
+            transition: 0.3s;
+        }
+
+        .primary-btn:hover {
+            background: var(--secondary);
+            transform: translateY(-3px);
+        }
+
+        .secondary-btn {
+            display: inline-block;
+            background: var(--secondary);
+            color: var(--white);
+            padding: 13px 27px;
+            border-radius: 30px;
+            font-weight: 900;
+        }
+
+        .club-hero {
+    min-height: 540px;
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+}
+
+.hero-content {
+    max-width: 650px;
+    color: #147D78;
+    padding: 70px 0;
+}
+
+.hero-content .tagline {
+    display: inline-block;
+    background: #FF8A65;
+    color: #FFFFFF;
+    padding: 8px 17px;
+    border-radius: 25px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: clamp(38px, 5vw, 58px);
+    line-height: 1.15;
+    font-weight: 900;
+    color: #147D78;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+    color: #FF8A65;
+}
+
+.hero-content p {
+    font-size: 17px;
+    color: #147D78;
+    margin-bottom: 28px;
+    max-width: 550px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.hero-buttons .primary-btn {
+    background: #FF8A65;
+    color: #FFFFFF;
+    border: 2px solid #FF8A65;
+    transition: 0.3s;
+}
+
+.hero-buttons .primary-btn:hover {
+    background: #147D78;
+    color: #FFFFFF;
+    border-color: #147D78;
+}
+
+.hero-buttons .secondary-btn {
+    display: inline-block;
+    background: #147D78;
+    color: #FFFFFF;
+    padding: 13px 27px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 900;
+    border: 2px solid #147D78;
+    transition: 0.3s;
+}
+
+.hero-buttons .secondary-btn:hover {
+    background: #FF8A65;
+    color: #FFFFFF;
+    border-color: #FF8A65;
+}
+        /* BENEFITS */
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 22px;
+        }
+
+        .benefit-card {
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 18px;
+            background: var(--light);
+            transition: 0.3s;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(20,125,120,0.12);
+        }
+
+        .benefit-icon {
+            width: 75px;
+            height: 75px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: var(--primary);
+            color: var(--white);
+            font-size: 30px;
+            border-radius: 50%;
+            margin: 0 auto 18px;
+        }
+
+        .benefit-card:nth-child(even) .benefit-icon {
+            background: var(--secondary);
+        }
+
+        .benefit-card h3 {
+            color: var(--primary);
+            font-size: 19px;
+            margin-bottom: 10px;
+        }
+
+        .benefit-card p {
+            color: #687976;
+            font-size: 14px;
+        }
+
+        /* MEMBERSHIP PLANS */
+
+        .plans-section {
+            background: var(--light);
+        }
+
+        .plans-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            align-items: stretch;
+        }
+
+        .plan-card {
+            background: var(--white);
+            padding: 35px 28px;
+            border-radius: 20px;
+            text-align: center;
+            border: 2px solid transparent;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            position: relative;
+        }
+
+        .plan-card.popular {
+            border-color: var(--primary);
+            transform: translateY(-10px);
+        }
+
+        .popular-label {
+            position: absolute;
+            top: -16px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--secondary);
+            color: var(--white);
+            padding: 6px 20px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 900;
+            white-space: nowrap;
+        }
+
+        .plan-card h3 {
+            color: var(--primary);
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        .plan-price {
+            color: var(--primary);
+            font-size: 39px;
+            font-weight: 900;
+            margin: 15px 0;
+        }
+
+        .plan-price small {
+            font-size: 13px;
+            color: #71807D;
+            font-weight: 600;
+        }
+
+        .plan-card ul {
+            list-style: none;
+            text-align: left;
+            margin: 25px 0;
+        }
+
+        .plan-card li {
+            padding: 9px 0;
+            border-bottom: 1px solid #E6EFED;
+            color: #596A67;
+            font-size: 14px;
+        }
+
+        .plan-card li i {
+            color: var(--primary);
+            margin-right: 9px;
+        }
+
+        .plan-card .primary-btn {
+            width: 100%;
+        }
+
+        /* COMMUNITY */
+
+        .community-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 45px;
+            align-items: center;
+        }
+
+        .community-image img {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+            border-radius: 25px;
+        }
+
+        .community-content h2 {
+            font-size: 36px;
+            color: var(--primary);
+            line-height: 1.2;
+            margin-bottom: 18px;
+        }
+
+        .community-content p {
+            color: #687976;
+            margin-bottom: 20px;
+        }
+
+        .community-list {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+
+        .community-list li {
+            margin: 13px 0;
+            font-weight: 800;
+        }
+
+        .community-list i {
+            color: var(--secondary);
+            margin-right: 10px;
+        }
+
+        /* CARE CENTER */
+
+        .care-section {
+            background: var(--light);
+        }
+
+        .care-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .care-card {
+            background: var(--white);
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.05);
+            transition: 0.3s;
+        }
+
+        .care-card:hover {
+            transform: translateY(-7px);
+        }
+
+        .care-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .care-content {
+            padding: 23px;
+        }
+
+        .care-content h3 {
+            color: var(--primary);
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .care-content p {
+            color: #687976;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .read-more {
+            color: var(--primary);
+            font-weight: 900;
+        }
+
+        .read-more:hover {
+            color: var(--secondary);
+        }
+
+        /* REGISTRATION */
+
+        .registration-section {
+            background:
+                linear-gradient(rgba(20,125,120,0.93),
+                rgba(20,125,120,0.93)),
+                url("Images/pet-club-registration.jpg") center/cover;
+        }
+
+        .registration-wrapper {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 45px;
+            align-items: center;
+        }
+
+        .registration-info {
+            color: var(--white);
+        }
+
+        .registration-info h2 {
+            font-size: 38px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .registration-info p {
+            margin-bottom: 20px;
+        }
+
+        .registration-info i {
+            color: #FFE0D4;
+            margin-right: 10px;
+        }
+
+        .registration-form {
+            background: var(--white);
+            padding: 35px;
+            border-radius: 20px;
+        }
+
+        .registration-form h3 {
+            color: var(--primary);
+            font-size: 26px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 800;
+            color: var(--dark);
+            margin-bottom: 6px;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #D7E4E1;
+            border-radius: 9px;
+            outline: none;
+            font-family: inherit;
+            font-size: 14px;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            border-color: var(--primary);
+        }
+
+        .registration-form button {
+            width: 100%;
+            margin-top: 8px;
+        }
+
+        .form-message {
+            display: none;
+            color: var(--primary);
+            text-align: center;
+            font-weight: 800;
+            margin-top: 15px;
+        }
+
+        /* FAQ */
+
+        .faq-container {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .faq-item {
+            border: 1px solid #E1EBE8;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            width: 100%;
+            background: var(--white);
+            color: var(--primary);
+            padding: 19px 22px;
+            border: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            font-size: 16px;
+            font-weight: 900;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 0 22px 20px;
+            color: #687976;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+
+        @media(max-width: 750px) {
+            .header-container {
+                flex-wrap: wrap;
+                padding: 15px 0;
+            }
+
+            .navigation {
+                width: 100%;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            .header-actions {
+                display: none;
+            }
+
+            .club-hero {
+                min-height: 470px;
+            }
+
+            .community-grid,
+            .registration-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .plans-grid,
+            .care-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .plan-card.popular {
+                transform: none;
+                margin-top: 15px;
+            }
+
+            .section {
+                padding: 55px 0;
+            }
+        }
+
+        @media(max-width: 480px) {
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-heading h2,
+            .community-content h2 {
+                font-size: 28px;
+            }
+
+            .registration-form {
+                padding: 22px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-content h1 {
+                font-size: 38px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+ <!-- HEADER -->
+<header class="main-header">
+    <div class="header-container">
+
+        <a href="index.html" class="logo">
+            <img src="Images/Logo Image1.png" alt="PetShoppy Logo">
+            <span class="logo-text">
+                Pet<span>Shoppy</span>
+                <small>Everything Your Pet Loves</small>
+            </span>
+        </a>
+
+        <nav class="navigation">
+            <div class="nav-item dropdown">
+                <a href="index.html" class="nav-link">Home <i class="fa-solid fa-angle-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="index.html">Home 1 - Classic</a>
+                    <a href="home2.html">Home 2 - Premium</a>
+                </div>
+            </div>
+
+            <a href="about.html" class="nav-link">About Us</a>
+
+            <div class="nav-item dropdown">
+                <a href="index.html" class="nav-link">Pets <i class="fa-solid fa-angle-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="Dogs.html">Dogs</a>
+                    <a href="Cat.html">Cats</a>
+                </div>
+            </div>
+
+            <a href="Products.html" class="nav-link">Products</a>
+            <a href="Brands.html" class="nav-link">Brands</a>
+            <a href="Services.html" class="nav-link">Services</a>
+            <a href="Blog.html" class="nav-link">Blog</a>
+            <a href="Contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="circle-btn" id="directionBtn" aria-label="Toggle direction">
+                <i class="fa-solid fa-right-left"></i>
+            </button>
+
+            <button class="circle-btn" id="themeBtn" aria-label="Toggle theme">
+                <i class="fa-solid fa-sun"></i>
+            </button>
+
+            <a href="PetClub.html" class="login-btn">
+                <i class="fa-solid fa-paw"></i> Join Pet Club
+            </a>
+        </div>
+
+    </div>
+</header>
+
+
+<!-- HERO SECTION -->
+
+<section class="club-hero">
+    <div class="container">
+        <div class="hero-content">
+
+            <span class="tagline">
+                <i class="fa-solid fa-heart"></i>
+                A COMMUNITY FULL OF LOVE
+            </span>
+
+            <h1>
+                Welcome to the
+                <span>PetShoppy Pet Club!</span>
+            </h1>
+
+            <p>
+                Every pet deserves extra love and care.
+                Become a part of our happy pet community and
+                discover exciting rewards, helpful pet-care tips,
+                special offers and unforgettable moments.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#registration" class="primary-btn">
+                    Join Pet Club
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="#benefits" class="secondary-btn">
+                    Explore Benefits
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- BENEFITS SECTION -->
+
+<section class="section" id="benefits">
+    <div class="container">
+
+        <div class="section-heading">
+            <span>Why Join Us?</span>
+            <h2>Enjoy More with Pet Club</h2>
+            <p>
+                Make your pet-parenting journey more exciting
+                with exclusive membership benefits.
+            </p>
+        </div>
+
+        <div class="benefits-grid">
+
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fa-solid fa-tags"></i>
+                </div>
+                <h3>Exclusive Discounts</h3>
+                <p>
+                    Discover special member-only offers on
+                    selected food, toys and pet accessories.
+                </p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fa-solid fa-gift"></i>
+                </div>
+                <h3>Reward Points</h3>
+                <p>
+                    Earn reward points on eligible purchases
+                    and enjoy exciting membership rewards.
+                </p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <h3>Pet Care Tips</h3>
+                <p>
+                    Get useful information about pet nutrition,
+                    grooming, training and everyday care.
+                </p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <h3>Pet Community</h3>
+                <p>
+                    Connect with other pet parents and
+                    participate in exciting pet activities.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- MEMBERSHIP PLANS -->
+
+<section class="section plans-section" id="plans">
+    <div class="container">
+
+        <div class="section-heading">
+            <span>Choose Your Membership</span>
+            <h2>Pet Club Membership Plans</h2>
+            <p>
+                Choose the membership experience that suits
+                your pet-parenting journey.
+            </p>
+        </div>
+
+        <div class="plans-grid">
+
+            <!-- FREE PLAN -->
+
+            <div class="plan-card">
+                <h3>Free Club</h3>
+                <p>Start your happy journey!</p>
+
+                <div class="plan-price">₹0</div>
+
+                <ul>
+                    <li><i class="fa-solid fa-check-circle"></i> Basic membership</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Pet care articles</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Community updates</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Pet parenting tips</li>
+                </ul>
+
+                <a href="#registration" class="primary-btn">
+                    Join Free
+                </a>
+            </div>
+
+
+            <!-- SILVER PLAN -->
+
+            <div class="plan-card popular">
+
+                <span class="popular-label">MOST POPULAR</span>
+
+                <h3>Silver Club</h3>
+                <p>More benefits for your pet!</p>
+
+                <div class="plan-price">
+                    ₹199 <small>/ month</small>
+                </div>
+
+                <ul>
+                    <li><i class="fa-solid fa-check-circle"></i> All Free Club benefits</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Additional member offers</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Reward points</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Special pet deals</li>
+                </ul>
+
+                <a href="#registration" class="primary-btn">
+                    Choose Silver
+                </a>
+            </div>
+
+
+            <!-- GOLD PLAN -->
+
+            <div class="plan-card">
+
+                <h3>Gold Club</h3>
+                <p>Enjoy a premium experience!</p>
+
+                <div class="plan-price">
+                    ₹399 <small>/ month</small>
+                </div>
+
+                <ul>
+                    <li><i class="fa-solid fa-check-circle"></i> All Silver Club benefits</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Premium reward offers</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Priority customer support</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Exclusive promotions</li>
+                </ul>
+
+                <a href="#registration" class="primary-btn">
+                    Choose Gold
+                </a>
+            </div>
+
+        </div>
+
+        <p style="text-align:center; margin-top:25px; color:#687976; font-size:13px;">
+            Note: Membership prices and benefits are illustrative.
+            Replace them with your actual offers before publishing.
+        </p>
+
+    </div>
+</section>
+
+
+<!-- PET COMMUNITY -->
+
+<section class="section">
+    <div class="container">
+
+        <div class="community-grid">
+
+            <div class="community-image">
+                <img src="https://images.openai.com/static-rsc-4/fqnzrfZ3WFDm0ptfUP7zTdneAazm2P2NcfNgz72BZTh5dOE9z3FvbJq7qqBkIudPcHLOuSNfWK-ZYUNMiKndkgy5vr52vDciDf1b5knd7W9yMwjXxk5CZNO1Jq2KqF_x2T-cjiFKdk1oQucfuxqoMM2U6zg8N4kUb7-O5GX5ISdfGeQrkGH9ld02JKTKotxr?purpose=fullsize"
+                     alt="Happy pets and their loving owners">
+            </div>
+
+            <div class="community-content">
+
+                <div class="section-heading"
+                     style="text-align:left; margin-bottom:15px;">
+
+                    <span>Our Happy Community</span>
+
+                    <h2>
+                        Where Every Pet Belongs!
+                    </h2>
+
+                </div>
+
+                <p>
+                    PetShoppy Pet Club is more than just a
+                    membership. It is a happy place where
+                    pet lovers come together to celebrate
+                    their adorable companions.
+                </p>
+
+                <ul class="community-list">
+
+                    <li>
+                        <i class="fa-solid fa-camera"></i>
+                        Share your pet's special moments.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-cake-candles"></i>
+                        Celebrate your pet's birthday.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-trophy"></i>
+                        Participate in pet contests.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-paw"></i>
+                        Explore pet-friendly activities.
+                    </li>
+
+                </ul>
+
+                <a href="#registration" class="primary-btn">
+                    Become a Club Member
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- PET CARE KNOWLEDGE CENTER -->
+
+<section class="section care-section">
+    <div class="container">
+
+        <div class="section-heading">
+            <span>Learn and Care</span>
+            <h2>Pet Care Knowledge Center</h2>
+            <p>
+                Learn how to keep your furry friends
+                healthy, active and happy.
+            </p>
+        </div>
+
+        <div class="care-grid">
+
+            <article class="care-card">
+
+                <img src="https://images.openai.com/static-rsc-4/UQplDPpXTqXkdV9lbhqgcbFg-UTb9_wlrA7KM4oBi58V-RvIU0ClYsFquC9SSXgydaIrlimj0biNKPjBjG4Cp6P9jgnckddSOB3YGA2E-iLFq_oQWaASLeltdmTRUXWz3hiSZhVi-UJNWlyBuKEaa8EHVpmwSjYSUvefMlQ4oy6xaH9kZDyGozF9vs3-3S0-?purpose=fullsize"
+                     alt="Dog grooming and coat care">
+
+                <div class="care-content">
+                    <h3>Dog Grooming Guide</h3>
+
+                    <p>
+                        Discover brushing, bathing, nail
+                        trimming and coat-care basics for dogs.
+                    </p>
+
+                    <a href="blogs.html" class="read-more">
+                        Read More
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </article>
+
+
+            <article class="care-card">
+
+                <img src="https://images.openai.com/static-rsc-4/u4fePdNcEsoAWm7P2tLeGUBya3z6-iEsmw4Km1DMAWZdrkUCscCoIOpMmqBngFWUWVPinjkQo7kTIrQNzA7eAnSFnJ36tC1EbL7mYKlEtXDsgq7i0cHWimJcJDogBrk5g4GCLKh8IbKmzJs9WFdx9yP92hFp9aciAmSBnuKKDRWjVJd5XrK2Odk5gNNcivO0?purpose=fullsize"
+                     alt="Healthy pet food and nutrition">
+
+                <div class="care-content">
+                    <h3>Healthy Pet Nutrition</h3>
+
+                    <p>
+                        Understand balanced pet nutrition
+                        and how to choose suitable food.
+                    </p>
+
+                    <a href="blogs.html" class="read-more">
+                        Read More
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </article>
+
+
+            <article class="care-card">
+
+                <img src="https://images.openai.com/static-rsc-4/QceaT-KTUiuBSMUa3y-xpaoBqH7qvY7LPRlt_3IYiW8xQHydFZN_rnhgQlANdg6EuRW-C8BdsWWJI2o1wPwesjBAKeZ4IOhTg-AqpVuiD-3OJeUFDqbxhAUILIFJHHe6J7DLzPdcp1VulMkZahNfR6OlnB1hmvkBJeyD9FtKDqdbXraVLh1m8LQBavzlKNtK?purpose=fullsize"
+                     alt="Puppy training and activities">
+
+                <div class="care-content">
+                    <h3>Puppy Training Basics</h3>
+
+                    <p>
+                        Explore positive training techniques,
+                        socialization and good habits.
+                    </p>
+
+                    <a href="blogs.html" class="read-more">
+                        Read More
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- REGISTRATION SECTION -->
+
+<section class="section registration-section" id="registration">
+
+    <div class="container">
+
+        <div class="registration-wrapper">
+
+            <div class="registration-info">
+
+                <h2>
+                    Your Pet's Happy Journey Starts Here!
+                </h2>
+
+                <p>
+                    Join the PetShoppy family today and
+                    discover a wonderful world of pet care,
+                    rewards and community.
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-check-circle"></i>
+                    Simple membership registration
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-check-circle"></i>
+                    Benefits based on your selected plan
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-check-circle"></i>
+                    A community for every pet lover
+                </p>
+
+            </div>
+
+
+            <form class="registration-form" id="clubForm">
+
+                <h3>Join PetShoppy Pet Club</h3>
+
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName"
+                           placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email"
+                           placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Mobile Number</label>
+                    <input type="tel" id="phone"
+                           placeholder="Enter mobile number"
+                           pattern="[0-9]{10}" maxlength="10" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="petName">Pet Name</label>
+                    <input type="text" id="petName"
+                           placeholder="Enter your pet's name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="petType">Pet Type</label>
+
+                    <select id="petType" required>
+                        <option value="">Select Pet Type</option>
+                        <option value="Dog">Dog</option>
+                        <option value="Cat">Cat</option>
+                        <option value="Bird">Bird</option>
+                        <option value="Rabbit">Rabbit</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="membership">Membership Plan</label>
+
+                    <select id="membership" required>
+                        <option value="">Choose Membership</option>
+                        <option value="Free Club">Free Club</option>
+                        <option value="Silver Club">Silver Club</option>
+                        <option value="Gold Club">Gold Club</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="primary-btn">
+                    <i class="fa-solid fa-paw"></i>
+                    Become a Member
+                </button>
+
+                <p class="form-message" id="formMessage">
+                    Thank you for registering with PetShoppy!
+                </p>
+
+            </form>
+
+        </div>
+    </div>
+
+</section>
+
+
+<!-- FAQ SECTION -->
+
+<section class="section">
+    <div class="container">
+
+        <div class="section-heading">
+            <span>Need Help?</span>
+            <h2>Frequently Asked Questions</h2>
+            <p>
+                Find answers to common questions
+                about PetShoppy Pet Club.
+            </p>
+        </div>
+
+        <div class="faq-container">
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    What is PetShoppy Pet Club?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        PetShoppy Pet Club is a membership
+                        community designed for pet parents.
+                        It provides access to pet-care content,
+                        community activities and membership
+                        benefits.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    How can I join Pet Club?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        Complete the registration form on this
+                        page, provide your details and choose
+                        your preferred membership plan.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    Can I register more than one pet?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        The registration form currently accepts
+                        one pet per registration. You can create
+                        another registration for an additional pet.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    How do reward points work?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        Reward points can be offered on eligible
+                        purchases according to PetShoppy's
+                        membership reward policy.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    How can I contact PetShoppy?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                <div class="faq-answer">
+                    <p>
+                        Visit our Contact page to send your
+                        questions or get assistance from
+                        the PetShoppy team.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<footer class="main-footer">
+
+    <div class="footer-container">
+
+        <!-- COLUMN 1: BRAND -->
+        <div class="footer-column footer-brand">
+
+            <a href="index.html" class="logo">
+                <img src="Images/Logo Image1.png" alt="PetShoppy Logo">
+
+                <span class="footer-logo-text">
+                    Pet<span>Shoppy</span>
+                </span>
+            </a>
+
+            <p class="footer-tagline">
+                Everything Your Pet Loves
+            </p>
+
+            <p class="footer-description">
+                Your one-stop destination for quality pet food,
+                toys, accessories and everything your furry
+                friends need to stay happy and healthy.
+            </p>
+
+
+            <div class="social-links">
+                <a href="#" class="social-btn" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" class="social-btn" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" class="social-btn" aria-label="Pinterest">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+
+                <a href="#" class="social-btn" aria-label="Twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- COLUMN 2: EXPLORE -->
+        <div class="footer-column">
+
+            <h3>Explore</h3>
+
+            <ul class="footer-links">
+        <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home-Classic </a></li>
+        <li><a href="home2.html"><i class="fa-solid fa-angle-right"></i> Home-Premium </a></li>
+        <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us </a></li>
+        <li><a href="Products.html"><i class="fa-solid fa-angle-right"></i> Products </a></li>
+        <li><a href="Brands.html"><i class="fa-solid fa-angle-right"></i> Brands </a></li>
+        <li><a href="Services.html"><i class="fa-solid fa-angle-right"></i> Services </a></li>
+        <li><a href="Blog.html"><i class="fa-solid fa-angle-right"></i> Blog </a></li>
+    </ul>
+        </div>
+
+        <!-- COLUMN 3: CUSTOMER SUPPORT -->
+        <div class="footer-column">
+
+            <h3>Customer Support</h3>
+
+            <ul class="footer-links">
+        <li><a href="Contact.html"><i class="fa-solid fa-angle-right"></i> Help & Support</a></li>
+        <li><a href="Contact.html"><i class="fa-solid fa-angle-right"></i> FAQs</a></li>
+        <li><a href="Contact.html"><i class="fa-solid fa-angle-right"></i> Shipping Information</a></li>
+        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Return & Refund Policy</a></li>
+        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Privacy Policy</a></li>
+        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Terms & Conditions</a></li>
+    </ul>
+
+        </div>
+
+        <!-- COLUMN 4: CONTACT -->
+        <div class="footer-column">
+
+            <h3>Contact Us</h3>
+
+            <ul class="contact-list">
+
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:hello@petshoppy.com">
+                        hello@petshoppy.com
+                    </a>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+919876543210">
+                        +91 98765 43210
+                    </a>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Your Business Address, India</span>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-clock"></i>
+                    <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 PetShoppy. All Rights Reserved.
+        </p>
+
+        <div class="legal-links">
+            <a href="#privacy">Privacy Policy</a>
+            <span class="separator">•</span>
+            <a href="#terms">Terms &amp; Conditions</a>
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+    // FAQ ACCORDION
+
+    const faqItems = document.querySelectorAll(".faq-item");
+
+    faqItems.forEach(item => {
+
+        const question = item.querySelector(".faq-question");
+
+        question.addEventListener("click", () => {
+
+            faqItems.forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove("active");
+                }
+            });
+
+            item.classList.toggle("active");
+
+        });
+
+    });
+
+
+    // MEMBERSHIP REGISTRATION DEMO
+
+    const clubForm = document.getElementById("clubForm");
+
+    clubForm.addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        if (!clubForm.checkValidity()) {
+            clubForm.reportValidity();
+            return;
+        }
+
+        const message = document.getElementById("formMessage");
+
+        message.style.display = "block";
+
+        clubForm.reset();
+
+    });
+
+</script>
+
+</body>
+</html>

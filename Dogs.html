@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dog Store | PetShoppy</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Dogs.css">
+
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+
+    <!-- HEADER -->
+<header class="main-header">
+    <div class="header-container">
+
+        <a href="index.html" class="logo">
+            <img src="Images/Logo Image1.png" alt="PetShoppy Logo">
+            <span class="logo-text">
+                Pet<span>Shoppy</span>
+                <small>Everything Your Pet Loves</small>
+            </span>
+        </a>
+
+        <nav class="navigation">
+            <div class="nav-item dropdown">
+                <a href="index.html" class="nav-link">Home <i class="fa-solid fa-angle-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="index.html">Home 1 - Classic</a>
+                    <a href="home2.html">Home 2 - Premium</a>
+                </div>
+            </div>
+
+            <a href="about.html" class="nav-link">About Us</a>
+
+            <div class="nav-item dropdown">
+                <a href="index.html" class="nav-link">Pets <i class="fa-solid fa-angle-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="Dogs.html">Dogs</a>
+                    <a href="Cat.html">Cats</a>
+                </div>
+            </div>
+            
+            <a href="Products.html" class="nav-link">Products</a>
+            <a href="Brands.html" class="nav-link">Brands</a>
+            <a href="Services.html" class="nav-link">Services</a>
+            <a href="Blog.html" class="nav-link">Blog</a>
+            <a href="Contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="circle-btn" id="directionBtn" aria-label="Toggle direction">
+                <i class="fa-solid fa-right-left"></i>
+            </button>
+
+            <button class="circle-btn" id="themeBtn" aria-label="Toggle theme">
+                <i class="fa-solid fa-sun"></i>
+            </button>
+
+            <a href="PetClub.html" class="login-btn">
+                <i class="fa-solid fa-paw"></i> Join Pet Club
+            </a>
+        </div>
+
+    </div>
+</header>
+
+    <main>
+
+        <!-- Dog Hero -->
+<section class="dog-hero">
+
+    <div class="dog-hero-content">
+
+        <span class="dog-eyebrow">WELCOME TO THE DOG WORLD</span>
+
+        <h1>
+            More Love.<br>
+            More Care.<br>
+            <span>More Happy Tails!</span>
+        </h1>
+
+        <p>
+            Discover nutritious food, playful toys, comfortable
+            accessories and everyday essentials for your furry friend.
+        </p>
+
+        <div class="dog-hero-buttons">
+
+            <a href="Products.html" class="dog-primary-btn">
+                Shop for Dogs
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a href="#dog-breeds" class="dog-secondary-btn">
+                Explore Breeds
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="dog-hero-image">
+        <img src="Images/dog-hero.jpeg"
+             alt="Beautiful dogs sitting together">
+    </div>
+
+</section>
+
+        <!-- Shop by Breed -->
+        
+<section class="dog-section" id="dog-breeds">
+
+    <div class="dog-section-heading">
+        <span>EXPLORE DOG BREEDS</span>
+        <h2>Find Your Favourite Dog Breed</h2>
+        <p>Discover breed characteristics, personalities and care guides.</p>
+    </div>
+
+    <div class="dog-breed-grid">
+
+        <a href="#golden-retriever" class="dog-breed-card">
+            <img src="Images/Golden Retriever.jpeg" alt="Golden Retriever">
+            <h3>Golden Retriever</h3>
+            <p>Explore Breed Guide</p>
+        </a>
+
+        <a href="#labrador" class="dog-breed-card">
+            <img src="Images/Golden Labrador.jpeg" alt="Labrador">
+            <h3>Labrador Retriever</h3>
+            <p>Explore Breed Guide</p>
+        </a>
+
+        <a href="#beagle" class="dog-breed-card">
+            <img src="https://images.unsplash.com/photo-1505628346881-b72b27e84530?w=600" alt="Beagle">
+            <h3>Beagle</h3>
+            <p>Explore Breed Guide</p>
+        </a>
+
+        <a href="#pug" class="dog-breed-card">
+            <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=600" alt="Pug">
+            <h3>Pug</h3>
+            <p>Explore Breed Guide</p>
+        </a>
+
+        <a href="#german-shepherd" class="dog-breed-card">
+            <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=600" alt="German Shepherd">
+            <h3>German Shepherd</h3>
+            <p>Explore Breed Guide</p>
+        </a>
+
+        <a href="#small-dog-breeds" class="dog-breed-card">
+            <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=600" alt="Small dog">
+            <h3>Small Dog Breeds</h3>
+            <p>Explore Breed Guide</p>
+        </a>
+
+    </div>
+</section>
+
+
+<!-- ALL DOG BREED INFORMATION -->
+
+<section class="all-breed-guides">
+
+    <!-- GOLDEN RETRIEVER -->
+
+    <article class="breed-guide" id="golden-retriever">
+
+        <div class="breed-guide-hero">
+            <img src="https://images.openai.com/static-rsc-4/LpCNUsjuQxujDZSPF3bOh8JUKAuLd_-1SjXl9asD8GFAJaS5PiqyPbMKTEbeTrU39Y5NQ9WmvR_whcTGMago711-mBTcyZHRxsOeacu5NvesK7gkSKvIcn7kJNL9H8lGXEJ6TxhLQZOc7Rn9kXLXsfb87I_qylh3fHJKKZsPmC0gRZI3M0jqgga6BCP5C4P_?purpose=fullsize" alt="Golden Retriever">
+
+            <div>
+                <span>COMPLETE BREED GUIDE</span>
+                <h2>Golden Retriever</h2>
+                <p>Friendly Hearts. Playful Personalities.</p>
+                <p>
+                    Golden Retrievers are affectionate, intelligent and
+                    sociable dogs. They generally enjoy companionship,
+                    outdoor activities and interactive games.
+                </p>
+            </div>
+        </div>
+
+        <h3>Golden Retriever Characteristics</h3>
+
+        <div class="breed-facts">
+            <div><strong>Size</strong><span>Medium to Large</span></div>
+            <div><strong>Weight</strong><span>24–34 kg (approx.)</span></div>
+            <div><strong>Height</strong><span>55–61 cm (approx.)</span></div>
+            <div><strong>Life Expectancy</strong><span>10–12 years (approx.)</span></div>
+            <div><strong>Coat</strong><span>Long Double Coat</span></div>
+            <div><strong>Shedding</strong><span>High</span></div>
+        </div>
+
+        <div class="breed-information-grid">
+
+            <div>
+                <h4>Personality</h4>
+                <p>Friendly, affectionate, intelligent, playful and generally sociable.</p>
+            </div>
+
+            <div>
+                <h4>Adaptability</h4>
+                <p>Benefits from companionship, comfortable resting space and regular outdoor activities.</p>
+            </div>
+
+            <div>
+                <h4>Diet & Nutrition</h4>
+                <p>Needs complete and balanced food suitable for its age, activity and health requirements. Monitor portions with veterinary guidance.</p>
+            </div>
+
+            <div>
+                <h4>Training & Exercise</h4>
+                <p>Enjoys walking, fetching, interactive games and reward-based training.</p>
+            </div>
+
+            <div>
+                <h4>Grooming</h4>
+                <p>Regular brushing, appropriate bathing, ear checks, dental care and nail maintenance are important.</p>
+            </div>
+
+            <div>
+                <h4>Health Considerations</h4>
+                <p>May be predisposed to hip and elbow dysplasia, certain heart conditions and skin problems. Regular veterinary check-ups are recommended.</p>
+            </div>
+
+        </div>
+
+        <details class="breed-faq">
+            <summary>Are Golden Retrievers friendly?</summary>
+            <p>They are generally known for their friendly and affectionate temperament.</p>
+        </details>
+
+        <details class="breed-faq">
+            <summary>Do Golden Retrievers need grooming?</summary>
+            <p>Yes. Their double coat benefits from regular brushing and routine grooming.</p>
+        </details>
+
+    </article>
+
+
+    <!-- LABRADOR RETRIEVER -->
+
+    <article class="breed-guide" id="labrador">
+
+        <div class="breed-guide-hero">
+            <img src="Images/Golden Labrador.jpeg" alt="Labrador Retriever">
+
+            <div>
+                <span>COMPLETE BREED GUIDE</span>
+                <h2>Labrador Retriever</h2>
+                <p>Energetic. Loyal. Loving.</p>
+                <p>
+                    Labradors are popular companion dogs known for their
+                    friendly nature, enthusiasm and willingness to learn.
+                </p>
+            </div>
+        </div>
+
+        <h3>Labrador Characteristics</h3>
+
+        <div class="breed-facts">
+            <div><strong>Size</strong><span>Medium to Large</span></div>
+            <div><strong>Weight</strong><span>25–36 kg (approx.)</span></div>
+            <div><strong>Height</strong><span>54–62 cm (approx.)</span></div>
+            <div><strong>Life Expectancy</strong><span>10–12 years (approx.)</span></div>
+            <div><strong>Coat</strong><span>Short Double Coat</span></div>
+            <div><strong>Shedding</strong><span>Moderate to High</span></div>
+        </div>
+
+        <div class="breed-information-grid">
+            <div>
+                <h4>Personality</h4>
+                <p>Generally friendly, outgoing, playful and people-oriented.</p>
+            </div>
+
+            <div>
+                <h4>Adaptability</h4>
+                <p>Needs regular activity, companionship and an environment suited to its energy level.</p>
+            </div>
+
+            <div>
+                <h4>Diet & Nutrition</h4>
+                <p>Needs balanced nutrition and appropriate portion management. Monitor body condition with veterinary advice.</p>
+            </div>
+
+            <div>
+                <h4>Training & Exercise</h4>
+                <p>Enjoys walks, retrieving games, swimming where safe and positive reinforcement training.</p>
+            </div>
+
+            <div>
+                <h4>Grooming</h4>
+                <p>Regular brushing, occasional bathing, nail care, dental hygiene and ear checks.</p>
+            </div>
+
+            <div>
+                <h4>Health Considerations</h4>
+                <p>May be predisposed to joint problems, obesity and certain eye conditions. Routine veterinary care is important.</p>
+            </div>
+        </div>
+
+        <details class="breed-faq">
+            <summary>Are Labradors good family companions?</summary>
+            <p>They are often sociable and affectionate, although every dog needs suitable training and supervision.</p>
+        </details>
+
+        <details class="breed-faq">
+            <summary>Are Labradors active?</summary>
+            <p>Yes. They generally benefit from regular walks, play and mental stimulation.</p>
+        </details>
+
+    </article>
+
+
+    <!-- BEAGLE -->
+
+    <article class="breed-guide" id="beagle">
+
+        <div class="breed-guide-hero">
+            <img src="https://images.openai.com/static-rsc-4/1GqENd-8UXRcJ3-78p3-dV_7prQgT9bVvlqmAm6TPYyaLfRGlKevaMQjxq7LsOVfQMkug68ILdeUI27IzIkAY8fUB0BnyDn2vVcqaB1VRh39iOej2tvagephg3bmvdJ6o-yKGwIygR9cu5mrbpHuFprFdJfgFz3pg0djKowgpKx7UkypvLRyVpDTUjQrLdyw?purpose=fullsize" alt="Beagle">
+
+            <div>
+                <span>COMPLETE BREED GUIDE</span>
+                <h2>Beagle</h2>
+                <p>Curious. Cheerful. Adventurous.</p>
+                <p>
+                    Beagles are small to medium-sized scent hounds
+                    known for their curiosity, distinctive ears
+                    and interest in exploring scents.
+                </p>
+            </div>
+        </div>
+
+        <h3>Beagle Characteristics</h3>
+
+        <div class="breed-facts">
+            <div><strong>Size</strong><span>Small to Medium</span></div>
+            <div><strong>Weight</strong><span>9–14 kg (approx.)</span></div>
+            <div><strong>Height</strong><span>33–41 cm (approx.)</span></div>
+            <div><strong>Life Expectancy</strong><span>12–15 years (approx.)</span></div>
+            <div><strong>Coat</strong><span>Short Coat</span></div>
+            <div><strong>Shedding</strong><span>Moderate</span></div>
+        </div>
+
+        <div class="breed-information-grid">
+            <div>
+                <h4>Personality</h4>
+                <p>Curious, friendly, energetic and often very interested in scents.</p>
+            </div>
+
+            <div>
+                <h4>Adaptability</h4>
+                <p>Benefits from secure outdoor spaces, companionship and supervised exploration.</p>
+            </div>
+
+            <div>
+                <h4>Diet & Nutrition</h4>
+                <p>Needs balanced meals and portion control appropriate to age and activity.</p>
+            </div>
+
+            <div>
+                <h4>Training & Exercise</h4>
+                <p>Scent games, walks and consistent reward-based training can be helpful.</p>
+            </div>
+
+            <div>
+                <h4>Grooming</h4>
+                <p>Regular brushing, ear checks, dental care and nail maintenance.</p>
+            </div>
+
+            <div>
+                <h4>Health Considerations</h4>
+                <p>May be predisposed to ear infections, obesity and certain joint or eye conditions.</p>
+            </div>
+        </div>
+
+        <details class="breed-faq">
+            <summary>Are Beagles curious dogs?</summary>
+            <p>Yes. Their scent-hound background makes them especially interested in following smells.</p>
+        </details>
+
+        <details class="breed-faq">
+            <summary>Do Beagles need exercise?</summary>
+            <p>They generally benefit from regular walks, play and supervised scent-based activities.</p>
+        </details>
+
+    </article>
+
+
+    <!-- PUG -->
+
+    <article class="breed-guide" id="pug">
+
+        <div class="breed-guide-hero">
+            <img src="https://images.openai.com/static-rsc-4/mnHdkUqdL44Iil5jHXhUQU_p3Pi_w0HxV6n2kk3l4xFLDBz0x-u2DBioXHADN-sZQzLGQ3MTA9glrJ9XNdka0d6XLSlxJiIKJtMluTDNxl6VENoWowgko4SEFGZAa3QLNYxHcr4MKRD_fDVpnNSDylQ3l1ADynKfxNvoJmDUREswbyuNxuNK143VabxPOU3Z?purpose=fullsize" alt="Pug">
+
+            <div>
+                <span>COMPLETE BREED GUIDE</span>
+                <h2>Pug</h2>
+                <p>Charming. Affectionate. Playful.</p>
+                <p>
+                    Pugs are small companion dogs recognised for their
+                    compact build, expressive faces and affectionate nature.
+                </p>
+            </div>
+        </div>
+
+        <h3>Pug Characteristics</h3>
+
+        <div class="breed-facts">
+            <div><strong>Size</strong><span>Small</span></div>
+            <div><strong>Weight</strong><span>6–8 kg (approx.)</span></div>
+            <div><strong>Height</strong><span>25–33 cm (approx.)</span></div>
+            <div><strong>Life Expectancy</strong><span>12–15 years (approx.)</span></div>
+            <div><strong>Coat</strong><span>Short Coat</span></div>
+            <div><strong>Shedding</strong><span>Moderate to High</span></div>
+        </div>
+
+        <div class="breed-information-grid">
+            <div>
+                <h4>Personality</h4>
+                <p>Often affectionate, sociable, playful and fond of companionship.</p>
+            </div>
+
+            <div>
+                <h4>Adaptability</h4>
+                <p>Can adapt to smaller homes, but needs a comfortable, cool environment.</p>
+            </div>
+
+            <div>
+                <h4>Diet & Nutrition</h4>
+                <p>Needs balanced food and appropriate portions. Monitor body condition with veterinary guidance.</p>
+            </div>
+
+            <div>
+                <h4>Training & Exercise</h4>
+                <p>Short, gentle activities and positive reinforcement are generally suitable. Avoid strenuous activity in hot weather.</p>
+            </div>
+
+            <div>
+                <h4>Grooming</h4>
+                <p>Regular brushing, careful cleaning of facial folds, dental care and nail maintenance.</p>
+            </div>
+
+            <div>
+                <h4>Health Considerations</h4>
+                <p>Pugs can experience breathing difficulties, eye problems and heat sensitivity because of their flat facial structure. Veterinary care is especially important.</p>
+            </div>
+        </div>
+
+        <details class="breed-faq">
+            <summary>Are Pugs suitable for apartment living?</summary>
+            <p>They can adapt to apartment environments when their comfort, activity and care needs are met.</p>
+        </details>
+
+        <details class="breed-faq">
+            <summary>Do Pugs tolerate hot weather well?</summary>
+            <p>No. Their breathing structure makes heat management particularly important. Keep them cool and seek veterinary advice about exercise.</p>
+        </details>
+
+    </article>
+
+
+    <!-- GERMAN SHEPHERD -->
+
+    <article class="breed-guide" id="german-shepherd">
+
+        <div class="breed-guide-hero">
+            <img src="https://images.openai.com/static-rsc-1/OeB9_Wih-Bc65LmP60Nm-dwUCq6BmZLnB3QQTq0YUvYqGt1ClZv9dMFQmsPJ3UwWLUZMZXQnAkwpjv5gqkfttkptdb7xhsxXV9FEQYFPXb42WNaGUVAkEVYUxpivineoo78YX6OX1UtdgYTQw8TaBtg1SwgTi8gJUtxFVeoUEzN3YdNy6FBgNWqz7JUNeAjrFMRBFN0QFJk9k0I0_evmrjtzSHJa1JvU4uXcGdmAGdHG8Xr5cI2zDMQgDIfR0MRkPGVFOLEQg0Q9ocsqqmgO3KggP9sTd1rnjeRqFwtw3T28muFEmB7g-WCLmQVLC8Ed" alt="German Shepherd">
+
+            <div>
+                <span>COMPLETE BREED GUIDE</span>
+                <h2>German Shepherd</h2>
+                <p>Intelligent. Confident. Devoted.</p>
+                <p>
+                    German Shepherds are intelligent working dogs
+                    known for their trainability, alertness
+                    and strong bonds with their families.
+                </p>
+            </div>
+        </div>
+
+        <h3>German Shepherd Characteristics</h3>
+
+        <div class="breed-facts">
+            <div><strong>Size</strong><span>Large</span></div>
+            <div><strong>Weight</strong><span>22–40 kg (approx.)</span></div>
+            <div><strong>Height</strong><span>55–65 cm (approx.)</span></div>
+            <div><strong>Life Expectancy</strong><span>9–13 years (approx.)</span></div>
+            <div><strong>Coat</strong><span>Double Coat</span></div>
+            <div><strong>Shedding</strong><span>High</span></div>
+        </div>
+
+        <div class="breed-information-grid">
+            <div>
+                <h4>Personality</h4>
+                <p>Often intelligent, loyal, alert and responsive to structured training.</p>
+            </div>
+
+            <div>
+                <h4>Adaptability</h4>
+                <p>Needs space for activity, companionship, socialisation and consistent routines.</p>
+            </div>
+
+            <div>
+                <h4>Diet & Nutrition</h4>
+                <p>Benefits from complete, balanced nutrition suitable for its life stage and activity.</p>
+            </div>
+
+            <div>
+                <h4>Training & Exercise</h4>
+                <p>Enjoys structured training, walks, puzzle activities and appropriate physical exercise.</p>
+            </div>
+
+            <div>
+                <h4>Grooming</h4>
+                <p>Regular brushing, especially during seasonal shedding, plus dental and nail care.</p>
+            </div>
+
+            <div>
+                <h4>Health Considerations</h4>
+                <p>May be predisposed to hip and elbow dysplasia, digestive conditions and certain spinal problems.</p>
+            </div>
+        </div>
+
+        <details class="breed-faq">
+            <summary>Are German Shepherds intelligent?</summary>
+            <p>They are widely recognised for their intelligence and ability to learn through consistent training.</p>
+        </details>
+
+        <details class="breed-faq">
+            <summary>Do German Shepherds need regular activity?</summary>
+            <p>Yes. They generally need physical exercise and mental stimulation suited to their age and health.</p>
+        </details>
+
+    </article>
+
+
+    <!-- SMALL DOG BREEDS -->
+
+    <article class="breed-guide" id="small-dog-breeds">
+
+        <div class="breed-guide-hero">
+            <img src="https://images.openai.com/static-rsc-4/kGwT47JvsV9_mVztQ7n3TXGXLjfUQn0Z8e4cqpy4CtAI6C541LpsfzswCzI7LNC7yBjs6-DF2wysPWg_BQanZiOvprBaZ6hsU4zV287Yuw1mJznX73vyRTHQFr59fhZHQZ6VdBKHokDu3nOOKLujoearSV3B3-YUBlkaFf7eYLrrdTLVy4Npd8VhrMg7rXeP?purpose=fullsize" alt="Small dog">
+
+            <div>
+                <span>COMPLETE BREED GUIDE</span>
+                <h2>Small Dog Breeds</h2>
+                <p>Little Companions. Big Personalities.</p>
+                <p>
+                    Small dogs include many different breeds with
+                    unique personalities, coat types and care needs.
+                    Their requirements vary by individual breed.
+                </p>
+            </div>
+        </div>
+
+        <h3>Small Dog Characteristics</h3>
+
+        <div class="breed-facts">
+            <div><strong>Size</strong><span>Small</span></div>
+            <div><strong>Weight</strong><span>Varies by breed</span></div>
+            <div><strong>Height</strong><span>Varies by breed</span></div>
+            <div><strong>Life Expectancy</strong><span>Varies by breed</span></div>
+            <div><strong>Coat</strong><span>Short, Medium or Long</span></div>
+            <div><strong>Shedding</strong><span>Varies by breed</span></div>
+        </div>
+
+        <div class="breed-information-grid">
+            <div>
+                <h4>Personality</h4>
+                <p>Can be affectionate, energetic, independent, playful or alert depending on breed.</p>
+            </div>
+
+            <div>
+                <h4>Adaptability</h4>
+                <p>Many can adapt to smaller homes, provided their activity and enrichment needs are met.</p>
+            </div>
+
+            <div>
+                <h4>Diet & Nutrition</h4>
+                <p>Choose balanced food suitable for the specific breed, age and size.</p>
+            </div>
+
+            <div>
+                <h4>Training & Exercise</h4>
+                <p>Provide suitable walks, playtime, socialisation and positive training.</p>
+            </div>
+
+            <div>
+                <h4>Grooming</h4>
+                <p>Grooming requirements depend on coat length, texture and breed.</p>
+            </div>
+
+            <div>
+                <h4>Health Considerations</h4>
+                <p>Health risks differ greatly between breeds. Ask a veterinarian about breed-specific screening and care.</p>
+            </div>
+        </div>
+
+        <details class="breed-faq">
+            <summary>Are small dogs suitable for apartments?</summary>
+            <p>Many can adapt to apartment living, but they still need exercise, training and enrichment.</p>
+        </details>
+
+        <details class="breed-faq">
+            <summary>Do all small dogs have the same care requirements?</summary>
+            <p>No. Diet, grooming, exercise and health needs vary significantly between breeds.</p>
+        </details>
+
+    </article>
+
+</section>
+
+
+
+        <!-- Categories -->
+        <section class="dog-category-section" id="dog-categories">
+            <div class="dog-section-heading">
+                <span>SHOP YOUR WAY</span>
+                <h2>Everything for Your Dog</h2>
+                <p>Everyday essentials to keep your dog happy and healthy.</p>
+            </div>
+
+            <div class="dog-category-grid">
+
+                <a href="#dog-products" class="dog-category-card">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <h3>Food & Treats</h3>
+                    <p>Delicious meals and tasty treats.</p>
+                </a>
+
+                <a href="#dog-products" class="dog-category-card">
+                    <i class="fa-solid fa-bone"></i>
+                    <h3>Toys & Playtime</h3>
+                    <p>Fun toys for active play.</p>
+                </a>
+
+                <a href="#dog-products" class="dog-category-card">
+                    <i class="fa-solid fa-shower"></i>
+                    <h3>Grooming & Care</h3>
+                    <p>Everyday grooming essentials.</p>
+                </a>
+
+                <a href="#dog-products" class="dog-category-card">
+                    <i class="fa-solid fa-dog"></i>
+                    <h3>Accessories</h3>
+                    <p>Collars, leashes and more.</p>
+                </a>
+
+            </div>
+        </section>
+
+
+        <!-- Dog Care Banner -->
+        <section class="dog-care-banner" id="dog-care">
+            <div class="dog-care-content">
+                <span>CARE THAT MAKES A DIFFERENCE</span>
+                <h2>Happy Dogs Start with Loving Care</h2>
+                <p>
+                    From daily nutrition to grooming and playtime,
+                    discover simple ways to make every day special for your dog.
+                </p>
+                <a href="Contact.html" class="dog-primary-btn">
+                    Explore Dog Care
+                </a>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="dog-section dog-benefits">
+            <div class="dog-section-heading">
+                <span>THE PETSHOPPY PROMISE</span>
+                <h2>Why Dog Parents Choose Us</h2>
+            </div>
+
+            <div class="dog-benefit-grid">
+                <div>
+                    <i class="fa-solid fa-heart"></i>
+                    <h3>Made with Care</h3>
+                    <p>Thoughtfully selected pet essentials.</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-paw"></i>
+                    <h3>Everyday Essentials</h3>
+                    <p>Products for your dog's daily needs.</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <h3>Easy Shopping</h3>
+                    <p>A convenient shopping experience.</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-headset"></i>
+                    <h3>Helpful Support</h3>
+                    <p>We're here to help pet parents.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+
+    <div class="footer-container">
+
+        <!-- COLUMN 1: BRAND -->
+        <div class="footer-column footer-brand">
+
+            <a href="index.html" class="logo">
+      <img src="Images/Logo Image1.png" alt="PetShoppy Logo">
+
+      <span class="footer-logo-text">
+            Pet<span>Shoppy</span>
+      </span>
+</a>
+
+            <p class="footer-tagline">
+                Everything Your Pet Loves
+            </p>
+
+            <p class="footer-description">
+                Your one-stop destination for quality pet food,
+                toys, accessories and everything your furry
+                friends need to stay happy and healthy.
+            </p>
+
+            <div class="social-links">
+                <a href="#" class="social-btn" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" class="social-btn" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" class="social-btn" aria-label="Pinterest">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+
+                <a href="#" class="social-btn" aria-label="Twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- COLUMN 2: EXPLORE -->
+        <div class="footer-column">
+
+            <h3>Explore</h3>
+
+            <ul class="footer-links">
+        <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home-Classic </a></li>
+        <li><a href="home2.html"><i class="fa-solid fa-angle-right"></i> Home-Premium </a></li>
+        <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us </a></li>
+        <li><a href="Products.html"><i class="fa-solid fa-angle-right"></i> Products </a></li>
+        <li><a href="Brands.html"><i class="fa-solid fa-angle-right"></i> Brands </a></li>
+        <li><a href="services.html"><i class="fa-solid fa-angle-right"></i> Services </a></li>
+        <li><a href="Blog.html"><i class="fa-solid fa-angle-right"></i> Blog </a></li>
+    </ul>
+        </div>
+
+        <!-- COLUMN 3: CUSTOMER SUPPORT -->
+        <div class="footer-column">
+
+            <h3>Customer Support</h3>
+
+            <ul class="footer-links">
+        <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Help & Support</a></li>
+        <li><a href="#"><i class="fa-solid fa-angle-right"></i> FAQs</a></li>
+        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Shipping Information</a></li>
+        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Return & Refund Policy</a></li>
+        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Privacy Policy</a></li>
+        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Terms & Conditions</a></li>
+    </ul>
+
+        </div>
+
+        <!-- COLUMN 4: CONTACT -->
+        <div class="footer-column">
+
+            <h3>Contact Us</h3>
+
+            <ul class="contact-list">
+
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:hello@petshoppy.com">
+                        hello@petshoppy.com
+                    </a>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+919876543210">
+                        +91 98765 43210
+                    </a>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Your Business Address, India</span>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-clock"></i>
+                    <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 PetShoppy. All Rights Reserved.
+        </p>
+
+        <div class="legal-links">
+            <a href="#privacy">Privacy Policy</a>
+            <span class="separator">•</span>
+            <a href="#terms">Terms &amp; Conditions</a>
+        </div>
+
+    </div>
+
+</footer>
+
+    <script src="dogs.js"></script>
+</body>
+</html>

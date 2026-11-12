@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Products | PetShoppy</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Products.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <script src="script.js" defer></script>
+    <script src="Products.js" defer></script>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="main-header">
+    <div class="header-container">
+
+        <a href="index.html" class="logo">
+            <img src="Images/Logo Image1.png" alt="PetShoppy Logo">
+            <span class="logo-text">
+                Pet<span>Shoppy</span>
+                <small>Everything Your Pet Loves</small>
+            </span>
+        </a>
+
+        <nav class="navigation">
+            <div class="nav-item dropdown">
+                <a href="index.html" class="nav-link">Home <i class="fa-solid fa-angle-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="index.html">Home 1 - Classic</a>
+                    <a href="home2.html">Home 2 - Premium</a>
+                </div>
+            </div>
+
+            <a href="about.html" class="nav-link">About Us</a>
+
+            <div class="nav-item dropdown">
+                <a href="index.html" class="nav-link">Pets <i class="fa-solid fa-angle-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="Dogs.html">Dogs</a>
+                    <a href="Cat.html">Cats</a>
+                </div>
+            </div>
+
+            <a href="Products.html" class="nav-link">Products</a>
+            <a href="Brands.html" class="nav-link">Brands</a>
+            <a href="Services.html" class="nav-link">Services</a>
+            <a href="Blog.html" class="nav-link">Blog</a>
+            <a href="Contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="circle-btn" id="directionBtn" aria-label="Toggle direction">
+                <i class="fa-solid fa-right-left"></i>
+            </button>
+
+            <button class="circle-btn" id="themeBtn" aria-label="Toggle theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+        <button class="header-icon-btn" id="wishlistHeaderBtn"
+                aria-label="View wishlist">
+            <i class="fa-regular fa-heart"></i>
+            <span>Wishlist</span>
+            <b id="wishlistCount">0</b>
+        </button>
+
+        <button class="header-icon-btn" id="cartHeaderBtn"
+                aria-label="View cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Cart</span>
+            <b id="cartCount">0</b>
+        </button>
+    </div>
+</header>
+
+
+<!-- PRODUCTS HERO -->
+<section class="products-hero">
+    <div class="products-hero-content">
+        <span>HAPPY PETS, HAPPY SHOPPING</span>
+        <h1>Everything Your Pet <strong>Loves!</strong></h1>
+        <p>
+            Explore nutritious food, playful toys, cosy bedding
+            and everyday grooming essentials for your furry friends.
+        </p>
+
+        <a href="#shop-products" class="products-hero-btn">
+            Start Shopping <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </div>
+
+    <div class="products-hero-image">
+        <img src="Images/Products Hero.jpeg"
+             alt="Dog and cat surrounded by pet products">
+    </div>
+</section>
+
+
+<!-- SHOP BY PET TYPE -->
+<section class="shop-pet-section">
+    <div class="products-heading">
+        <span>FIND THEIR FAVOURITES</span>
+        <h2>Shop by Pet Type</h2>
+        <p>Choose your companion to explore products made for them.</p>
+    </div>
+
+    <div class="shop-pet-grid">
+        <button class="pet-type-card active" data-pet="all">
+            <img src="https://images.openai.com/static-rsc-4/c7AP5CH-nmE7OWW0ZQB7HltDbZ5C9AeBxgJrCH7DkvdLaelxKAdM8-SJF_Nj6YlcXeZ7o2h-mQomYuEE6-86xX7wMBBOvw_mZWheBuw6gVK3jsomG7lJjPG267rNKm15x1VhkivO6Vhb4_13rArpBVIesycyziM3vSnS1Wdi3DIbkvGwozMK7ium3yYQCZy2?purpose=fullsize" alt="All pets">
+            <span>All Pets</span>
+        </button>
+
+        <button class="pet-type-card" data-pet="dog">
+            <img src="Images/Dog Products.jpeg" alt="Dog products">
+            <span>Dogs</span>
+        </button>
+
+        <button class="pet-type-card" data-pet="cat">
+            <img src="Images/Cat Products.jpeg" alt="Cat products">
+            <span>Cats</span>
+        </button>
+
+        <button class="pet-type-card" data-pet="small-pet">
+            <img src="Images/Small Pets.jpeg" alt="Small pets">
+            <span>Small Pets</span>
+        </button>
+    </div>
+</section>
+
+
+<!-- SHOP BY CATEGORY -->
+<section class="shop-category-section">
+    <div class="products-heading">
+        <span>EVERYDAY PET ESSENTIALS</span>
+        <h2>Shop by Category</h2>
+        <p>Find everything your pet needs in one convenient place.</p>
+    </div>
+
+    <div class="shop-category-grid">
+        <button class="category-tile" data-category="food">
+            <i class="fa-solid fa-bowl-food"></i>
+            <span>Pet Food</span>
+        </button>
+
+        <button class="category-tile" data-category="toys">
+            <i class="fa-solid fa-baseball"></i>
+            <span>Toys</span>
+        </button>
+
+        <button class="category-tile" data-category="bedding">
+            <i class="fa-solid fa-bed"></i>
+            <span>Bedding</span>
+        </button>
+
+        <button class="category-tile" data-category="grooming">
+            <i class="fa-solid fa-paw"></i>
+            <span>Grooming</span>
+        </button>
+    </div>
+</section>
+
+
+<!-- PRODUCTS -->
+<section class="products-main-section" id="shop-products">
+
+    <div class="products-heading">
+        <span>EXPLORE OUR COLLECTION</span>
+        <h2>Shop Pet Products</h2>
+        <p>Browse our collection and find something special for your pet.</p>
+    </div>
+
+    <div class="product-toolbar">
+        <div class="product-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" id="productSearch"
+                   placeholder="Search food, toys, bedding...">
+        </div>
+
+        <select id="sortProducts" aria-label="Sort products">
+            <option value="default">Sort: Featured</option>
+            <option value="low-high">Price: Low to High</option>
+            <option value="high-low">Price: High to Low</option>
+            <option value="name">Name: A to Z</option>
+        </select>
+    </div>
+
+    <div class="product-layout">
+
+        <!-- FILTER SIDEBAR -->
+        <aside class="product-filters">
+            <div class="filter-title">
+                <h3>Filters</h3>
+                <button id="clearFilters">Clear All</button>
+            </div>
+
+            <div class="filter-group">
+                <h4>Pet Type</h4>
+
+                <label><input type="checkbox" name="petFilter"
+                    value="dog"> Dogs</label>
+
+                <label><input type="checkbox" name="petFilter"
+                    value="cat"> Cats</label>
+
+                <label><input type="checkbox" name="petFilter"
+                    value="small-pet"> Small Pets</label>
+            </div>
+
+            <div class="filter-group">
+                <h4>Product Category</h4>
+
+                <label><input type="checkbox" name="categoryFilter"
+                    value="food"> Food</label>
+
+                <label><input type="checkbox" name="categoryFilter"
+                    value="toys"> Toys</label>
+
+                <label><input type="checkbox" name="categoryFilter"
+                    value="bedding"> Bedding</label>
+
+                <label><input type="checkbox" name="categoryFilter"
+                    value="grooming"> Grooming</label>
+            </div>
+
+            <div class="filter-group">
+                <h4>Price Range</h4>
+
+                <label><input type="radio" name="priceFilter"
+                    value="all" checked> All Prices</label>
+
+                <label><input type="radio" name="priceFilter"
+                    value="under500"> Under ₹500</label>
+
+                <label><input type="radio" name="priceFilter"
+                    value="500-1000"> ₹500 – ₹1,000</label>
+
+                <label><input type="radio" name="priceFilter"
+                    value="above1000"> Above ₹1,000</label>
+            </div>
+        </aside>
+
+
+        <!-- PRODUCT GRID -->
+        <div class="products-results">
+            <div class="products-results-heading">
+                <p id="productResultCount">Showing all products</p>
+                <button id="showAllProducts">Show All Products</button>
+            </div>
+
+            <div class="product-grid" id="productGrid">
+
+                <!-- FOOD -->
+                <article class="product-card"
+                    data-id="p1" data-pet="dog" data-category="food"
+                    data-price="799" data-name="Premium Dog Food">
+
+                    <div class="product-image">
+                        <img src="Images/Dog Food.jpeg" alt="Premium dog food">
+                        <button class="wishlist-btn" aria-label="Add Premium Dog Food to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-category">Dog Food</span>
+                        <h3>Premium Dog Food</h3>
+                        <p class="product-description">Daily nutrition for adult dogs.</p>
+                        <div class="product-price">₹799</div>
+                        <a href="Product-Details.html?id=p1"
+           class="product-details-btn">
+            Product Details
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+                        <button class="add-cart-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+
+                <article class="product-card"
+                    data-id="p2" data-pet="cat" data-category="food"
+                    data-price="599" data-name="Healthy Cat Food">
+
+                    <div class="product-image">
+                        <img src="Images/Cat Food.jpeg" alt="Healthy cat food">
+                        <button class="wishlist-btn" aria-label="Add Healthy Cat Food to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-category">Cat Food</span>
+                        <h3>Healthy Cat Food</h3>
+                        <p class="product-description">Balanced everyday cat nutrition.</p>
+                        <div class="product-price">₹599</div>
+                        <a href="Product-Details.html?id=p2"
+           class="product-details-btn">
+            Product Details
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+                        <button class="add-cart-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+
+                <!-- TOYS -->
+                <article class="product-card"
+                    data-id="p3" data-pet="dog" data-category="toys"
+                    data-price="349" data-name="Rope Chew Toy">
+
+                    <div class="product-image">
+                        <img src="Images/Dog Toy.jpeg" alt="Dog rope chew toy">
+                        <button class="wishlist-btn" aria-label="Add Rope Chew Toy to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-category">Dog Toys</span>
+                        <h3>Rope Chew Toy</h3>
+                        <p class="product-description">A playful toy for supervised play.</p>
+                        <div class="product-price">₹349</div>
+                        <a href="Product-Details.html?id=p3"
+           class="product-details-btn">
+            Product Details
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+                        <button class="add-cart-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+
+                <article class="product-card"
+                    data-id="p4" data-pet="cat" data-category="toys"
+                    data-price="299" data-name="Interactive Cat Toy">
+
+                    <div class="product-image">
+                        <img src="Images/Cat Toy.jpeg" alt="Interactive cat toy">
+                        <button class="wishlist-btn" aria-label="Add Interactive Cat Toy to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-category">Cat Toys</span>
+                        <h3>Interactive Cat Toy</h3>
+                        <p class="product-description">Encourages playful activity.</p>
+                        <div class="product-price">₹299</div>
+                        <a href="Product-Details.html?id=p4"
+           class="product-details-btn">
+            Product Details
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+                        <button class="add-cart-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+
+                <!-- BEDDING -->
+                <article class="product-card"
+                    data-id="p5" data-pet="dog" data-category="bedding"
+                    data-price="1299" data-name="Comfort Dog Bed">
+
+                    <div class="product-image">
+                        <img src="Images/Dog Bed.jpeg" alt="Comfortable dog bed">
+                        <button class="wishlist-btn" aria-label="Add Comfort Dog Bed to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-category">Dog Bedding</span>
+                        <h3>Comfort Dog Bed</h3>
+                        <p class="product-description">A cosy resting space for dogs.</p>
+                        <div class="product-price">₹1,299</div>
+                        <a href="Product-Details.html?id=p5"
+           class="product-details-btn">
+            Product Details
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+                        <button class="add-cart-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+
+                <article class="product-card"
+                    data-id="p6" data-pet="cat" data-category="bedding"
+                    data-price="999" data-name="Soft Cat Cushion">
+
+                    <div class="product-image">
+                        <img src="Images/Cat Bed.jpeg" alt="Soft cat cushion">
+                        <button class="wishlist-btn" aria-label="Add Soft Cat Cushion to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-category">Cat Bedding</span>
+                        <h3>Soft Cat Cushion</h3>
+                        <p class="product-description">A soft place for cosy naps.</p>
+                        <div class="product-price">₹999</div>
+                        <a href="Product-Details.html?id=p6"
+           class="product-details-btn">
+            Product Details
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+                        <button class="add-cart-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+
+                <!-- GROOMING -->
+                <article class="product-card"
+                    data-id="p7" data-pet="dog" data-category="grooming"
+                    data-price="449" data-name="Pet Grooming Brush">
+
+                    <div class="product-image">
+                        <img src="Images/Grooming Brush.jpeg" alt="Pet grooming brush">
+                        <button class="wishlist-btn" aria-label="Add Pet Grooming Brush to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-category">Dog Grooming</span>
+                        <h3>Pet Grooming Brush</h3>
+                        <p class="product-description">Everyday coat-care accessory.</p>
+                        <div class="product-price">₹449</div>
+                        <a href="Product-Details.html?id=p7"
+           class="product-details-btn">
+            Product Details
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+                        <button class="add-cart-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+
+                <article class="product-card"
+                    data-id="p8" data-pet="cat" data-category="grooming"
+                    data-price="399" data-name="Cat Grooming Kit">
+
+                    <div class="product-image">
+                        <img src="Images/Cat Grooming.jpeg" alt="Cat grooming kit">
+                        <button class="wishlist-btn" aria-label="Add Cat Grooming Kit to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-category">Cat Grooming</span>
+                        <h3>Cat Grooming Kit</h3>
+                        <p class="product-description">Essential coat-care accessories.</p>
+                        <div class="product-price">₹399</div>
+                        <a href="Product-Details.html?id=p8"
+           class="product-details-btn">
+            Product Details
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+                        <button class="add-cart-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+
+                <article class="product-card"
+                    data-id="p9" data-pet="small-pet" data-category="food"
+                    data-price="499" data-name="Small Pet Food">
+
+                    <div class="product-image">
+                        <img src="Images/Small Pet Food.jpeg" alt="Small pet food">
+                        <button class="wishlist-btn" aria-label="Add Small Pet Food to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-category">Small Pet Food</span>
+                        <h3>Small Pet Food</h3>
+                        <p class="product-description">Food for suitable small pets.</p>
+                        <div class="product-price">₹499</div>
+                        <a href="Product-Details.html?id=p9"
+           class="product-details-btn">
+            Product Details
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+                        <button class="add-cart-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+
+                <article class="product-card"
+                    data-id="p10" data-pet="small-pet" data-category="toys"
+                    data-price="249" data-name="Small Pet Play Toy">
+
+                    <div class="product-image">
+                        <img src="Images/Small Pet Toy.jpeg" alt="Small pet play toy">
+                        <button class="wishlist-btn" aria-label="Add Small Pet Play Toy to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-category">Small Pet Toys</span>
+                        <h3>Small Pet Play Toy</h3>
+                        <p class="product-description">An enrichment toy for small pets.</p>
+                        <div class="product-price">₹249</div>
+                        <a href="Product-Details.html?id=p10"
+           class="product-details-btn">
+            Product Details
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+                        <button class="add-cart-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="product-card"
+                    data-id="p11" data-pet="small-pet" data-category="bedding"
+                    data-price="499" data-name="Small Pet Cozy Bedding">
+
+                    <div class="product-image">
+                        <img src="Images/Small Pet Bedding.jpeg" alt="Small Pet Cozy Bedding">
+                        <button class="wishlist-btn" aria-label="Add Small Pet Cozy Bedding to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-category">Small Pets Bedding</span>
+                        <h3>Small Pet Cozy Bedding</h3>
+                        <p class="product-description">An enrichment bed for small pets.</p>
+                        <div class="product-price">₹499</div>
+                        <a href="Product-Details.html?id=p11"
+           class="product-details-btn">
+            Product Details
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+                        <button class="add-cart-btn">Add to Cart</button>
+                    </div>
+                </article>
+                
+                <article class="product-card"
+                    data-id="p12" data-pet="small-pet" data-category="grooming"
+                    data-price="299" data-name="Small Pet Grooming Brush">
+
+                    <div class="product-image">
+                        <img src="Images/Small Pet Grooming.jpeg" alt="Small pet grooming brush">
+                        <button class="wishlist-btn" aria-label="Add Small Pet Cozy Bedding to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-category">Small Pets Grooming</span>
+                        <h3>Small Pet Grooming Brush</h3>
+                        <p class="product-description">An enrichment Grooming Brush for small pets.</p>
+                        <div class="product-price">₹299</div>
+                        <a href="Product-Details.html?id=p12"
+           class="product-details-btn">
+            Product Details
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+                        <button class="add-cart-btn">Add to Cart</button>
+                    </div>
+                </article>
+
+                
+<!-- ==================================
+     ADDITIONAL PRODUCTS: p13 - p24
+=================================== -->
+
+<!-- DOG PRODUCTS -->
+
+<!-- p13: Adjustable Dog Harness -->
+<article class="product-card"
+    data-id="p13" data-pet="dog" data-category="toys"
+    data-price="699" data-name="Adjustable Dog Harness">
+
+    <div class="product-image">
+        <img src="https://images.openai.com/static-rsc-4/d7sYUTjoU4mqlitxc5sJl99mHy5yVjBfl25MJ2OvibPPwc613bMH_2J_KBHKNp1IecMI5aSOOOooydbnFSemEbC4L-TAqa9nx7BJdtdnj5khvvKgW6ajNl34iAxFUTSleCVxiKWiJFSzkb7vki4XUKuM2GEeShPKZo5aDbpsK7PXZJbY32diDfNDfx_zGKbM?purpose=fullsize" alt="Adjustable dog harness">
+        <button class="wishlist-btn" aria-label="Add Adjustable Dog Harness to wishlist">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+    </div>
+
+    <div class="product-info">
+        <span class="product-category">Dog Accessories</span>
+        <h3>Adjustable Dog Harness</h3>
+        <p class="product-description">An adjustable harness for everyday walks.</p>
+        <div class="product-price">₹699</div>
+        <a href="Product-Details.html?id=p13" class="product-details-btn">
+            Product Details <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="add-cart-btn">Add to Cart</button>
+    </div>
+</article>
+
+
+<!-- p14: Stainless Steel Dog Bowl -->
+<article class="product-card"
+    data-id="p14" data-pet="dog" data-category="food"
+    data-price="299" data-name="Stainless Steel Dog Bowl">
+
+    <div class="product-image">
+        <img src="https://images.openai.com/static-rsc-4/nHOsssvsAg-pmBeVxH4hhr-IsHu0wNZhOpPGTWSj6P_LYiXyv0RjQlzXzdaHrhhW9vl-UFS8mSxyylSzOZsINEbo0uwGFgFZ41ibOWkgz4blfnbbKz7i59eKtLuYFNukZWbZacwlgYr8vLShp731-T4_zIoHqOsYA73VFz6Ud6eutM8EIC0pb9hw932-62rl?purpose=fullsize" alt="Stainless steel dog bowl">
+        <button class="wishlist-btn" aria-label="Add Stainless Steel Dog Bowl to wishlist">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+    </div>
+
+    <div class="product-info">
+        <span class="product-category">Dog Feeding</span>
+        <h3>Stainless Steel Dog Bowl</h3>
+        <p class="product-description">A practical bowl for daily feeding.</p>
+        <div class="product-price">₹299</div>
+        <a href="Product-Details.html?id=p14" class="product-details-btn">
+            Product Details <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="add-cart-btn">Add to Cart</button>
+    </div>
+</article>
+
+
+<!-- p15: Puppy Training Pads -->
+<article class="product-card"
+    data-id="p15" data-pet="dog" data-category="grooming"
+    data-price="399" data-name="Puppy Training Pads">
+
+    <div class="product-image">
+        <img src="https://images.openai.com/static-rsc-4/bfzZ06wVCg1v-OlGyurowNdGNv3qQuFqkZKVSjan6lX5izZ1c4LD24nLxjl5vp6E8BVPfuLaRcbhE8HIGAymp0dmue-WWoMJPNTaSayYrwUsNkXUnBDaXznz-ssjdGokml799QIDd8so_sJz2y8La6xcXO0FleUoqlTVlBRuAvYISw87V_dxpBzlNS0_CGB5?purpose=fullsize" alt="Puppy training pads">
+        <button class="wishlist-btn" aria-label="Add Puppy Training Pads to wishlist">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+    </div>
+
+    <div class="product-info">
+        <span class="product-category">Dog Care</span>
+        <h3>Puppy Training Pads</h3>
+        <p class="product-description">Convenient disposable training pads.</p>
+        <div class="product-price">₹399</div>
+        <a href="Product-Details.html?id=p15" class="product-details-btn">
+            Product Details <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="add-cart-btn">Add to Cart</button>
+    </div>
+</article>
+
+
+<!-- p16: Dog Shampoo -->
+<article class="product-card"
+    data-id="p16" data-pet="dog" data-category="grooming"
+    data-price="349" data-name="Gentle Dog Shampoo">
+
+    <div class="product-image">
+        <img src="https://images.openai.com/static-rsc-4/RvfkfwHIU48RDH9se2U3vcBs0JKkErdQQ7Oz4RCzZfvOQONfrbTkYFf890d2Ts_x8opBK3krmHP9ThxgUrWw9ZnmsdjI4ZsFr9xqxbdF9sfnAxTijxVpA0TLrnwMYvnfRE--VYE5_0EzcUlGfwQlE2x340LSM1C8_WWz3ZzpDO0PuA6ucAiQEG3hnARG-Ttx?purpose=fullsize" alt="Gentle dog shampoo">
+        <button class="wishlist-btn" aria-label="Add Gentle Dog Shampoo to wishlist">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+    </div>
+
+    <div class="product-info">
+        <span class="product-category">Dog Grooming</span>
+        <h3>Gentle Dog Shampoo</h3>
+        <p class="product-description">A grooming essential for dog coat care.</p>
+        <div class="product-price">₹349</div>
+        <a href="Product-Details.html?id=p16" class="product-details-btn">
+            Product Details <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="add-cart-btn">Add to Cart</button>
+    </div>
+</article>
+
+
+<!-- CAT PRODUCTS -->
+
+<!-- p17: Cat Scratching Post -->
+<article class="product-card"
+    data-id="p17" data-pet="cat" data-category="toys"
+    data-price="899" data-name="Cat Scratching Post">
+
+    <div class="product-image">
+        <img src="https://images.openai.com/static-rsc-4/JbHn5jfVI9CnJqbsX99DUbIM6m-_m2HH7UGi7BvvH9LcbyoyQgYePDFcCM48exEIY33kKT4-rlz1_JNpSjUbh2XZitFN9o_nFxGXE9ryj6c2Q86r660s0_Pie5vAJxOBrBzPTOh3UDr7r4KmYJOBukLG34zLvO1Y4yA4RZffxEdkhEdY0EOsO0n03yefHXZE?purpose=fullsize" alt="Cat scratching post">
+        <button class="wishlist-btn" aria-label="Add Cat Scratching Post to wishlist">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+    </div>
+
+    <div class="product-info">
+        <span class="product-category">Cat Toys</span>
+        <h3>Cat Scratching Post</h3>
+        <p class="product-description">A scratching and play accessory for cats.</p>
+        <div class="product-price">₹899</div>
+        <a href="Product-Details.html?id=p17" class="product-details-btn">
+            Product Details <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="add-cart-btn">Add to Cart</button>
+    </div>
+</article>
+
+
+<!-- p18: Cat Litter Box -->
+<article class="product-card"
+    data-id="p18" data-pet="cat" data-category="grooming"
+    data-price="599" data-name="Cat Litter Box">
+
+    <div class="product-image">
+        <img src="https://images.openai.com/static-rsc-4/aDf-0TUx6LyEyXgkaQZ1gX06p7L-bNGh7ZZuNOv7ddn8FnYWDnudmtdbGEA8wdDgYl3fSi10cRtbBw1h4p6LAm0SK3Lf8IaAwhnjZ46hZddg-5hxruAswWGdOIvyEMVLaRoIQOyFSFOdzkmObKD5O4Uj6HSAzziScidX2ETYjzLR8398GHeRLCLPGbToBRB-?purpose=fullsize" alt="Cat litter box">
+        <button class="wishlist-btn" aria-label="Add Cat Litter Box to wishlist">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+    </div>
+
+    <div class="product-info">
+        <span class="product-category">Cat Care</span>
+        <h3>Cat Litter Box</h3>
+        <p class="product-description">A convenient litter box for everyday use.</p>
+        <div class="product-price">₹599</div>
+        <a href="Product-Details.html?id=p18" class="product-details-btn">
+            Product Details <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="add-cart-btn">Add to Cart</button>
+    </div>
+</article>
+
+
+<!-- p19: Feather Wand Cat Toy -->
+<article class="product-card"
+    data-id="p19" data-pet="cat" data-category="toys"
+    data-price="199" data-name="Feather Wand Cat Toy">
+
+    <div class="product-image">
+        <img src="https://images.openai.com/static-rsc-4/QxyuE08U9lWbh_hT9SLtG44eiIwUbGyyA5J2Jw9___kYJ-Xh7kiH6BgpRk_1DpcqvRX7J525RL1FC8QvG-aso72HnYwS-7u5PCpWutjr-qfteySiuuiDTZeJie9ix2_unfAmx5cUZKaekjLXwGZ5DLiqZBMjUR9BTfd4tlhTjVKOoCmg7l9owWJQf4SmjC29?purpose=fullsize" alt="Feather wand cat toy">
+        <button class="wishlist-btn" aria-label="Add Feather Wand Cat Toy to wishlist">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+    </div>
+
+    <div class="product-info">
+        <span class="product-category">Cat Toys</span>
+        <h3>Feather Wand Cat Toy</h3>
+        <p class="product-description">An interactive toy for supervised play.</p>
+        <div class="product-price">₹199</div>
+        <a href="Product-Details.html?id=p19" class="product-details-btn">
+            Product Details <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="add-cart-btn">Add to Cart</button>
+    </div>
+</article>
+
+
+<!-- p20: Cat Food Bowl -->
+<article class="product-card"
+    data-id="p20" data-pet="cat" data-category="food"
+    data-price="249" data-name="Cat Food Bowl">
+
+    <div class="product-image">
+        <img src="https://images.openai.com/static-rsc-4/NqhxoixR06FxEtHtZWOjkTwQXheuLBylEQAbcNCLdvy-Lgy77EwoTGqNetk4ST9f7wRkDhjDbPRh8bQ1YkSTwf-Q-0eO9GaCUyrD47HguukSyrAxmf33oCgKoTVaSE_yIgGojFwbMJ9nx3oK_TYeiBWoG6VNMcwS9l4SQYfl-QJNWjcQH45oD9EWaY-HKbqO?purpose=fullsize" alt="Cat food bowl">
+        <button class="wishlist-btn" aria-label="Add Cat Food Bowl to wishlist">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+    </div>
+
+    <div class="product-info">
+        <span class="product-category">Cat Feeding</span>
+        <h3>Cat Food Bowl</h3>
+        <p class="product-description">A simple bowl for daily meals.</p>
+        <div class="product-price">₹249</div>
+        <a href="Product-Details.html?id=p20" class="product-details-btn">
+            Product Details <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="add-cart-btn">Add to Cart</button>
+    </div>
+</article>
+
+
+<!-- SMALL PET PRODUCTS -->
+
+<!-- p21: Rabbit Food Mix -->
+<article class="product-card"
+    data-id="p21" data-pet="small-pet" data-category="food"
+    data-price="349" data-name="Rabbit Food Mix">
+
+    <div class="product-image">
+        <img src="https://images.openai.com/static-rsc-4/m5JIdrKkyWl9wmntMPOxic6jt0LMFJRaIh4Azj-wfLF-Krr4WPPRThFNgem-Exoys2dNq0DEDcqZjgJWbWFRFdIaPeFSRjYffXN4BjaEyATPHUiIG6ugVHXEfi0oO8SEqOfz10mitIwRzV0RbchocHiTnUwAPVrR18rrm8oWcR9Y3Q-hWu4s3YS5LCKbIvlP?purpose=fullsize" alt="Rabbit food mix">
+        <button class="wishlist-btn" aria-label="Add Rabbit Food Mix to wishlist">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+    </div>
+
+    <div class="product-info">
+        <span class="product-category">Small Pet Food</span>
+        <h3>Rabbit Food Mix</h3>
+        <p class="product-description">A food mix formulated for rabbits.</p>
+        <div class="product-price">₹349</div>
+        <a href="Product-Details.html?id=p21" class="product-details-btn">
+            Product Details <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="add-cart-btn">Add to Cart</button>
+    </div>
+</article>
+
+
+<!-- p22: Hamster Exercise Wheel -->
+<article class="product-card"
+    data-id="p22" data-pet="small-pet" data-category="toys"
+    data-price="299" data-name="Hamster Exercise Wheel">
+
+    <div class="product-image">
+        <img src="https://images.openai.com/static-rsc-4/SIF__KPtp9Hqiijrw2W94w_3e8sXJ8t-7Vilb1JkDUDb-kJdjYT-r6Xz6mmAEWtorsv0zo84eIvPa1Jl0xcEeKTufr7fQ3RxFIFSRuQojYW25hNzWGz7ryzuVHczPxy9AC4pzzdrEMA-KXePNXkSUkU2wUFj3pPLoy9jjohVg70?purpose=inline" alt="Hamster exercise wheel">
+        <button class="wishlist-btn" aria-label="Add Hamster Exercise Wheel to wishlist">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+    </div>
+
+    <div class="product-info">
+        <span class="product-category">Small Pet Toys</span>
+        <h3>Hamster Exercise Wheel</h3>
+        <p class="product-description">An enrichment accessory for suitable hamsters.</p>
+        <div class="product-price">₹299</div>
+        <a href="Product-Details.html?id=p22" class="product-details-btn">
+            Product Details <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="add-cart-btn">Add to Cart</button>
+    </div>
+</article>
+
+
+<!-- p23: Small Pet Water Bottle -->
+<article class="product-card"
+    data-id="p23" data-pet="small-pet" data-category="food"
+    data-price="199" data-name="Small Pet Water Bottle">
+
+    <div class="product-image">
+        <img src="https://images.openai.com/static-rsc-4/A8OtWYkXP86RvHvjB3qQYfn2Lyuk3pS_orlL0iAIPDMrDsM5B25AyXP86vrJhyccYyDcDnlVaHPTLUcaMede13f9lHkCu96YPGsjovOby7s_b8rg1pv8d4mnqMkSXOXHmAyp-hs0PlYOYugU8xC71s--HfaBgnd2O6s7OXSvBJ9OzVDp0IMamGPJSd-OuO-L?purpose=fullsize" alt="Small pet water bottle">
+        <button class="wishlist-btn" aria-label="Add Small Pet Water Bottle to wishlist">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+    </div>
+
+    <div class="product-info">
+        <span class="product-category">Small Pet Accessories</span>
+        <h3>Small Pet Water Bottle</h3>
+        <p class="product-description">A water bottle for suitable small pets.</p>
+        <div class="product-price">₹199</div>
+        <a href="Product-Details.html?id=p23" class="product-details-btn">
+            Product Details <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="add-cart-btn">Add to Cart</button>
+    </div>
+</article>
+
+
+<!-- p24: Small Pet Carrier -->
+<article class="product-card"
+    data-id="p24" data-pet="small-pet" data-category="bedding"
+    data-price="799" data-name="Small Pet Carrier">
+
+    <div class="product-image">
+        <img src="https://images.openai.com/static-rsc-4/eqKPNvMVKsv7YzMWVWYqx-FCpt915vRZwyTAjJb0uW7ZDxFoJ6KDrbRJznHCeXqaZ6jMqALFGYZuv8DkaqnixTyWv0IvVxlxDCngiQ3OtlQwjelHNFEOdqTZTvyqGh0CZKc3JROSwCa4415miDM3Q-fRQo2Kj1WndlWCf29I-JhBmIJcO_uvPcARZS8bXUL6?purpose=fullsize" alt="Small pet carrier">
+        <button class="wishlist-btn" aria-label="Add Small Pet Carrier to wishlist">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+    </div>
+
+    <div class="product-info">
+        <span class="product-category">Small Pet Accessories</span>
+        <h3>Small Pet Carrier</h3>
+        <p class="product-description">A carrier for convenient pet transport.</p>
+        <div class="product-price">₹799</div>
+        <a href="Product-Details.html?id=p24" class="product-details-btn">
+            Product Details <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="add-cart-btn">Add to Cart</button>
+    </div>
+</article>
+
+
+</div>
+
+            <div class="no-products" id="noProducts" hidden>
+                <i class="fa-solid fa-paw"></i>
+                <h3>No products found</h3>
+                <p>Try changing your search or filters.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- SHOPPING PROMISE -->
+<section class="shopping-promise">
+    <div>
+        <i class="fa-solid fa-truck-fast"></i>
+        <h3>Convenient Shopping</h3>
+        <p>Explore everyday essentials in one place.</p>
+    </div>
+
+    <div>
+        <i class="fa-solid fa-heart"></i>
+        <h3>Made for Pets</h3>
+        <p>Discover products for different companions.</p>
+    </div>
+
+    <div>
+        <i class="fa-solid fa-headset"></i>
+        <h3>Friendly Support</h3>
+        <p>We're here to help with your shopping questions.</p>
+    </div>
+</section>
+
+
+
+<!-- WISHLIST / CART DRAWER -->
+<div class="shop-overlay" id="shopOverlay"></div>
+
+<aside class="shop-drawer" id="shopDrawer" aria-hidden="true">
+    <div class="drawer-header">
+        <h2 id="drawerTitle">Your Cart</h2>
+        <button id="closeDrawer" aria-label="Close panel">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+
+    <div class="drawer-items" id="drawerItems"></div>
+
+    <div class="drawer-footer" id="drawerFooter">
+        <p>Total: <strong id="drawerTotal">₹0</strong></p>
+        <button type="button" id="demoCheckoutBtn" class="checkout-btn">
+    Proceed to Checkout
+    <i class="fa-solid fa-arrow-right"></i>
+</button>
+    </div>
+</aside>
+
+<!-- Checkout Section -->
+<section class="checkout-section" id="checkoutSection">
+
+    <div class="checkout-container">
+
+        <button type="button" id="closeCheckout" class="close-checkout">
+            <i class="fa-solid fa-arrow-left"></i> Back to Products
+        </button>
+
+        <h2>Complete Your Order</h2>
+        <p>Enter your delivery details and select a payment method.</p>
+
+        <form id="checkoutForm">
+
+            <h3>Delivery Information</h3>
+
+            <div class="checkout-grid">
+                <input type="text" id="customerName"
+                       placeholder="Full Name" required>
+
+                <input type="email" id="customerEmail"
+                       placeholder="Email Address" required>
+
+                <input type="tel" id="customerPhone"
+                       placeholder="Phone Number"
+                       pattern="[0-9]{10}" maxlength="10" required>
+
+                <input type="text" id="customerPincode"
+                       placeholder="PIN Code"
+                       pattern="[0-9]{6}" maxlength="6" required>
+
+                <input type="text" id="customerCity"
+                       placeholder="City" required>
+
+                <input type="text" id="customerState"
+                       placeholder="State" required>
+
+                <textarea id="customerAddress"
+                          placeholder="Full Delivery Address"
+                          required></textarea>
+            </div>
+
+            <h3>Payment Method</h3>
+
+            <div class="checkout-payment-options">
+
+                <label>
+                    <input type="radio" name="paymentMethod"
+                           value="UPI" checked>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    UPI Payment
+                </label>
+
+                <label>
+                    <input type="radio" name="paymentMethod"
+                           value="Card">
+                    <i class="fa-solid fa-credit-card"></i>
+                    Credit / Debit Card
+                </label>
+
+                <label>
+                    <input type="radio" name="paymentMethod"
+                           value="COD">
+                    <i class="fa-solid fa-truck"></i>
+                    Cash on Delivery
+                </label>
+
+            </div>
+
+            <div class="checkout-total">
+                <span>Order Total</span>
+                <strong id="checkoutTotal">₹0</strong>
+            </div>
+
+            <p class="demo-payment-message">
+                Demo checkout only. No real payment will be collected.
+            </p>
+
+            <button type="submit" class="place-order-btn">
+                Complete Demo Order
+                <i class="fa-solid fa-check"></i>
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="main-footer">
+
+    <div class="footer-container">
+
+        <!-- COLUMN 1: BRAND -->
+        <div class="footer-column footer-brand">
+
+            <a href="index.html" class="logo">
+      <img src="Images/Logo Image1.png" alt="PetShoppy Logo">
+
+      <span class="footer-logo-text">
+            Pet<span>Shoppy</span>
+      </span>
+</a>
+
+            <p class="footer-tagline">
+                Everything Your Pet Loves
+            </p>
+
+            <p class="footer-description">
+                Your one-stop destination for quality pet food,
+                toys, accessories and everything your furry
+                friends need to stay happy and healthy.
+            </p>
+
+            <div class="social-links">
+                <a href="#" class="social-btn" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" class="social-btn" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" class="social-btn" aria-label="Pinterest">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+
+                <a href="#" class="social-btn" aria-label="Twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- COLUMN 2: EXPLORE -->
+        <div class="footer-column">
+
+            <h3>Explore</h3>
+
+            <ul class="footer-links">
+        <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home-Classic </a></li>
+        <li><a href="home2.html"><i class="fa-solid fa-angle-right"></i> Home- Premium </a></li>
+        <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us </a></li>
+        <li><a href="Brands.html"><i class="fa-solid fa-angle-right"></i> Brands </a></li>
+        <li><a href="services.html"><i class="fa-solid fa-angle-right"></i> Services</a></li>
+        <li><a href="blogs.html"><i class="fa-solid fa-angle-right"></i> Blog </a></li>
+    </ul>
+        </div>
+
+        <!-- COLUMN 3: CUSTOMER SUPPORT -->
+        <div class="footer-column">
+
+            <h3>Customer Support</h3>
+
+            <ul class="footer-links">
+        <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Help & Support</a></li>
+        <li><a href="#"><i class="fa-solid fa-angle-right"></i> FAQs</a></li>
+        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Shipping Information</a></li>
+        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Return & Refund Policy</a></li>
+        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Privacy Policy</a></li>
+        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Terms & Conditions</a></li>
+    </ul>
+
+        </div>
+
+        <!-- COLUMN 4: CONTACT -->
+        <div class="footer-column">
+
+            <h3>Contact Us</h3>
+
+            <ul class="contact-list">
+
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:hello@petshoppy.com">
+                        hello@petshoppy.com
+                    </a>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+919876543210">
+                        +91 98765 43210
+                    </a>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Your Business Address, India</span>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-clock"></i>
+                    <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 PetShoppy. All Rights Reserved.
+        </p>
+
+        <div class="legal-links">
+            <a href="#privacy">Privacy Policy</a>
+            <span class="separator">•</span>
+            <a href="#terms">Terms &amp; Conditions</a>
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

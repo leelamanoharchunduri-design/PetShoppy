@@ -1,0 +1,825 @@
+
+/* =========================
+   CAT PAGE GENERAL
+========================= */
+
+.cat-announcement {
+    background: #105E5A;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.cat-announcement p {
+    margin: 0;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* =========================
+   CAT HERO
+========================= */
+
+.cat-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 45px;
+    padding: 70px 7%;
+    background: #FFFFFF;
+}
+
+.cat-hero-content > span,
+.cat-section-heading > span,
+.cat-guide-hero span,
+.cat-care-content > span,
+.cat-vet-content > span {
+    color: #FF8A65;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.cat-hero-content h1 {
+    color: #105E5A;
+    font-size: clamp(42px, 5vw, 65px);
+    font-weight: 400;
+    line-height: 1.15;
+    margin: 20px 0;
+}
+
+.cat-hero-content h1 span {
+    display: block;
+    font-weight: 400;
+    color: #FF8A65;
+}
+
+.cat-hero-content p {
+    color: #147D78;
+    line-height: 1.9;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.cat-hero-image img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.cat-hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.cat-primary-btn,
+.cat-secondary-btn {
+    display: inline-block;
+    padding: 14px 23px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.cat-primary-btn {
+    background: #147D78;
+    color: #FFFFFF;
+}
+
+.cat-secondary-btn {
+    background: #FF8A65;
+    color: #FFFFFF;
+}
+
+.cat-primary-btn:hover,
+.cat-secondary-btn:hover {
+    transform: translateY(-3px);
+    background: #105E5A;
+}
+
+/* =========================
+   SECTION HEADINGS
+========================= */
+
+.cat-section-heading {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 45px;
+}
+
+.cat-section-heading h2 {
+    color: #105E5A;
+    font-size: 36px;
+    margin: 15px 0;
+}
+
+.cat-section-heading p {
+    color: #147D78;
+    line-height: 1.8;
+}
+
+/* =========================
+   SHOP BY BREED
+========================= */
+
+.cat-breed-section {
+    padding: 75px 7%;
+    background: #F4FAF8;
+}
+
+.cat-breed-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.cat-breed-card {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: #FFFFFF;
+    padding: 15px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(16, 94, 90, 0.08);
+    transition: 0.3s;
+}
+
+.cat-breed-card:hover {
+    transform: translateY(-7px);
+}
+
+.cat-breed-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    background: #FFFFFF;
+    border-radius: 12px;
+}
+
+.cat-breed-card h3 {
+    color: #105E5A;
+    font-size: 20px;
+    margin: 18px 0 8px;
+}
+
+.cat-breed-card p {
+    color: #FF8A65;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   COMPLETE BREED GUIDES
+========================= */
+
+.all-cat-guides {
+    padding: 60px 7%;
+    background: #FFFFFF;
+}
+
+.cat-breed-guide {
+    padding: 60px 0;
+    border-bottom: 2px solid rgba(20, 125, 120, 0.2);
+    scroll-margin-top: 110px;
+}
+
+.cat-guide-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+    padding: 30px;
+    margin-bottom: 35px;
+    background: #F4FAF8;
+    border-radius: 20px;
+}
+
+.cat-guide-hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+
+.cat-guide-hero h2 {
+    color: #105E5A;
+    font-size: 36px;
+    margin: 15px 0;
+}
+
+.cat-guide-hero p {
+    color: #147D78;
+    line-height: 1.8;
+}
+
+.cat-breed-guide > h3 {
+    color: #105E5A;
+    font-size: 25px;
+    margin: 30px 0 20px;
+}
+
+/* BREED FACTS */
+
+.cat-facts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.cat-facts div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 22px;
+    background: #F4FAF8;
+    border-radius: 12px;
+}
+
+.cat-facts strong {
+    color: #105E5A;
+}
+
+.cat-facts span {
+    color: #147D78;
+}
+
+/* BREED INFORMATION */
+
+.cat-information-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.cat-information-grid > div {
+    padding: 25px;
+    border: 1px solid rgba(20, 125, 120, 0.2);
+    border-radius: 14px;
+}
+
+.cat-information-grid h4 {
+    color: #105E5A;
+    font-size: 17px;
+    margin: 0 0 12px;
+}
+
+.cat-information-grid h4 i {
+    color: #FF8A65;
+    margin-right: 7px;
+}
+
+.cat-information-grid p {
+    color: #147D78;
+    line-height: 1.8;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* FAQ */
+
+.cat-faq {
+    margin-top: 20px;
+    padding: 20px;
+    background: #F4FAF8;
+    border-radius: 12px;
+}
+
+.cat-faq details {
+    padding: 13px 5px;
+    border-bottom: 1px solid rgba(20, 125, 120, 0.2);
+}
+
+.cat-faq details:last-child {
+    border-bottom: none;
+}
+
+.cat-faq summary {
+    color: #105E5A;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.cat-faq p {
+    color: #147D78;
+    line-height: 1.8;
+}
+
+/* =========================
+   CAT CARE
+========================= */
+
+.cat-care-section {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 45px;
+    padding: 75px 7%;
+    background: #F4FAF8;
+    scroll-margin-top: 100px;
+}
+
+.cat-care-content h2,
+.cat-vet-content h2 {
+    color: #105E5A;
+    font-size: 36px;
+    line-height: 1.3;
+    margin: 18px 0;
+}
+
+.cat-care-content > p,
+.cat-vet-content > p {
+    color: #147D78;
+    line-height: 1.9;
+}
+
+.cat-care-points {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.cat-care-points > div {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.cat-care-points i {
+    color: #FF8A65;
+    font-size: 23px;
+    margin-top: 5px;
+}
+
+.cat-care-points h3 {
+    color: #105E5A;
+    font-size: 17px;
+    margin: 0 0 8px;
+}
+
+.cat-care-points p {
+    color: #147D78;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.cat-care-image img,
+.cat-vet-image img {
+    width: 100%;
+    height: 470px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+/* =========================
+   VETERINARY
+========================= */
+
+.cat-veterinary-section {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 45px;
+    padding: 75px 7%;
+    background: #FFFFFF;
+    scroll-margin-top: 100px;
+}
+
+.cat-vet-list {
+    display: grid;
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.cat-vet-list > div {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.cat-vet-list i {
+    color: #FF8A65;
+    font-size: 23px;
+    margin-top: 5px;
+}
+
+.cat-vet-list span {
+    color: #147D78;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.cat-vet-list strong {
+    display: block;
+    color: #105E5A;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.cat-vet-note {
+    margin-top: 25px;
+    padding: 15px;
+    background: #F4FAF8;
+    border-left: 4px solid #FF8A65;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+/* =========================
+   DARK MODE - TEXT ONLY
+========================= */
+
+body.dark .cat-hero-content h1,
+body.dark .cat-section-heading h2,
+body.dark .cat-guide-hero h2,
+body.dark .cat-breed-guide > h3,
+body.dark .cat-facts strong,
+body.dark .cat-information-grid h4,
+body.dark .cat-faq summary,
+body.dark .cat-care-content h2,
+body.dark .cat-care-points h3,
+body.dark .cat-vet-content h2,
+body.dark .cat-vet-list strong,
+body.dark .cat-breed-card h3 {
+    color: #FFFFFF !important;
+}
+
+body.dark .cat-hero-content p,
+body.dark .cat-section-heading p,
+body.dark .cat-guide-hero p,
+body.dark .cat-facts span,
+body.dark .cat-information-grid p,
+body.dark .cat-faq p,
+body.dark .cat-care-content > p,
+body.dark .cat-care-points p,
+body.dark .cat-vet-content > p,
+body.dark .cat-vet-list span {
+    color: #FFFFFF !important;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 1000px) {
+
+    .cat-breed-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cat-care-section,
+    .cat-veterinary-section {
+        gap: 30px;
+    }
+
+    .cat-information-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+
+    .cat-hero,
+    .cat-guide-hero,
+    .cat-care-section,
+    .cat-veterinary-section {
+        grid-template-columns: 1fr;
+    }
+
+    .cat-hero {
+        padding: 50px 6%;
+    }
+
+    .cat-hero-image img {
+        height: 330px;
+    }
+
+    .cat-guide-hero img {
+        height: 350px;
+    }
+
+    .cat-facts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cat-care-points {
+        grid-template-columns: 1fr;
+    }
+
+    .cat-care-image img,
+    .cat-vet-image img {
+        height: 350px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .cat-breed-grid,
+    .cat-facts,
+    .cat-information-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cat-breed-section,
+    .all-cat-guides,
+    .cat-care-section,
+    .cat-veterinary-section {
+        padding: 45px 5%;
+    }
+
+    .cat-section-heading h2 {
+        font-size: 29px;
+    }
+
+    .cat-guide-hero {
+        padding: 18px;
+    }
+
+    .cat-guide-hero h2 {
+        font-size: 29px;
+    }
+
+    .cat-guide-hero img {
+        height: 280px;
+    }
+
+    .cat-breed-card img {
+        height: 280px;
+    }
+
+    .cat-care-content h2,
+    .cat-vet-content h2 {
+        font-size: 29px;
+    }
+}
+
+/* Cat Breed Cards - Dark Mode */
+body.dark .cat-breed-card {
+    background-color: #105E5A;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+body.dark .cat-breed-card img {
+    opacity: 1;
+    filter: none;
+}
+
+body.dark .cat-breed-card:hover {
+    background-color: #147D78;
+    transition: 0.3s ease;
+}
+
+
+/* Cat Breed Guide - Dark Mode */
+body.dark .cat-breed-guide {
+    background-color: #105E5A;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+body.dark .cat-guide-hero {
+    background-color: transparent;
+}
+
+body.dark .cat-guide-hero img {
+    opacity: 1;
+    filter: none;
+}
+
+body.dark .cat-guide-hero > div {
+    background-color: transparent;
+}
+/* Cat Facts - Dark Mode */
+body.dark .cat-facts > div {
+    background-color: #105E5A;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+body.dark .cat-facts {
+    gap: 15px;
+}
+/* Cat FAQ - Dark Mode */
+body.dark .cat-faq details {
+    background-color: #105E5A;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    padding: 15px 18px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+body.dark .cat-faq summary {
+    cursor: pointer;
+}
+
+body.dark .cat-faq details p {
+    background-color: transparent;
+}
+/* Cat Vet Note - Dark Mode */
+body.dark .cat-vet-note {
+    background-color: #105E5A;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    padding: 12px 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+
+/* CAT HERO - IMAGE LEFT, CONTENT RIGHT */
+
+.cat-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 70px 6%;
+
+    min-height: 550px;
+    box-sizing: border-box;
+}
+
+/* IMAGE ON LEFT */
+.cat-hero-image {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.cat-hero-image img {
+    display: block;
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* CONTENT ON RIGHT */
+.cat-hero-content {
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 800px) {
+    .cat-hero {
+        grid-template-columns: 1fr;
+        padding: 45px 6%;
+        gap: 30px;
+    }
+
+    .cat-hero-image {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .cat-hero-content {
+        grid-column: 1;
+        grid-row: 2;
+        text-align: center;
+    }
+
+    .cat-hero-image img {
+        height: 300px;
+    }
+
+    .cat-hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+/* CAT HERO BANNER */
+.cat-hero {
+    width: 90%;
+    height: 90vh;
+    min-height: 550px;
+    max-height: 900px;
+    margin: 20px auto;
+    padding: 40px 5%;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+
+    border: 2px solid white;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+/* CAT HERO CONTENT */
+.cat-hero-content {
+    width: 100%;
+}
+
+.cat-hero-content h1 {
+    font-size: clamp(36px, 4vw, 58px);
+    line-height: 1.2;
+}
+
+.cat-hero-content p {
+    max-width: 550px;
+    line-height: 1.8;
+}
+
+/* CAT HERO IMAGE */
+.cat-hero-image {
+    width: 100%;
+    height: 75%;
+    min-height: 280px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.cat-hero-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* TABLET */
+@media (max-width: 992px) {
+    .cat-hero {
+        width: 94%;
+        height: auto;
+        min-height: 80vh;
+        padding: 35px;
+        gap: 25px;
+    }
+
+    .cat-hero-image {
+        height: 350px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .cat-hero {
+        width: 94%;
+        height: auto;
+        min-height: auto;
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .cat-hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cat-hero-image {
+        height: 280px;
+        min-height: 0;
+    }
+
+    .cat-hero-buttons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}

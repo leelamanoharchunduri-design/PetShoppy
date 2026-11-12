@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cat Breeds & Care | PetShoppy</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Cat.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <script src="script.js" defer></script>
+    <script src="Cat.js" defer></script>
+</head>
+
+<body>
+
+
+<!-- HEADER -->
+<header class="main-header">
+    <div class="header-container">
+
+        <a href="index.html" class="logo">
+            <img src="Images/Logo Image1.png" alt="PetShoppy Logo">
+            <span class="logo-text">
+                Pet<span>Shoppy</span>
+                <small>Everything Your Pet Loves</small>
+            </span>
+        </a>
+
+        <nav class="navigation">
+            <div class="nav-item dropdown">
+                <a href="index.html" class="nav-link">Home <i class="fa-solid fa-angle-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="index.html">Home 1 - Classic</a>
+                    <a href="home2.html">Home 2 - Premium</a>
+                </div>
+            </div>
+
+            <a href="about.html" class="nav-link">About Us</a>
+
+            <div class="nav-item dropdown">
+                <a href="index.html" class="nav-link">Pets <i class="fa-solid fa-angle-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="Dogs.html">Dogs</a>
+                    <a href="Cat.html">Cats</a>
+                </div>
+            </div>
+            
+            <a href="Products.html" class="nav-link">Products</a>
+            <a href="Brands.html" class="nav-link">Brands</a>
+            <a href="Services.html" class="nav-link">Services</a>
+            <a href="Blog.html" class="nav-link">Blog</a>
+            <a href="Contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="circle-btn" id="directionBtn" aria-label="Toggle direction">
+                <i class="fa-solid fa-right-left"></i>
+            </button>
+
+            <button class="circle-btn" id="themeBtn" aria-label="Toggle theme">
+                <i class="fa-solid fa-sun"></i>
+            </button>
+
+            <a href="PetClub.html" class="login-btn">
+                <i class="fa-solid fa-paw"></i> Join Pet Club
+            </a>
+        </div>
+
+    </div>
+</header>
+
+
+<!-- CAT HERO SECTION -->
+<section class="cat-hero">
+
+    <div class="cat-hero-content">
+
+        <span>WELCOME TO THE WORLD OF CATS</span>
+
+        <h1>
+            Little Paws.
+            <span>Big Love.</span>
+        </h1>
+
+        <p>
+            Discover adorable cat breeds, explore essential
+            cat products and learn how to give your feline
+            companion a happy, healthy and comfortable life.
+        </p>
+
+        <div class="cat-hero-buttons">
+            <a href="#cat-breeds" class="cat-primary-btn">
+                Explore Cat Breeds
+            </a>
+
+            <a href="#cat-care" class="cat-secondary-btn">
+                Discover Cat Care
+            </a>
+        </div>
+
+    </div>
+
+    <div class="cat-hero-image">
+        <img src="Images/Cat Hero.jpeg"
+             alt="Beautiful cats sitting together">
+    </div>
+
+</section>
+
+
+<!-- SHOP BY BREED -->
+<section class="cat-breed-section" id="cat-breeds">
+
+    <div class="cat-section-heading">
+        <span>FIND YOUR FELINE FRIEND</span>
+
+        <h2>Shop by Cat Breed</h2>
+
+        <p>
+            Explore different cat breeds and discover their
+            unique personalities, characteristics and care needs.
+        </p>
+    </div>
+
+    <div class="cat-breed-grid">
+
+        <a href="#persian-cat" class="cat-breed-card">
+            <img src="Images/Persian Cat.jpeg"
+                 alt="Persian Cat">
+            <h3>Persian Cat</h3>
+            <p>Explore Breed Guide</p>
+        </a>
+
+        <a href="#siamese-cat" class="cat-breed-card">
+            <img src="Images/Siamese Cat.jpeg"
+                 alt="Siamese Cat">
+            <h3>Siamese Cat</h3>
+            <p>Explore Breed Guide</p>
+        </a>
+
+        <a href="#maine-coon" class="cat-breed-card">
+            <img src="Images/Maine Coon.jpeg"
+                 alt="Maine Coon">
+            <h3>Maine Coon</h3>
+            <p>Explore Breed Guide</p>
+        </a>
+
+        <a href="#bengal-cat" class="cat-breed-card">
+            <img src="Images/Bengal Cat.jpeg"
+                 alt="Bengal Cat">
+            <h3>Bengal Cat</h3>
+            <p>Explore Breed Guide</p>
+        </a>
+
+        <a href="#british-shorthair" class="cat-breed-card">
+            <img src="Images/British Shorthair.jpeg"
+                 alt="British Shorthair">
+            <h3>British Shorthair</h3>
+            <p>Explore Breed Guide</p>
+        </a>
+
+        <a href="#ragdoll" class="cat-breed-card">
+            <img src="Images/Ragdoll Cat.jpeg"
+                 alt="Ragdoll Cat">
+            <h3>Ragdoll</h3>
+            <p>Explore Breed Guide</p>
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- COMPLETE CAT BREED GUIDES -->
+<section class="all-cat-guides" id="cat-guides">
+
+    <div class="cat-section-heading">
+        <span>KNOW YOUR CAT</span>
+        <h2>Complete Cat Breed Guides</h2>
+        <p>
+            Learn about different cat breeds, their behaviour,
+            grooming requirements and everyday care.
+        </p>
+    </div>
+
+
+    <!-- PERSIAN CAT -->
+    <article class="cat-breed-guide" id="persian-cat">
+
+        <div class="cat-guide-hero">
+
+            <img src="Images/Persian Cat.jpeg"
+                 alt="Persian Cat">
+
+            <div>
+                <span>COMPLETE BREED GUIDE</span>
+                <h2>Persian Cat</h2>
+
+                <p>Gentle Nature. Beautiful Long Coat.</p>
+
+                <p>
+                    Persian cats are known for their long,
+                    luxurious coats, round faces and calm
+                    personalities. They generally enjoy
+                    peaceful environments and comfortable
+                    indoor living.
+                </p>
+            </div>
+
+        </div>
+
+        <h3>Persian Cat Characteristics</h3>
+
+        <div class="cat-facts">
+
+            <div>
+                <strong>Size</strong>
+                <span>Medium to Large</span>
+            </div>
+
+            <div>
+                <strong>Weight</strong>
+                <span>Approximately 3–6 kg</span>
+            </div>
+
+            <div>
+                <strong>Life Expectancy</strong>
+                <span>Approximately 12–17 years</span>
+            </div>
+
+            <div>
+                <strong>Coat</strong>
+                <span>Long and Dense</span>
+            </div>
+
+            <div>
+                <strong>Personality</strong>
+                <span>Calm and Affectionate</span>
+            </div>
+
+            <div>
+                <strong>Grooming</strong>
+                <span>Daily Brushing</span>
+            </div>
+
+        </div>
+
+        <div class="cat-information-grid">
+
+            <div>
+                <h4><i class="fa-solid fa-heart"></i> Personality</h4>
+                <p>
+                    Persian cats are generally gentle,
+                    affectionate and relaxed. They often
+                    appreciate quiet surroundings and
+                    comfortable resting places.
+                </p>
+            </div>
+
+            <div>
+                <h4><i class="fa-solid fa-bowl-food"></i> Nutrition</h4>
+                <p>
+                    Provide balanced cat food suitable
+                    for their age and activity level.
+                    Fresh drinking water should always
+                    be available.
+                </p>
+            </div>
+
+            <div>
+                <h4><i class="fa-solid fa-brush"></i> Grooming</h4>
+                <p>
+                    Their long coat needs regular brushing
+                    to prevent tangles and matting.
+                    Keep their eyes and facial area clean.
+                </p>
+            </div>
+
+            <div>
+                <h4><i class="fa-solid fa-dumbbell"></i> Exercise</h4>
+                <p>
+                    Encourage gentle play with interactive
+                    toys, climbing structures and short
+                    play sessions throughout the day.
+                </p>
+            </div>
+
+            <div>
+                <h4><i class="fa-solid fa-house"></i> Living Environment</h4>
+                <p>
+                    A clean, comfortable indoor environment
+                    with quiet resting areas is generally
+                    suitable for Persian cats.
+                </p>
+            </div>
+
+            <div>
+                <h4><i class="fa-solid fa-stethoscope"></i> Health Care</h4>
+                <p>
+                    Ask a veterinarian about eye care,
+                    breathing concerns, dental hygiene
+                    and breed-related health screening.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="cat-faq">
+            <details>
+                <summary>Are Persian cats suitable for indoor living?</summary>
+                <p>
+                    Yes. Persian cats generally adapt well to
+                    indoor environments when provided with
+                    enrichment, attention and comfortable spaces.
+                </p>
+            </details>
+
+            <details>
+                <summary>Do Persian cats need regular grooming?</summary>
+                <p>
+                    Yes. Their long coats require frequent
+                    brushing to reduce tangles and maintain
+                    coat cleanliness.
+                </p>
+            </details>
+        </div>
+
+    </article>
+
+
+    <!-- SIAMESE CAT -->
+    <article class="cat-breed-guide" id="siamese-cat">
+
+        <div class="cat-guide-hero">
+
+            <img src="Images/Siamese Cat.jpeg"
+                 alt="Siamese Cat">
+
+            <div>
+                <span>COMPLETE BREED GUIDE</span>
+                <h2>Siamese Cat</h2>
+
+                <p>Social Nature. Curious Personality.</p>
+
+                <p>
+                    Siamese cats are recognised for their
+                    colour-point coats, blue eyes and
+                    vocal personalities. They are often
+                    active, intelligent and interested
+                    in interacting with people.
+                </p>
+            </div>
+
+        </div>
+
+        <h3>Siamese Cat Characteristics</h3>
+
+        <div class="cat-facts">
+
+            <div>
+                <strong>Size</strong>
+                <span>Medium</span>
+            </div>
+
+            <div>
+                <strong>Weight</strong>
+                <span>Approximately 2.5–5.5 kg</span>
+            </div>
+
+            <div>
+                <strong>Life Expectancy</strong>
+                <span>Approximately 12–20 years</span>
+            </div>
+
+            <div>
+                <strong>Coat</strong>
+                <span>Short and Fine</span>
+            </div>
+
+            <div>
+                <strong>Personality</strong>
+                <span>Social and Vocal</span>
+            </div>
+
+            <div>
+                <strong>Grooming</strong>
+                <span>Weekly Brushing</span>
+            </div>
+
+        </div>
+
+        <div class="cat-information-grid">
+
+            <div>
+                <h4><i class="fa-solid fa-heart"></i> Personality</h4>
+                <p>
+                    Siamese cats are often sociable,
+                    curious and communicative. They
+                    enjoy interaction and companionship.
+                </p>
+            </div>
+
+            <div>
+                <h4><i class="fa-solid fa-bowl-food"></i> Nutrition</h4>
+                <p>
+                    Provide complete and balanced cat food.
+                    Monitor portions and maintain a
+                    consistent feeding routine.
+                </p>
+            </div>
+
+            <div>
+                <h4><i class="fa-solid fa-brush"></i> Grooming</h4>
+                <p>
+                    Their short coat generally needs
+                    occasional brushing. Regular nail
+                    trimming and dental care are useful.
+                </p>
+            </div>
+
+            <div>
+                <h4><i class="fa-solid fa-dumbbell"></i> Exercise</h4>
+                <p>
+                    Offer puzzle toys, climbing spaces,
+                    interactive games and activities
+                    that encourage exploration.
+                </p>
+            </div>
+
+            <div>
+                <h4><i class="fa-solid fa-house"></i> Living Environment</h4>
+                <p>
+                    Siamese cats benefit from a stimulating
+                    indoor environment with companionship
+                    and opportunities for play.
+                </p>
+            </div>
+
+            <div>
+                <h4><i class="fa-solid fa-stethoscope"></i> Health Care</h4>
+                <p>
+                    Schedule regular veterinary examinations.
+                    Discuss dental health and inherited
+                    conditions with your veterinarian.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="cat-faq">
+            <details>
+                <summary>Are Siamese cats active?</summary>
+                <p>
+                    They are generally energetic and enjoy
+                    interactive play, climbing and exploring.
+                </p>
+            </details>
+
+            <details>
+                <summary>Do Siamese cats enjoy companionship?</summary>
+                <p>
+                    Many Siamese cats enjoy spending time
+                    with people and may seek regular interaction.
+                </p>
+            </details>
+        </div>
+
+    </article>
+
+
+    <!-- MAINE COON -->
+    <article class="cat-breed-guide" id="maine-coon">
+
+        <div class="cat-guide-hero">
+
+            <img src="Images/Maine Coon.jpeg"
+                 alt="Maine Coon Cat">
+
+            <div>
+                <span>COMPLETE BREED GUIDE</span>
+                <h2>Maine Coon</h2>
+
+                <p>Big Personality. Gentle Companion.</p>
+
+                <p>
+                    Maine Coons are one of the largest
+                    domestic cat breeds. They are known
+                    for their long coats, bushy tails,
+                    intelligence and friendly nature.
+                </p>
+            </div>
+
+        </div>
+
+        <h3>Maine Coon Characteristics</h3>
+
+        <div class="cat-facts">
+
+            <div>
+                <strong>Size</strong>
+                <span>Large</span>
+            </div>
+
+            <div>
+                <strong>Weight</strong>
+                <span>Approximately 4–8 kg</span>
+            </div>
+
+            <div>
+                <strong>Life Expectancy</strong>
+                <span>Approximately 12–15 years</span>
+            </div>
+
+            <div>
+                <strong>Coat</strong>
+                <span>Long and Thick</span>
+            </div>
+
+            <div>
+                <strong>Personality</strong>
+                <span>Friendly and Intelligent</span>
+            </div>
+
+            <div>
+                <strong>Grooming</strong>
+                <span>Regular Brushing</span>
+            </div>
+
+        </div>
+
+        <div class="cat-information-grid">
+
+            <div>
+                <h4><i class="fa-solid fa-heart"></i> Personality</h4>
+                <p>
+                    Maine Coons are often friendly,
+                    intelligent and playful. Many enjoy
+                    spending time with their families.
+                </p>
+            </div>
+
+            <div>
+                <h4><i class="fa-solid fa-bowl-food"></i> Nutrition</h4>
+                <p>
+                    Offer balanced food appropriate
+                    for their size, age and activity.
+                    Monitor feeding portions.
+                </p>
+            </div>
+
+            <div>
+                <h4><i class="fa-solid fa-brush"></i> Grooming</h4>
+                <p>
+                    Their thick coat needs regular
+                    brushing, especially around the
+                    underside and areas prone to tangles.
+                </p>
+            </div>
+
+            <div>
+                <h4><i class="fa-solid fa-dumbbell"></i> Exercise</h4>
+                <p>
+                    Provide sturdy cat trees, interactive
+                    toys and opportunities for climbing
+                    and exploration.
+                </p>
+            </div>
+
+            <div>
+                <h4><i class="fa-solid fa-house"></i> Living Environment</h4>
+                <p>
+                    Give them enough room to move,
+                    comfortable resting areas and
+                    appropriately sized accessories.
+                </p>
+            </div>
+
+            <div>
+                <h4><i class="fa-solid fa-stethoscope"></i> Health Care</h4>
+                <p>
+                    Discuss screening for heart and
+                    joint conditions with a qualified
+                    veterinarian.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="cat-faq">
+            <details>
+                <summary>Are Maine Coons large cats?</summary>
+                <p>
+                    Yes. They are a large domestic cat breed
+                    and often have a substantial build.
+                </p>
+            </details>
+
+            <details>
+                <summary>Do Maine Coons need grooming?</summary>
+                <p>
+                    Yes. Regular brushing helps keep their
+                    long coat clean and free from tangles.
+                </p>
+            </details>
+        </div>
+
+    </article>
+
+
+    <!-- BENGAL CAT -->
+    <article class="cat-breed-guide" id="bengal-cat">
+
+        <div class="cat-guide-hero">
+
+            <img src="Images/Bengal Cat.jpeg"
+                 alt="Bengal Cat">
+
+            <div>
+                <span>COMPLETE BREED GUIDE</span>
+                <h2>Bengal Cat</h2>
+
+                <p>Wild Looks. Playful Energy.</p>
+
+                <p>
+                    Bengal cats are known for their
+                    distinctive spotted or marbled coats.
+                    They are generally active, curious
+                    and enjoy interactive activities.
+                </p>
+            </div>
+
+        </div>
+
+        <h3>Bengal Cat Characteristics</h3>
+
+        <div class="cat-facts">
+
+            <div>
+                <strong>Size</strong>
+                <span>Medium to Large</span>
+            </div>
+
+            <div>
+                <strong>Weight</strong>
+                <span>Approximately 3.5–7 kg</span>
+            </div>
+
+            <div>
+                <strong>Life Expectancy</strong>
+                <span>Approximately 12–16 years</span>
+            </div>
+
+            <div>
+                <strong>Coat</strong>
+                <span>Short and Patterned</span>
+            </div>
+
+            <div>
+                <strong>Personality</strong>
+                <span>Active and Curious</span>
+            </div>
+
+            <div>
+                <strong>Grooming</strong>
+                <span>Occasional Brushing</span>
+            </div>
+
+        </div>
+
+        <div class="cat-information-grid">
+
+            <div>
+                <h4><i class="fa-solid fa-heart"></i> Personality</h4>
+                <p>
+                    Bengal cats are often curious,
+                    confident and energetic. They enjoy
+                    exploration and interactive play.
+                </p>
+            </div>
+
+            <div>
+                <h4><i class="fa-solid fa-bowl-food"></i> Nutrition</h4>
+                <p>
+                    Feed a complete and balanced diet
+                    appropriate for their life stage.
+                    Provide fresh drinking water.
+                </p>
+            </div>
+
+            <div>
+                <h4><i class="fa-solid fa-brush"></i> Grooming</h4>
+                <p>
+                    Their short coat is relatively easy
+                    to maintain. Include regular nail
+                    and dental care.
+                </p>
+            </div>
+
+            <div>
+                <h4><i class="fa-solid fa-dumbbell"></i> Exercise</h4>
+                <p>
+                    Offer climbing structures, puzzle
+                    feeders and interactive toys to
+                    support their active nature.
+                </p>
+            </div>
+
+            <div>
+                <h4><i class="fa-solid fa-house"></i> Living Environment</h4>
+                <p>
+                    Provide a secure and enriching
+                    environment with suitable climbing
+                    and play opportunities.
+                </p>
+            </div>
+
+            <div>
+                <h4><i class="fa-solid fa-stethoscope"></i> Health Care</h4>
+                <p>
+                    Ask your veterinarian about
+                    appropriate breed-related health
+                    screening and routine checkups.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="cat-faq">
+            <details>
+                <summary>Are Bengal cats playful?</summary>
+                <p>
+                    Yes. They are generally active cats
+                    that enjoy games, climbing and
+                    environmental enrichment.
+                </p>
+            </details>
+
+            <details>
+                <summary>Do Bengal cats need much grooming?</summary>
+                <p>
+                    Their short coat usually requires
+                    less brushing than long-haired breeds.
+                </p>
+            </details>
+        </div>
+
+    </article>
+
+
+    <!-- BRITISH SHORTHAIR -->
+    <article class="cat-breed-guide" id="british-shorthair">
+
+        <div class="cat-guide-hero">
+
+            <img src="Images/British Shorthair.jpeg"
+                 alt="British Shorthair Cat">
+
+            <div>
+                <span>COMPLETE BREED GUIDE</span>
+                <h2>British Shorthair</h2>
+
+                <p>Calm Nature. Charming Appearance.</p>
+
+                <p>
+                    British Shorthair cats are recognised
+                    for their round faces, dense coats
+                    and sturdy appearance. They are
+                    often calm and independent.
+                </p>
+            </div>
+
+        </div>
+
+        <h3>British Shorthair Characteristics</h3>
+
+        <div class="cat-facts">
+
+            <div>
+                <strong>Size</strong>
+                <span>Medium to Large</span>
+            </div>
+
+            <div>
+                <strong>Weight</strong>
+                <span>Approximately 3–8 kg</span>
+            </div>
+
+            <div>
+                <strong>Life Expectancy</strong>
+                <span>Approximately 12–20 years</span>
+            </div>
+
+            <div>
+                <strong>Coat</strong>
+                <span>Short and Dense</span>
+            </div>
+
+            <div>
+                <strong>Personality</strong>
+                <span>Calm and Independent</span>
+            </div>
+
+            <div>
+                <strong>Grooming</strong>
+                <span>Weekly Brushing</span>
+            </div>
+
+        </div>
+
+        <div class="cat-information-grid">
+
+            <div>
+                <h4><i class="fa-solid fa-heart"></i> Personality</h4>
+                <p>
+                    British Shorthairs are often relaxed,
+                    affectionate and independent.
+                    They generally appreciate routine.
+                </p>
+            </div>
+
+            <div>
+                <h4><i class="fa-solid fa-bowl-food"></i> Nutrition</h4>
+                <p>
+                    Provide balanced meals and monitor
+                    portions to support a healthy
+                    body condition.
+                </p>
+            </div>
+
+            <div>
+                <h4><i class="fa-solid fa-brush"></i> Grooming</h4>
+                <p>
+                    Brush their dense coat regularly
+                    and maintain routine nail and
+                    dental care.
+                </p>
+            </div>
+
+            <div>
+                <h4><i class="fa-solid fa-dumbbell"></i> Exercise</h4>
+                <p>
+                    Encourage daily play using toys,
+                    climbing areas and short interactive
+                    activities.
+                </p>
+            </div>
+
+            <div>
+                <h4><i class="fa-solid fa-house"></i> Living Environment</h4>
+                <p>
+                    A calm indoor space with resting
+                    areas, scratching posts and toys
+                    can suit their lifestyle.
+                </p>
+            </div>
+
+            <div>
+                <h4><i class="fa-solid fa-stethoscope"></i> Health Care</h4>
+                <p>
+                    Ask your veterinarian about
+                    heart screening, weight management
+                    and dental health.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="cat-faq">
+            <details>
+                <summary>Are British Shorthair cats independent?</summary>
+                <p>
+                    They are often comfortable spending
+                    some time independently while still
+                    enjoying companionship.
+                </p>
+            </details>
+
+            <details>
+                <summary>Do British Shorthairs need brushing?</summary>
+                <p>
+                    Yes. Regular brushing helps maintain
+                    their dense coat and remove loose hair.
+                </p>
+            </details>
+        </div>
+
+    </article>
+
+
+    <!-- RAGDOLL -->
+    <article class="cat-breed-guide" id="ragdoll">
+
+        <div class="cat-guide-hero">
+
+            <img src="Images/Ragdoll Cat.jpeg"
+                 alt="Ragdoll Cat">
+
+            <div>
+                <span>COMPLETE BREED GUIDE</span>
+                <h2>Ragdoll Cat</h2>
+
+                <p>Gentle Companion. Beautiful Blue Eyes.</p>
+
+                <p>
+                    Ragdolls are known for their striking
+                    blue eyes, soft coats and affectionate
+                    personalities. They often enjoy
+                    companionship and relaxed play.
+                </p>
+            </div>
+
+        </div>
+
+        <h3>Ragdoll Cat Characteristics</h3>
+
+        <div class="cat-facts">
+
+            <div>
+                <strong>Size</strong>
+                <span>Large</span>
+            </div>
+
+            <div>
+                <strong>Weight</strong>
+                <span>Approximately 4–9 kg</span>
+            </div>
+
+            <div>
+                <strong>Life Expectancy</strong>
+                <span>Approximately 12–17 years</span>
+            </div>
+
+            <div>
+                <strong>Coat</strong>
+                <span>Semi-long and Silky</span>
+            </div>
+
+            <div>
+                <strong>Personality</strong>
+                <span>Gentle and Affectionate</span>
+            </div>
+
+            <div>
+                <strong>Grooming</strong>
+                <span>Regular Brushing</span>
+            </div>
+
+        </div>
+
+        <div class="cat-information-grid">
+
+            <div>
+                <h4><i class="fa-solid fa-heart"></i> Personality</h4>
+                <p>
+                    Ragdolls are often friendly,
+                    gentle and people-oriented.
+                    Many enjoy relaxed companionship.
+                </p>
+            </div>
+
+            <div>
+                <h4><i class="fa-solid fa-bowl-food"></i> Nutrition</h4>
+                <p>
+                    Provide balanced cat food that
+                    meets their nutritional needs.
+                    Monitor portions and activity.
+                </p>
+            </div>
+
+            <div>
+                <h4><i class="fa-solid fa-brush"></i> Grooming</h4>
+                <p>
+                    Brush their semi-long coat
+                    regularly to remove loose hair
+                    and reduce tangles.
+                </p>
+            </div>
+
+            <div>
+                <h4><i class="fa-solid fa-dumbbell"></i> Exercise</h4>
+                <p>
+                    Encourage gentle play, interactive
+                    toys and suitable climbing
+                    opportunities.
+                </p>
+            </div>
+
+            <div>
+                <h4><i class="fa-solid fa-house"></i> Living Environment</h4>
+                <p>
+                    Create a safe indoor environment
+                    with comfortable sleeping spaces
+                    and daily companionship.
+                </p>
+            </div>
+
+            <div>
+                <h4><i class="fa-solid fa-stethoscope"></i> Health Care</h4>
+                <p>
+                    Discuss heart health, dental care
+                    and appropriate genetic screening
+                    with your veterinarian.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="cat-faq">
+            <details>
+                <summary>Are Ragdoll cats affectionate?</summary>
+                <p>
+                    Many Ragdolls enjoy human companionship
+                    and are known for their gentle nature.
+                </p>
+            </details>
+
+            <details>
+                <summary>Do Ragdolls need grooming?</summary>
+                <p>
+                    Yes. Regular brushing helps maintain
+                    their semi-long coat.
+                </p>
+            </details>
+        </div>
+
+    </article>
+
+</section>
+
+
+<!-- CAT CARE SECTION -->
+<section class="cat-care-section" id="cat-care">
+
+    <div class="cat-care-content">
+
+        <span>CARE THAT MAKES A DIFFERENCE</span>
+
+        <h2>Happy Cats Start with Loving Care</h2>
+
+        <p>
+            From healthy nutrition to grooming,
+            playtime and comfortable surroundings,
+            discover simple ways to support your
+            cat's everyday well-being.
+        </p>
+
+        <div class="cat-care-points">
+
+            <div>
+                <i class="fa-solid fa-bowl-food"></i>
+                <div>
+                    <h3>Healthy Nutrition</h3>
+                    <p>
+                        Offer complete and balanced cat food,
+                        fresh water and suitable feeding portions.
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-brush"></i>
+                <div>
+                    <h3>Grooming & Hygiene</h3>
+                    <p>
+                        Maintain coat cleanliness, nail care,
+                        dental hygiene and a clean litter box.
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-fish"></i>
+                <div>
+                    <h3>Play & Enrichment</h3>
+                    <p>
+                        Use interactive toys, scratching posts
+                        and climbing spaces to encourage activity.
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-house"></i>
+                <div>
+                    <h3>Comfortable Living</h3>
+                    <p>
+                        Provide safe resting places, clean
+                        surroundings and a calm home environment.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="cat-care-image">
+        <img src="Images/Cat Care.jpeg"
+             alt="Cat receiving loving care">
+    </div>
+
+</section>
+
+
+<!-- VETERINARY SECTION -->
+<section class="cat-veterinary-section" id="cat-veterinary">
+
+    <div class="cat-vet-image">
+        <img src="Images/Cat Veterinary.jpeg"
+             alt="Veterinarian examining a cat">
+    </div>
+
+    <div class="cat-vet-content">
+
+        <span>VETERINARY & CAT WELLNESS</span>
+
+        <h2>Keep Your Feline Friend Healthy</h2>
+
+        <p>
+            Regular veterinary care is an important
+            part of responsible cat ownership.
+            Professional checkups help monitor
+            your cat's health at every life stage.
+        </p>
+
+        <div class="cat-vet-list">
+
+            <div>
+                <i class="fa-solid fa-stethoscope"></i>
+                <span>
+                    <strong>Routine Health Checkups</strong>
+                    Schedule regular examinations with
+                    a qualified veterinarian.
+                </span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-syringe"></i>
+                <span>
+                    <strong>Vaccination & Prevention</strong>
+                    Follow professional advice about
+                    vaccinations and parasite prevention.
+                </span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-tooth"></i>
+                <span>
+                    <strong>Dental Care</strong>
+                    Maintain oral hygiene and discuss
+                    dental examinations with your vet.
+                </span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-heart-pulse"></i>
+                <span>
+                    <strong>Health Monitoring</strong>
+                    Monitor appetite, behaviour, litter
+                    habits and activity for changes.
+                </span>
+            </div>
+
+        </div>
+
+        <p class="cat-vet-note">
+            PetShoppy provides general cat-care information.
+            For diagnosis, treatment and medical advice,
+            always consult a qualified veterinarian.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer class="main-footer">
+
+    <div class="footer-container">
+
+        <!-- COLUMN 1: BRAND -->
+        <div class="footer-column footer-brand">
+
+            <a href="index.html" class="logo">
+      <img src="Images/Logo Image1.png" alt="PetShoppy Logo">
+
+      <span class="footer-logo-text">
+            Pet<span>Shoppy</span>
+      </span>
+</a>
+
+            <p class="footer-tagline">
+                Everything Your Pet Loves
+            </p>
+
+            <p class="footer-description">
+                Your one-stop destination for quality pet food,
+                toys, accessories and everything your furry
+                friends need to stay happy and healthy.
+            </p>
+
+
+            <div class="social-links">
+                <a href="#" class="social-btn" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" class="social-btn" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" class="social-btn" aria-label="Pinterest">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+
+                <a href="#" class="social-btn" aria-label="Twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- COLUMN 2: EXPLORE -->
+        <div class="footer-column">
+
+            <h3>Explore</h3>
+
+            <ul class="footer-links">
+        <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home-Classic </a></li>
+        <li><a href="home2.html"><i class="fa-solid fa-angle-right"></i> Home-Premium </a></li>
+        <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+        <li><a href="products.html"><i class="fa-solid fa-angle-right"></i> Products </a></li>
+        <li><a href="Brands.html"><i class="fa-solid fa-angle-right"></i> Brands </a></li>
+        <li><a href="services.html"><i class="fa-solid fa-angle-right"></i> Services </a></li>
+        <li><a href="Blog.html"><i class="fa-solid fa-angle-right"></i> Blog</a></li>
+    </ul>
+        </div>
+
+        <!-- COLUMN 3: CUSTOMER SUPPORT -->
+        <div class="footer-column">
+
+            <h3>Customer Support</h3>
+
+            <ul class="footer-links">
+        <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Help & Support</a></li>
+        <li><a href="#"><i class="fa-solid fa-angle-right"></i> FAQs</a></li>
+        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Shipping Information</a></li>
+        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Return & Refund Policy</a></li>
+        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Privacy Policy</a></li>
+        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Terms & Conditions</a></li>
+    </ul>
+
+        </div>
+
+        <!-- COLUMN 4: CONTACT -->
+        <div class="footer-column">
+
+            <h3>Contact Us</h3>
+
+            <ul class="contact-list">
+
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:hello@petshoppy.com">
+                        hello@petshoppy.com
+                    </a>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+919876543210">
+                        +91 98765 43210
+                    </a>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Your Business Address, India</span>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-clock"></i>
+                    <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 PetShoppy. All Rights Reserved.
+        </p>
+
+        <div class="legal-links">
+            <a href="#privacy">Privacy Policy</a>
+            <span class="separator">•</span>
+            <a href="#terms">Terms &amp; Conditions</a>
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
