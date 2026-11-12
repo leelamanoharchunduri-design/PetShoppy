@@ -1195,7 +1195,7 @@ body.dark .premium-blog-card:hover {
             rgba(255, 255, 255, 0.80) 48%,
             rgba(255, 255, 255, 0.10) 100%
         ),
-        url("Images/premium-home-banner1.jpeg");
+        url("premium-home-banner1.jpeg");
 
     background-size: cover;
     background-position: center;
