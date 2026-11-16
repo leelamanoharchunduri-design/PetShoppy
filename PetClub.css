@@ -476,3 +476,51 @@
     }
 }
 
+
+
+
+
+
+
+/* =====================================
+   PET CLUB - DARK MODE SECTION BACKGROUNDS
+===================================== */
+
+body.dark {
+    background: #000000 !important;
+}
+
+/* Main sections */
+body.dark .club-hero,
+body.dark .section,
+body.dark .plans-section,
+body.dark .care-section,
+body.dark .registration-section {
+    background: #000000 !important;
+}
+
+/* Cards and content containers */
+body.dark .benefit-card,
+body.dark .plan-card,
+body.dark .care-card,
+body.dark .faq-question,
+body.dark .registration-form {
+    background: #000000 !important;
+}
+
+/* FAQ borders */
+body.dark .faq-item {
+    background: #000000 !important;
+    border-color: #333333 !important;
+}
+
+/* Keep registration banner dark */
+body.dark .registration-section {
+    background: #000000 !important;
+}
+
+/* Ensure the footer is black */
+body.dark .main-footer {
+    background: #000000 !important;
+}
+

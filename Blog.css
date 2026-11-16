@@ -1919,3 +1919,36 @@ body.dark .blog-light-btn:hover {
     background: #FF8A65 !important;
     color: #FFFFFF !important;
 }
+
+.blog-intro h2 span {
+    color: #FF8A65 !important;
+}
+.blog-filter-section .blog-section-heading h2 span {
+    color: #147D78 !important;
+}
+.product-guide-section .blog-section-heading h2 span {
+    color: #147D78 !important;
+}
+.seasonal-content h2 span {
+    color: #147D78 !important;
+}
+.expert-section .blog-section-heading h2 span {
+    color: #147D78 !important;
+}
+.newsletter-section .newsletter-box h2 span {
+    color: #FF8A65 !important;
+}
+/* PetShoppy logo - Pet color in dark mode */
+body.dark .main-header .logo-text,
+body.dark .main-footer .footer-logo-text {
+    color: #147D78 !important;
+}
+body.dark .main-footer .footer-tagline {
+    color: #147D78 !important;
+}
+body.dark .main-footer .footer-logo-text span {
+    color: #FF8A65 !important;
+}
+body.dark .blog-eyebrow {
+    color: #147D78 !important;
+}

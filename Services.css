@@ -2572,3 +2572,11 @@ body.dark .booking-info {
 .services-faq .faq-heading h2 span {
     color: #FF8A65 !important;
 }
+/* PetShoppy logo - Pet color in dark mode */
+body.dark .main-header .logo-text,
+body.dark .main-footer .footer-logo-text {
+    color: #147D78 !important;
+}
+body.dark .main-footer .footer-tagline {
+    color: #147D78 !important;
+}
