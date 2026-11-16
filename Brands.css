@@ -1302,4 +1302,164 @@ body.dark .cart-close:hover {
 
 
 
+/* =========================================
+   PETSHOPPY BRANDS PAGE - DARK MODE
+   BLACK BACKGROUND FOR ALL SECTIONS
+========================================= */
 
+body.dark {
+    background: #000000 !important;
+    color: #FFFFFF;
+}
+
+/* Header and navigation */
+body.dark .main-header,
+body.dark .header-container,
+body.dark .navigation,
+body.dark .dropdown-menu {
+    background-color: #000000 !important;
+}
+
+/* Hero section */
+body.dark .brands-hero,
+body.dark .brands-hero-content {
+    background-color: #000000 !important;
+}
+
+/* Brand introduction */
+body.dark .brands-intro,
+body.dark .brand-quick-grid,
+body.dark .brand-quick-card {
+    background-color: #000000 !important;
+}
+
+/* Individual brand sections */
+body.dark .brand-section,
+body.dark .alternate-brand-section,
+body.dark .brand-heading,
+body.dark .brand-description,
+body.dark .brand-description-content,
+body.dark .brand-product-heading {
+    background-color: #000000 !important;
+}
+
+/* Brand product cards */
+body.dark .brand-product-grid,
+body.dark .brand-product-card,
+body.dark .brand-product-info,
+body.dark .brand-product-image {
+    background-color: #000000 !important;
+}
+
+/* Brand tags */
+body.dark .brand-tags,
+body.dark .brand-tags span {
+    background-color: #000000 !important;
+}
+
+/* Benefits section */
+body.dark .brand-benefits,
+body.dark .brand-benefits-grid,
+body.dark .brand-benefit-card {
+    background-color: #000000 !important;
+}
+
+/* Final CTA */
+body.dark .brands-cta,
+body.dark .brands-cta-content,
+body.dark .brands-cta-icon {
+    background-color: #000000 !important;
+}
+
+/* Cart overlay and drawer */
+body.dark .cart-overlay {
+    background-color: rgba(0, 0, 0, 0.85) !important;
+}
+
+body.dark .cart-drawer,
+body.dark .cart-header,
+body.dark .cart-items,
+body.dark .cart-footer,
+body.dark .cart-total-row {
+    background-color: #000000 !important;
+}
+
+/* Footer */
+body.dark .main-footer,
+body.dark .footer-container,
+body.dark .footer-column,
+body.dark .footer-bottom {
+    background-color: #000000 !important;
+}
+
+/* Text visibility */
+body.dark .brands-hero,
+body.dark .brands-hero h1,
+body.dark .brands-hero p,
+body.dark .brands-intro,
+body.dark .brand-section,
+body.dark .brand-section h2,
+body.dark .brand-section h3,
+body.dark .brand-section h4,
+body.dark .brand-section p,
+body.dark .brand-section strong,
+body.dark .brand-benefits,
+body.dark .brand-benefits h2,
+body.dark .brand-benefit-card h3,
+body.dark .brand-benefit-card p,
+body.dark .brands-cta,
+body.dark .brands-cta h2,
+body.dark .brands-cta p,
+body.dark .cart-drawer,
+body.dark .cart-drawer h2,
+body.dark .main-footer {
+    color: #FFFFFF;
+}
+
+/* PetShoppy brand colors */
+body.dark .brands-hero h1 span,
+body.dark .section-label,
+body.dark .brand-number,
+body.dark .product-category,
+body.dark .brand-quick-card strong {
+    color: #147D78 !important;
+}
+
+body.dark .brand-heading-icon i,
+body.dark .brand-benefit-card i {
+    color: #FF8A65 !important;
+}
+
+/* Form and quantity controls, if present */
+body.dark .cart-drawer input,
+body.dark .cart-drawer select {
+    background-color: #000000 !important;
+    color: #FFFFFF !important;
+    border-color: #147D78 !important;
+}
+
+/* Keep product and brand images visible */
+body.dark .brand-product-image img,
+body.dark .brand-description-image img,
+body.dark .brands-hero-image img {
+    background-color: transparent !important;
+}
+
+
+
+/* Featured Pet Brands heading in coral */
+.brands-intro .section-heading h2 span {
+    color: #FF8A65 !important;
+}
+/* Brand description heading - coral text */
+.brand-description-content h3 span {
+    color: #FF8A65 !important;
+}
+/* PetShoppy benefits heading - coral text */
+.brand-benefits .section-heading h2 span {
+    color: #FF8A65 !important;
+}
+/* Brands hero heading - coral in dark mode */
+body.dark .brands-hero-content h1 span {
+    color: #FF8A65 !important;
+}

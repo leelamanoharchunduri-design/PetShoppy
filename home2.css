@@ -1195,9 +1195,139 @@ body.dark .premium-blog-card:hover {
             rgba(255, 255, 255, 0.80) 48%,
             rgba(255, 255, 255, 0.10) 100%
         ),
-        url("premium-home-banner1.jpeg");
+        url("Images/premium-home-banner1.jpeg");
 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+
+.premium-hero {
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 60px 8%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.95) 0%,
+            rgba(255, 255, 255, 0.80) 40%,
+            rgba(255, 255, 255, 0.10) 100%
+        ),
+        url("Images/premium-home-banner1.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.premium-hero-content {
+    width: 48%;
+    max-width: 650px;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.premium-hero-content h1 {
+    font-size: clamp(36px, 4vw, 58px);
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.premium-hero-content p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.premium-hero-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .premium-hero {
+        min-height: calc(100vh - 90px);
+        padding: 40px 5%;
+    }
+
+    .premium-hero-content {
+        width: 60%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .premium-hero {
+        min-height: calc(100vh - 80px);
+        padding: 30px 20px;
+        background-position: center;
+    }
+
+    .premium-hero-content {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+        text-align: left;
+    }
+
+    .premium-hero-content h1 {
+        font-size: 34px;
+    }
+
+    .premium-hero-content p {
+        font-size: 15px;
+    }
+
+    .premium-hero-buttons {
+        justify-content: flex-start;
+    }
+}
+
+
+
+
+/* Force Premium Hero Image to Show in Dark Mode */
+body.dark .premium-hero,
+body.dark-mode .premium-hero {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.20) 0%,
+            rgba(0, 0, 0, 0.10) 50%,
+            rgba(0, 0, 0, 0.05) 100%
+        ),
+        url("./Images/premium-home-banner1.jpeg")
+        center center / cover no-repeat !important;
+
+    background-color: transparent !important;
+}
+
+/* Remove gap between label and heading */
+.premium-hero-label {
+    display: block;
+    margin-bottom: 0 !important;
+    padding-bottom: 0;
+}
+
+.premium-hero-content h1 {
+    margin-top: 0 !important;
+}
+/* Premium Shop by Pet Heading Colors */
+.premium-heading .premium-label {
+    color: #147D78 !important;
+}
+
+.premium-heading h2 span {
+    color: #FF8A65 !important;
 }

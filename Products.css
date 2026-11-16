@@ -14,7 +14,7 @@
 
 .products-hero-content > span,
 .products-heading > span {
-    color: #FF8A65;
+    color: teal;
     font-size: 13px;
     font-weight: 800;
     letter-spacing: 2px;
@@ -1096,4 +1096,131 @@ body.dark .filter-title button {
 
 .product-card[hidden] {
     display: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   PRODUCT PAGE - BLACK BACKGROUNDS IN DARK MODE
+========================================= */
+
+/* Main page sections */
+body.dark .products-hero,
+body.dark .shop-pet-section,
+body.dark .shop-category-section,
+body.dark .products-main-section,
+body.dark .shopping-promise,
+body.dark .checkout-section {
+    background: #000000 !important;
+    background-color: #000000 !important;
+}
+
+/* Header */
+body.dark .main-header,
+body.dark .header-container {
+    background: #000000 !important;
+    background-color: #000000 !important;
+}
+
+/* Product hero content and image container */
+body.dark .products-hero-content,
+body.dark .products-hero-image {
+    background: #000000 !important;
+}
+
+/* Section heading containers */
+body.dark .products-heading,
+body.dark .products-results-heading {
+    background: #000000 !important;
+}
+
+/* Pet type cards */
+body.dark .pet-type-card {
+    background: #000000 !important;
+    border-color: #147D78 !important;
+}
+
+/* Category tiles */
+body.dark .category-tile {
+    background: #000000 !important;
+    border-color: #147D78 !important;
+}
+
+/* Product layout and sidebar */
+body.dark .product-layout,
+body.dark .product-filters,
+body.dark .products-results,
+body.dark .product-toolbar {
+    background: #000000 !important;
+}
+
+/* Filter groups */
+body.dark .filter-group,
+body.dark .filter-title {
+    background: #000000 !important;
+}
+
+/* Product cards */
+body.dark .product-card,
+body.dark .product-info,
+body.dark .product-image {
+    background: #000000 !important;
+}
+
+/* Search and sort controls */
+body.dark .product-search,
+body.dark .product-search input,
+body.dark #sortProducts {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+}
+
+/* Checkout form */
+body.dark .checkout-container,
+body.dark #checkoutForm,
+body.dark .checkout-grid input,
+body.dark .checkout-grid textarea,
+body.dark .checkout-payment-options label,
+body.dark .checkout-total {
+    background: #000000 !important;
+}
+
+/* Cart and wishlist drawer */
+body.dark .shop-drawer,
+body.dark .drawer-header,
+body.dark .drawer-items,
+body.dark .drawer-footer {
+    background: #000000 !important;
+}
+
+/* Footer */
+body.dark .main-footer,
+body.dark .footer-container,
+body.dark .footer-column,
+body.dark .footer-bottom {
+    background: #000000 !important;
+}
+
+/* Product and checkout overlays */
+body.dark .shop-overlay {
+    background: rgba(0, 0, 0, 0.85) !important;
+}
+/* Shop by Pet Type heading - coral */
+.shop-pet-section .products-heading h2 span {
+    color: #FF8A65 !important;
+}
+/* Shop by Category heading - coral */
+.shop-category-section .products-heading h2 span {
+    color: #FF8A65 !important;
+}
+/* Shop Pet Products heading - coral */
+.products-main-section .products-heading h2 span {
+    color: #FF8A65 !important;
 }

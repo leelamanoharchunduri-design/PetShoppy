@@ -1609,3 +1609,313 @@ body.dark .blog-light-btn:hover {
 .seasonal-content h2 {
     color: #FF8A65;
 }
+
+
+
+/* =========================================
+   BLOG PAGE - COMPLETE DARK MODE
+========================================= */
+
+body.dark {
+    background: #000000 !important;
+    color: #FFFFFF;
+}
+
+/* Main page sections */
+body.dark .blog-hero,
+body.dark .blog-intro,
+body.dark .blog-filter-section,
+body.dark .product-guide-section,
+body.dark .seasonal-blog-section,
+body.dark .expert-section,
+body.dark .blog-service-cta,
+body.dark .newsletter-section {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+}
+
+/* Header and footer */
+body.dark .main-header,
+body.dark .main-footer,
+body.dark .footer-bottom {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+}
+
+/* Hero section */
+body.dark .blog-hero-text h1,
+body.dark .blog-hero-text p,
+body.dark .blog-hero-highlights,
+body.dark .hero-image-label {
+    color: #FFFFFF !important;
+}
+
+body.dark .blog-eyebrow,
+body.dark .section-eyebrow {
+    color: #147D78 !important;
+}
+
+/* Section headings and descriptions */
+body.dark .blog-intro h2,
+body.dark .blog-section-heading h2,
+body.dark .seasonal-content h2,
+body.dark .newsletter-box h2,
+body.dark .blog-service-cta h2 {
+    color: #FFFFFF !important;
+}
+
+body.dark .blog-intro p,
+body.dark .blog-section-heading p,
+body.dark .seasonal-content p,
+body.dark .expert-disclaimer,
+body.dark .newsletter-box p,
+body.dark .blog-service-cta p {
+    color: #FFFFFF !important;
+}
+
+/* Filter panel */
+body.dark .blog-filter-panel,
+body.dark .blog-filter-group,
+body.dark .blog-search-group {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+}
+
+body.dark .blog-filter-group label,
+body.dark .blog-search-group label,
+body.dark .active-filter-info,
+body.dark #articleCount {
+    color: #FFFFFF !important;
+}
+
+body.dark .blog-filter-panel select,
+body.dark .blog-search-box,
+body.dark .blog-search-box input {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+    border-color: #147D78 !important;
+}
+
+body.dark .blog-filter-panel select option {
+    background: #000000;
+    color: #FFFFFF;
+}
+
+body.dark .blog-search-box i {
+    color: #FF8A65 !important;
+}
+
+body.dark .clear-filter-btn {
+    background: #147D78 !important;
+    color: #FFFFFF !important;
+}
+
+/* Article cards */
+body.dark .blog-card,
+body.dark .blog-card-content {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+    border-color: #147D78 !important;
+}
+
+body.dark .blog-card h3,
+body.dark .blog-card-content h3,
+body.dark .blog-card p,
+body.dark .article-meta,
+body.dark .article-meta span {
+    color: #FFFFFF !important;
+}
+
+body.dark .article-category {
+    background: #147D78 !important;
+    color: #FFFFFF !important;
+}
+
+body.dark .read-article-link {
+    color: #FF8A65 !important;
+}
+
+body.dark .read-article-link:hover {
+    color: #147D78 !important;
+}
+
+/* No articles message */
+body.dark .no-articles-message {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+}
+
+body.dark .no-articles-message h3,
+body.dark .no-articles-message p,
+body.dark .no-articles-message i {
+    color: #FFFFFF !important;
+}
+
+/* Product guide cards */
+body.dark .product-guide-card {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #147D78 !important;
+}
+
+body.dark .product-guide-card h3,
+body.dark .product-guide-card p {
+    color: #FFFFFF !important;
+}
+
+body.dark .product-guide-card a {
+    color: #FF8A65 !important;
+}
+
+body.dark .guide-icon {
+    background: #147D78 !important;
+    color: #FFFFFF !important;
+}
+
+/* Seasonal care section */
+body.dark .seasonal-content,
+body.dark .seasonal-content ul,
+body.dark .seasonal-content li {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+}
+
+body.dark .seasonal-content li i {
+    color: #FF8A65 !important;
+}
+
+/* Expert advice cards */
+body.dark .expert-card {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #147D78 !important;
+}
+
+body.dark .expert-card h3,
+body.dark .expert-card p {
+    color: #FFFFFF !important;
+}
+
+body.dark .expert-card a {
+    color: #FF8A65 !important;
+}
+
+body.dark .expert-icon {
+    background: #147D78 !important;
+    color: #FFFFFF !important;
+}
+
+/* Service CTA */
+body.dark .blog-service-cta,
+body.dark .service-cta-inner {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+}
+
+body.dark .blog-light-btn {
+    background: #147D78 !important;
+    color: #FFFFFF !important;
+}
+
+/* Newsletter */
+body.dark .newsletter-box {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #147D78 !important;
+}
+
+body.dark .newsletter-box small,
+body.dark .newsletter-message {
+    color: #FFFFFF !important;
+}
+
+body.dark .newsletter-icon {
+    background: #147D78 !important;
+    color: #FFFFFF !important;
+}
+
+body.dark .newsletter-form input {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #147D78 !important;
+}
+
+body.dark .newsletter-form input::placeholder {
+    color: #FFFFFF !important;
+    opacity: 0.7;
+}
+
+body.dark .newsletter-form button {
+    background: #147D78 !important;
+    color: #FFFFFF !important;
+}
+
+/* Header navigation */
+body.dark .navigation .nav-link,
+body.dark .header-actions .circle-btn {
+    color: #FFFFFF !important;
+}
+
+body.dark .dropdown-menu {
+    background: #000000 !important;
+    border: 1px solid #147D78 !important;
+}
+
+body.dark .dropdown-menu a {
+    color: #FFFFFF !important;
+}
+
+body.dark .dropdown-menu a:hover {
+    background: #147D78 !important;
+    color: #FFFFFF !important;
+}
+
+/* Footer */
+body.dark .main-footer h3,
+body.dark .main-footer p,
+body.dark .main-footer a,
+body.dark .main-footer li,
+body.dark .main-footer span,
+body.dark .main-footer i {
+    color: #FFFFFF !important;
+}
+
+body.dark .main-footer a:hover {
+    color: #FF8A65 !important;
+}
+
+body.dark .social-btn {
+    background: #147D78 !important;
+    color: #FFFFFF !important;
+}
+
+body.dark .footer-bottom {
+    border-top: 1px solid #147D78 !important;
+}
+
+/* General text and remaining containers */
+body.dark .blog-container,
+body.dark .blog-hero-content,
+body.dark .blog-intro-inner,
+body.dark .seasonal-inner,
+body.dark .service-cta-inner {
+    color: #FFFFFF;
+}
+
+/* Buttons */
+body.dark .blog-primary-btn {
+    background: #147D78 !important;
+    color: #FFFFFF !important;
+}
+
+body.dark .blog-outline-btn {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #FF8A65 !important;
+}
+
+body.dark .blog-primary-btn:hover,
+body.dark .blog-light-btn:hover {
+    background: #FF8A65 !important;
+    color: #FFFFFF !important;
+}

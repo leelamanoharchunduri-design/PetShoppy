@@ -1115,3 +1115,122 @@ body.dark .back-products-btn {
     color: #FF8A65;
 }
 
+
+
+/* =====================================
+   PRODUCT DETAILS - DARK MODE
+   ALL PAGE BACKGROUNDS BLACK
+===================================== */
+
+body.dark {
+    background-color: #000000 !important;
+    color: #FFFFFF;
+}
+
+/* Header */
+body.dark .main-header,
+body.dark .header-container {
+    background-color: #000000 !important;
+}
+
+/* Promotional banner */
+body.dark .product-promo-banner,
+body.dark .promo-content,
+body.dark .promo-image {
+    background-color: #000000 !important;
+}
+
+/* Main product details area */
+body.dark .product-details-page,
+body.dark .details-breadcrumb,
+body.dark .product-details-container,
+body.dark .details-gallery,
+body.dark .main-product-image,
+body.dark .thumbnail-gallery,
+body.dark .product-details-info {
+    background-color: #000000 !important;
+}
+
+/* Product information */
+body.dark .details-category,
+body.dark .details-rating,
+body.dark .details-price,
+body.dark .details-short-description,
+body.dark .details-specifications,
+body.dark .details-specifications > div,
+body.dark .details-features,
+body.dark .quantity-section,
+body.dark .quantity-control,
+body.dark .details-subtotal,
+body.dark .details-actions,
+body.dark .details-message {
+    background-color: #000000 !important;
+}
+
+/* Full description */
+body.dark .product-description-section,
+body.dark .description-heading,
+body.dark .description-content,
+body.dark .information-table,
+body.dark .information-table > div {
+    background-color: #000000 !important;
+}
+
+/* Product benefits */
+body.dark .product-benefits,
+body.dark .product-section-heading,
+body.dark .benefits-grid,
+body.dark .benefit-card,
+body.dark .benefit-icon {
+    background-color: #000000 !important;
+}
+
+/* Recommended products */
+body.dark .recommended-products,
+body.dark .recommended-grid,
+body.dark .recommended-card,
+body.dark .recommended-info {
+    background-color: #000000 !important;
+}
+
+/* Footer */
+body.dark .main-footer,
+body.dark .footer-container,
+body.dark .footer-column,
+body.dark .footer-bottom {
+    background-color: #000000 !important;
+}
+
+/* Text visibility */
+body.dark .product-details-page,
+body.dark .product-details-page h1,
+body.dark .product-details-page h2,
+body.dark .product-details-page h3,
+body.dark .product-details-page p,
+body.dark .product-details-page span,
+body.dark .product-description-section,
+body.dark .product-benefits,
+body.dark .recommended-products,
+body.dark .main-footer {
+    color: #FFFFFF;
+}
+
+/* Input fields */
+body.dark .quantity-control input {
+    background-color: #000000 !important;
+    color: #FFFFFF !important;
+    border-color: #147D78;
+}
+
+/* Keep PetShoppy brand colors */
+body.dark .promo-content h2 span,
+body.dark .product-section-heading span,
+body.dark .description-heading span {
+    color: #147D78;
+}
+
+body.dark .benefit-icon i,
+body.dark .details-specifications i {
+    color: #FF8A65;
+}
+

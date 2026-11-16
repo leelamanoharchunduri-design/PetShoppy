@@ -39,7 +39,7 @@
 .cat-guide-hero span,
 .cat-care-content > span,
 .cat-vet-content > span {
-    color: #FF8A65;
+    color: teal;
     font-size: 13px;
     font-weight: 800;
     letter-spacing: 2px;
@@ -571,7 +571,7 @@ body.dark .cat-vet-list span {
 
 /* Cat Breed Cards - Dark Mode */
 body.dark .cat-breed-card {
-    background-color: #105E5A;
+    background-color: black;
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
@@ -584,14 +584,14 @@ body.dark .cat-breed-card img {
 }
 
 body.dark .cat-breed-card:hover {
-    background-color: #147D78;
+    background-color: black;
     transition: 0.3s ease;
 }
 
 
 /* Cat Breed Guide - Dark Mode */
 body.dark .cat-breed-guide {
-    background-color: #105E5A;
+    background-color: black;
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 15px;
     box-shadow: 0 5px 18px rgba(0, 0, 0, 0.3);
@@ -612,7 +612,7 @@ body.dark .cat-guide-hero > div {
 }
 /* Cat Facts - Dark Mode */
 body.dark .cat-facts > div {
-    background-color: #105E5A;
+    background-color: black;
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 10px;
     padding: 15px;
@@ -624,7 +624,7 @@ body.dark .cat-facts {
 }
 /* Cat FAQ - Dark Mode */
 body.dark .cat-faq details {
-    background-color: #105E5A;
+    background-color: black;
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 10px;
     padding: 15px 18px;
@@ -641,7 +641,7 @@ body.dark .cat-faq details p {
 }
 /* Cat Vet Note - Dark Mode */
 body.dark .cat-vet-note {
-    background-color: #105E5A;
+    background-color: black;
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 10px;
     padding: 12px 16px;
@@ -666,7 +666,6 @@ body.dark .cat-vet-note {
     padding: 70px 6%;
 
     min-height: 550px;
-    box-sizing: border-box;
 }
 
 /* IMAGE ON LEFT */
@@ -735,14 +734,12 @@ body.dark .cat-vet-note {
     max-height: 900px;
     margin: 20px auto;
     padding: 40px 5%;
-    box-sizing: border-box;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 40px;
 
-    border: 2px solid white;
     border-radius: 24px;
     overflow: hidden;
 }
@@ -823,3 +820,587 @@ body.dark .cat-vet-note {
         gap: 15px;
     }
 }
+
+
+/* =====================================
+   CAT HERO - SAME LAYOUT IN BOTH MODES
+===================================== */
+
+.cat-hero {
+    width: 90%;
+    height: 90vh;
+    min-height: 550px;
+    max-height: 900px;
+    margin: 20px auto;
+    padding: 40px 5%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "image content";
+    align-items: center;
+    gap: 40px;
+
+    background: #FFFFFF;
+    border-radius: 24px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Image on the left */
+.cat-hero-image {
+    grid-area: image;
+    width: 100%;
+    height: 75%;
+    min-height: 280px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.cat-hero-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Content on the right */
+.cat-hero-content {
+    grid-area: content;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.cat-hero-content h1 {
+    font-size: clamp(36px, 4vw, 58px);
+    line-height: 1.2;
+}
+
+.cat-hero-content p {
+    max-width: 550px;
+    line-height: 1.8;
+}
+
+/* DARK MODE - CHANGE COLORS ONLY */
+body.dark .cat-hero {
+    background: #000000 !important;
+}
+
+body.dark .cat-hero-content > span {
+    color: #FF8A65 !important;
+}
+
+body.dark .cat-hero-content h1 {
+    color: #FFFFFF !important;
+}
+
+body.dark .cat-hero-content h1 span {
+    color: #FF8A65 !important;
+}
+
+body.dark .cat-hero-content p {
+    color: #FFFFFF !important;
+}
+
+/* TABLET */
+@media (max-width: 992px) {
+    .cat-hero {
+        width: 94%;
+        height: auto;
+        min-height: 80vh;
+        padding: 35px;
+        gap: 25px;
+    }
+
+    .cat-hero-image {
+        height: 350px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .cat-hero {
+        width: 94%;
+        height: auto;
+        min-height: auto;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "image"
+            "content";
+        padding: 30px 20px;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .cat-hero-image {
+        height: 280px;
+        min-height: 0;
+    }
+
+    .cat-hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cat-hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+/* =====================================
+   CAT HERO - FIT SCREEN
+===================================== */
+
+.cat-hero {
+    width: 100%;
+    min-height: 100vh;
+    height: 100vh;
+    margin: 0;
+    padding: 100px 7% 40px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 45px;
+
+    background: #FFFFFF;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* CONTENT */
+.cat-hero-content {
+    width: 100%;
+}
+
+.cat-hero-content h1 {
+    font-size: clamp(36px, 4.5vw, 60px);
+    line-height: 1.15;
+    margin: 18px 0;
+}
+
+.cat-hero-content p {
+    max-width: 550px;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* IMAGE */
+.cat-hero-image {
+    width: 100%;
+    height: 70vh;
+    min-height: 300px;
+    max-height: 550px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.cat-hero-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* DARK MODE */
+body.dark .cat-hero {
+    background: #000000 !important;
+}
+
+body.dark .cat-hero-content h1,
+body.dark .cat-hero-content p {
+    color: #FFFFFF !important;
+}
+
+body.dark .cat-hero-content h1 span,
+body.dark .cat-hero-content > span {
+    color: #FF8A65 !important;
+}
+
+/* TABLET AND MOBILE */
+@media (max-width: 800px) {
+    .cat-hero {
+        height: auto;
+        min-height: 100vh;
+        padding: 110px 6% 40px;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        overflow: visible;
+        text-align: center;
+    }
+
+    .cat-hero-image {
+        height: 40vh;
+        min-height: 230px;
+        max-height: 350px;
+    }
+
+    .cat-hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cat-hero-buttons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .cat-hero {
+        padding: 100px 5% 35px;
+    }
+
+    .cat-hero-content h1 {
+        font-size: 38px;
+    }
+
+    .cat-hero-image {
+        height: 280px;
+    }
+}
+
+
+
+
+
+/* =====================================
+   CAT PAGE - DARK MODE BLACK BACKGROUNDS
+===================================== */
+
+body.dark .main-header,
+body.dark .cat-hero,
+body.dark .cat-breed-section,
+body.dark .all-cat-guides,
+body.dark .cat-breed-guide,
+body.dark .cat-guide-hero,
+body.dark .cat-care-section,
+body.dark .cat-veterinary-section,
+body.dark .main-footer,
+body.dark .footer-bottom {
+    background: #000000 !important;
+    background-color: #000000 !important;
+}
+
+/* Breed cards */
+body.dark .cat-breed-card {
+    background: #000000 !important;
+    border-color: #147D78 !important;
+}
+
+/* Breed facts */
+body.dark .cat-facts,
+body.dark .cat-facts > div {
+    background: #000000 !important;
+}
+
+/* Information cards */
+body.dark .cat-information-grid > div {
+    background: #000000 !important;
+    border-color: #147D78 !important;
+}
+
+/* FAQ */
+body.dark .cat-faq details {
+    background: #000000 !important;
+    border-color: #147D78 !important;
+}
+
+/* Care and veterinary content */
+body.dark .cat-care-points > div,
+body.dark .cat-vet-list > div {
+    background: #000000 !important;
+}
+
+/* Footer columns */
+body.dark .footer-column {
+    background: #000000 !important;
+}
+
+
+
+
+
+
+
+
+/* DARK MODE - REMOVE CAT HERO BORDER BOX COMPLETELY */
+
+body.dark .cat-hero,
+body.dark .cat-hero-content,
+body.dark .cat-hero-image {
+    background: #000000 !important;
+    border: 0 !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+/* Remove borders and decorative box effects */
+body.dark .cat-hero *,
+body.dark .cat-hero::before,
+body.dark .cat-hero::after,
+body.dark .cat-hero-content::before,
+body.dark .cat-hero-content::after,
+body.dark .cat-hero-image::before,
+body.dark .cat-hero-image::after {
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+/* Remove image frame */
+body.dark .cat-hero-image img {
+    border: 0 !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+
+
+/* REMOVE ALL CAT HERO BORDER BOXES IN DARK MODE */
+
+body.dark section.cat-hero,
+body.dark .cat-hero,
+body.dark .cat-hero-content,
+body.dark .cat-hero-image {
+    border: none !important;
+    border-width: 0 !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: #000000 !important;
+}
+
+/* Remove borders from decorative elements */
+body.dark .cat-hero *,
+body.dark .cat-hero::before,
+body.dark .cat-hero::after {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+body.dark .cat-hero-image img {
+    border: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================
+   CAT HERO - FINAL DARK MODE FIX
+===================================== */
+
+body.dark .cat-hero {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 550px;
+    height: auto !important;
+
+    margin: 0 !important;
+    padding: 70px 6% !important;
+
+    background: #000000 !important;
+    background-color: #000000 !important;
+
+    border: none !important;
+    border-radius: 0 !important;
+    outline: none !important;
+    box-shadow: none !important;
+
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Remove box styling from hero containers */
+body.dark .cat-hero-content,
+body.dark .cat-hero-image {
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Remove image border */
+body.dark .cat-hero-image img {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Remove decorative pseudo-elements */
+body.dark .cat-hero::before,
+body.dark .cat-hero::after,
+body.dark .cat-hero-content::before,
+body.dark .cat-hero-content::after,
+body.dark .cat-hero-image::before,
+body.dark .cat-hero-image::after {
+    content: none !important;
+    display: none !important;
+}
+
+/* Preserve image-left, content-right layout */
+body.dark .cat-hero-image {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+body.dark .cat-hero-content {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+    body.dark .cat-hero {
+        grid-template-columns: 1fr;
+        padding: 40px 5% !important;
+    }
+
+    body.dark .cat-hero-image {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    body.dark .cat-hero-content {
+        grid-column: 1;
+        grid-row: 2;
+    }
+}
+/* Cat Breed heading - coral text */
+.cat-breed-section .cat-section-heading h2 span {
+    color: #FF8A65 !important;
+}
+
+
+
+
+
+/* CAT HERO - IMAGE LEFT, TEXT RIGHT */
+.cat-hero {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+    padding: 40px 6%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.cat-hero-content {
+    flex: 1;
+    min-width: 0;
+    text-align: left;
+}
+
+.cat-hero-image {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.cat-hero-image img {
+    width: 100%;
+    max-width: 600px;
+    height: min(65vh, 500px);
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+    .cat-hero {
+        gap: 25px;
+        padding: 35px 4%;
+    }
+
+    .cat-hero-image img {
+        height: 380px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 650px) {
+    .cat-hero {
+        min-height: auto;
+        flex-direction: column;
+        padding: 35px 5%;
+        gap: 25px;
+    }
+
+    .cat-hero-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .cat-hero-image {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .cat-hero-image img {
+        width: 100%;
+        height: 280px;
+    }
+
+    .cat-hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+/* Cat breed guides heading - coral text */
+.all-cat-guides .cat-section-heading h2 span {
+    color: #FF8A65 !important;
+}
+/* Cat hero welcome text - teal in dark mode */
+body.dark .cat-hero-content > span {
+    color: #147D78 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

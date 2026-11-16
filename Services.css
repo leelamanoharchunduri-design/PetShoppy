@@ -2203,3 +2203,372 @@ body.dark .custom-care-btn:hover {
     color: #FF8A65;
 }
 
+/* =========================================
+   SERVICES PAGE – COMPLETE DARK MODE
+========================================= */
+
+body.dark {
+    background: #000000 !important;
+    color: #FFFFFF;
+}
+
+/* Main page sections */
+body.dark .services-hero,
+body.dark .services-intro,
+body.dark .all-services,
+body.dark .grooming-addons,
+body.dark .booking-process,
+body.dark .explore-pet-section,
+body.dark .personalized-care,
+body.dark .care-standards,
+body.dark .flexible-care-section,
+body.dark .services-faq,
+body.dark .services-final-cta,
+body.dark .service-booking {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+}
+
+/* Header */
+body.dark .main-header {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+    border-bottom: 1px solid #147D78;
+}
+
+body.dark .navigation .nav-link,
+body.dark .logo-text,
+body.dark .header-actions .circle-btn {
+    color: #FFFFFF !important;
+}
+
+body.dark .dropdown-menu {
+    background: #000000 !important;
+    border: 1px solid #147D78;
+}
+
+body.dark .dropdown-menu a {
+    color: #FFFFFF !important;
+}
+
+body.dark .dropdown-menu a:hover {
+    background: #147D78 !important;
+    color: #FFFFFF !important;
+}
+
+/* Headings and paragraphs */
+body.dark .services-hero h1,
+body.dark .services-intro h2,
+body.dark .services-heading h2,
+body.dark .addons-heading h2,
+body.dark .process-heading h2,
+body.dark .explore-pet-heading h2,
+body.dark .pet-banner-content h3,
+body.dark .pet-detail-content h3,
+body.dark .personalized-heading h2,
+body.dark .specialized-card h3,
+body.dark .standards-content h2,
+body.dark .standard-item h3,
+body.dark .flexible-care-heading h2,
+body.dark .care-package-content h3,
+body.dark .faq-heading h2,
+body.dark .faq-item summary,
+body.dark .services-final-cta h2,
+body.dark .booking-info h2,
+body.dark .booking-form-box h3 {
+    color: #FFFFFF !important;
+}
+
+body.dark .services-hero p,
+body.dark .services-intro p,
+body.dark .services-heading p,
+body.dark .service-content p,
+body.dark .service-content li,
+body.dark .addons-heading p,
+body.dark .addon-card p,
+body.dark .process-heading p,
+body.dark .process-card p,
+body.dark .explore-pet-heading p,
+body.dark .pet-banner-content p,
+body.dark .pet-detail-content p,
+body.dark .pet-detail-content li,
+body.dark .personalized-heading p,
+body.dark .specialized-card p,
+body.dark .standards-content p,
+body.dark .flexible-care-heading p,
+body.dark .care-package-content p,
+body.dark .care-package-content li,
+body.dark .package-best-for,
+body.dark .faq-item p,
+body.dark .services-final-cta p,
+body.dark .booking-info p,
+body.dark .form-disclaimer {
+    color: #FFFFFF !important;
+}
+
+/* Service cards */
+body.dark .service-card,
+body.dark .addon-card,
+body.dark .process-card,
+body.dark .pet-detail-card,
+body.dark .specialized-card,
+body.dark .care-package-card,
+body.dark .faq-item,
+body.dark .booking-form-box {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #147D78 !important;
+    box-shadow: none !important;
+}
+
+/* Card content areas */
+body.dark .service-content,
+body.dark .pet-detail-content,
+body.dark .care-package-content {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+}
+
+/* Dog and cat feature banners */
+body.dark .pet-feature-banner,
+body.dark .pet-banner-content {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #147D78;
+}
+
+/* Care standards */
+body.dark .standard-item {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+}
+
+body.dark .pet-care-bottom-note,
+body.dark .custom-care-note {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #147D78;
+}
+
+/* Icons and accent text */
+body.dark .service-icon,
+body.dark .addon-icon,
+body.dark .process-icon,
+body.dark .specialized-icon,
+body.dark .standard-icon,
+body.dark .final-cta-icon,
+body.dark .custom-care-icon {
+    color: #FF8A65 !important;
+}
+
+body.dark .services-eyebrow,
+body.dark .section-eyebrow,
+body.dark .service-category,
+body.dark .service-price strong,
+body.dark .addon-card strong,
+body.dark .package-type {
+    color: #FF8A65 !important;
+}
+
+/* Booking form */
+body.dark .booking-form-box input,
+body.dark .booking-form-box select,
+body.dark .booking-form-box textarea {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #147D78 !important;
+}
+
+body.dark .booking-form-box label {
+    color: #FFFFFF !important;
+}
+
+body.dark .booking-form-box input::placeholder,
+body.dark .booking-form-box textarea::placeholder {
+    color: #FFFFFF !important;
+    opacity: 0.7;
+}
+
+body.dark .booking-form-box select option {
+    background: #000000;
+    color: #FFFFFF;
+}
+
+/* FAQ */
+body.dark .faq-item summary::marker {
+    color: #FF8A65;
+}
+
+/* Buttons */
+body.dark .service-primary-btn,
+body.dark .service-book-btn,
+body.dark .booking-submit,
+body.dark .package-btn {
+    background: #147D78 !important;
+    color: #FFFFFF !important;
+}
+
+body.dark .service-outline-btn {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #FF8A65 !important;
+}
+
+body.dark .service-primary-btn:hover,
+body.dark .service-book-btn:hover,
+body.dark .booking-submit:hover,
+body.dark .package-btn:hover {
+    background: #FF8A65 !important;
+    color: #000000 !important;
+}
+
+/* Footer */
+body.dark .main-footer {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+    border-top: 1px solid #147D78;
+}
+
+body.dark .footer-column h3,
+body.dark .footer-column p,
+body.dark .footer-links a,
+body.dark .contact-list a,
+body.dark .contact-list span,
+body.dark .footer-bottom p,
+body.dark .legal-links a,
+body.dark .footer-logo-text {
+    color: #FFFFFF !important;
+}
+
+body.dark .footer-links a:hover,
+body.dark .contact-list a:hover,
+body.dark .legal-links a:hover {
+    color: #FF8A65 !important;
+}
+
+body.dark .social-btn {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #147D78;
+}
+
+/* Floating cards and captions */
+body.dark .hero-floating-card,
+body.dark .standards-image-caption {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #147D78;
+}
+
+/* Booking status */
+body.dark .booking-message {
+    color: #FFFFFF !important;
+}
+
+/* Remove light backgrounds from nested containers */
+body.dark .services-hero-content,
+body.dark .services-heading,
+body.dark .addons-heading,
+body.dark .process-heading,
+body.dark .explore-pet-heading,
+body.dark .personalized-heading,
+body.dark .standards-content,
+body.dark .flexible-care-heading,
+body.dark .faq-heading,
+body.dark .booking-info {
+    background: transparent !important;
+}
+/* Services hero eyebrow - teal color */
+.services-hero .services-eyebrow {
+    color: #147D78 !important;
+}
+/* Services intro eyebrow - teal */
+.services-intro .section-eyebrow {
+    color: #147D78 !important;
+}
+
+/* Services intro heading - coral */
+.services-intro h2 span {
+    color: #FF8A65 !important;
+}
+/* Services heading eyebrow - teal */
+.all-services .section-eyebrow {
+    color: #147D78 !important;
+}
+
+/* Services heading - coral */
+.all-services .services-heading h2 span {
+    color: #FF8A65 !important;
+}
+/* Grooming add-ons eyebrow - teal */
+.grooming-addons .section-eyebrow {
+    color: #147D78 !important;
+}
+
+/* Spa Experience heading - coral */
+.grooming-addons .addons-heading h2 span {
+    color: #FF8A65 !important;
+}
+/* Booking process eyebrow - teal */
+.booking-process .section-eyebrow {
+    color: #147D78 !important;
+}
+
+/* Booking Works heading - coral */
+.booking-process .process-heading h2 span {
+    color: #FF8A65 !important;
+}
+/* Dog care eyebrow - teal */
+.explore-pet-heading .section-eyebrow {
+    color: #147D78 !important;
+}
+
+/* Dog Care heading - coral */
+.explore-pet-heading h2 span {
+    color: #FF8A65 !important;
+}
+/* Cat care eyebrow - teal */
+.cat-care-section .explore-pet-heading .section-eyebrow {
+    color: #147D78 !important;
+}
+
+/* Cat Care heading - coral */
+.cat-care-section .explore-pet-heading h2 span {
+    color: #FF8A65 !important;
+}
+/* Personalized care eyebrow - teal */
+.personalized-care .section-eyebrow {
+    color: #147D78 !important;
+}
+
+/* Care Options heading - coral */
+.personalized-care .personalized-heading h2 span {
+    color: #FF8A65 !important;
+}
+/* Care standards eyebrow - teal */
+.care-standards .section-eyebrow {
+    color: #147D78 !important;
+}
+
+/* Every Step heading - coral */
+.care-standards .standards-content h2 span {
+    color: #FF8A65 !important;
+}
+/* Flexible care subtitle - teal */
+.flexible-care-heading .care-subtitle {
+    color: #147D78 !important;
+}
+
+/* Care Options heading - coral */
+.flexible-care-heading h2 span {
+    color: #FF8A65 !important;
+}
+/* FAQ heading eyebrow - teal */
+.services-faq .section-eyebrow {
+    color: #147D78 !important;
+}
+
+/* Asked Questions heading - coral */
+.services-faq .faq-heading h2 span {
+    color: #FF8A65 !important;
+}

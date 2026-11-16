@@ -92,72 +92,7 @@ a {
     border-radius: 6px;
 }
 
-/* Hero */
 
-.dog-hero {
-    min-height: 610px;
-    display: flex;
-    align-items: center;
-    padding: 80px 8%;
-}
-
-.dog-hero-content {
-    max-width: 650px;
-    color: var(--dog-white);
-}
-
-.dog-eyebrow,
-.dog-section-heading span,
-.dog-care-content span {
-    color: var(--dog-coral);
-    font-size: 13px;
-    font-weight: 800;
-    letter-spacing: 2px;
-}
-
-.dog-hero h1 {
-    font-size: clamp(42px, 6vw, 72px);
-    font-weight: 400;
-    line-height: 1.12;
-    margin: 20px 0;
-    color: var(--dog-coral);
-    text-shadow: 2px 3px 7px rgba(0, 0, 0, 0.75);
-}
-
-.dog-hero h1 span {
-    color: var(--dog-white);
-}
-
-.dog-hero-content p {
-    font-size: 17px;
-    line-height: 1.8;
-    max-width: 520px;
-}
-
-.dog-hero-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 30px;
-}
-
-.dog-primary-btn,
-.dog-secondary-btn {
-    display: inline-block;
-    padding: 14px 24px;
-    border-radius: 30px;
-    font-weight: 700;
-}
-
-.dog-primary-btn {
-    background: var(--dog-coral);
-    color: var(--dog-white);
-}
-
-.dog-secondary-btn {
-    border: 2px solid var(--dog-white);
-    color: var(--dog-white);
-}
 
 /* Common Sections */
 
@@ -1091,77 +1026,6 @@ body.dark .dog-category-card:hover {
 
 
 
-
-
-
-
-
-
-
-
-/* DOG HERO - EQUAL LEFT AND RIGHT SPACING */
-
-.dog-hero {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    align-items: center;
-    gap: 40px;
-
-    width: 100%;
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 70px 6%;
-
-    box-sizing: border-box;
-    min-height: 550px;
-    background: #FFFFFF;
-}
-
-/* LEFT IMAGE */
-
-.dog-hero-image {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.dog-hero-image img {
-    display: block;
-    width: 100%;
-    height: 430px;
-    object-fit: cover;
-    border-radius: 20px;
-}
-
-/* RIGHT CONTENT */
-
-.dog-hero-content {
-    width: 100%;
-    max-width: none;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* RESPONSIVE */
-
-@media (max-width: 800px) {
-    .dog-hero {
-        grid-template-columns: 1fr;
-        padding: 45px 6%;
-    }
-
-    .dog-hero-image img {
-        height: 330px;
-    }
-}
-
-
-
-
-
-
-
 /* BREED GUIDE IMAGE VISIBILITY */
 
 .breed-guide-hero {
@@ -1302,6 +1166,236 @@ body.dark .dog-category-card:hover {
 
 
 
+/* =====================================
+   DOG HERO – LEFT IMAGE, RIGHT CONTENT
+===================================== */
+
+.dog-hero {
+    width: 100%;
+    height: calc(100vh - 110px);
+    min-height: 550px;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 45px;
+
+    padding: 35px 5%;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* LEFT SIDE – IMAGE */
+.dog-hero-image {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dog-hero-image img {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 25px;
+}
+
+/* RIGHT SIDE – CONTENT */
+.dog-hero-content {
+    width: 100%;
+    max-width: 650px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.dog-eyebrow {
+    display: inline-block;
+    color: #147D78;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.dog-hero-content h1 {
+    font-size: clamp(42px, 4.2vw, 68px);
+    line-height: 1.15;
+    margin: 0 0 25px;
+}
+
+.dog-hero-content h1 span {
+    color: #147D78;
+}
+
+.dog-hero-content p {
+    font-size: 17px;
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+
+/* BUTTONS */
+.dog-hero-buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+    .dog-hero {
+        height: auto;
+        min-height: auto;
+        gap: 25px;
+        padding: 40px 4%;
+    }
+
+    .dog-hero-image {
+        height: 450px;
+    }
+
+    .dog-hero-content h1 {
+        font-size: 42px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .dog-hero {
+        height: auto;
+        grid-template-columns: 1fr;
+        padding: 25px 20px;
+        gap: 25px;
+        overflow: visible;
+    }
+
+    .dog-hero-image {
+        height: 300px;
+    }
+
+    .dog-hero-image img {
+        height: 300px;
+    }
+
+    .dog-hero-content {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .dog-hero-content h1 {
+        font-size: 36px;
+    }
+
+    .dog-hero-buttons {
+        justify-content: center;
+    }
+}
 
 
+
+
+
+
+.dog-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "image content";
+    align-items: center;
+    gap: 45px;
+}
+
+.dog-hero-image {
+    grid-area: image;
+}
+
+.dog-hero-content {
+    grid-area: content;
+}
+
+/* Mobile: content above image */
+@media (max-width: 600px) {
+    .dog-hero {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "content"
+            "image";
+    }
+}
+/* Teal color for section label */
+.dog-section-heading b span {
+    color: #147D78;
+    font-weight: 700;
+}
+
+/* Coral color for Dog Breed */
+.dog-section-heading h2 span {
+    color: #FF8A65;
+}
+/* DARK MODE - REMOVE DOG HERO WHITE BORDER */
+
+body.dark .dog-hero {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+body.dark .dog-hero-content,
+body.dark .dog-hero-image,
+body.dark .dog-hero-image img {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+
+
+
+/* DARK MODE - BREED GUIDE COLORS */
+
+/* Coral: label and breed name */
+body.dark .breed-guide-hero span,
+body.dark .breed-guide-hero h2 {
+    color: #FF8A65 !important;
+}
+
+/* Teal: descriptions */
+body.dark .breed-guide-hero p {
+    color: #147D78 !important;
+}
+/* DARK MODE - BREED FACTS BLACK BACKGROUND */
+
+/* Keep fact text visible */
+body.dark .breed-facts strong,
+body.dark .breed-facts span {
+    color: #FFFFFF !important;
+}
+
+/* DARK MODE - PETSHoppy LOGO COLORS */
+
+body.dark .main-header .logo-text {
+    color: #147D78 !important;
+}
+
+body.dark .main-header .logo-text small {
+    color: #147D78 !important;
+}
+
+/* DARK MODE - FOOTER LOGO COLORS */
+
+/* PET text in teal */
+body.dark .footer-brand .footer-logo-text {
+    color: #147D78 !important;
+}
+
+/* Tagline in teal */
+body.dark .footer-brand .footer-tagline {
+    color: #147D78 !important;
+}
 
